@@ -10,14 +10,14 @@
 
 #include "Sensor.hpp"
 #include "Entropy.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "NetLib\BitStream.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "NetLib/BitStream.hpp"
 #include "ParticleObject.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Damage/Damage.hpp"
 
-#include "Objects\Projectiles\Debris.hpp"
+#include "Objects/Projectiles/Debris.hpp"
 
 #include "StringMgr/StringMgr.hpp"
 #include "Demo1/Data/UI/ui_strings.h"

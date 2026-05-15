@@ -10,17 +10,17 @@
 
 #include "Entropy.hpp"
 #include "ParticleObject.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "netlib/bitstream.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "pointlight\pointlight.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "pointlight/pointlight.hpp"
 #include "grenade.hpp"
-#include "Objects\Vehicles\Vehicle.hpp"
+#include "Objects/Vehicles/Vehicle.hpp"
 
 #include "Missile.hpp"
 #include "textures.hpp"

@@ -6,19 +6,19 @@
 
 #include "entropy.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_text.hpp"
-#include "ui\ui_font.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_text.hpp"
+#include "ui/ui_font.hpp"
 
 #include "dlg_Message.hpp"
 
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "Demo1/data/ui/ui_strings.h"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
 //==============================================================================
 // Online Dialog

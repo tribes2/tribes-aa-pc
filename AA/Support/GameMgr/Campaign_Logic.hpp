@@ -12,10 +12,10 @@
 //=============================================================================
 
 #include "GameLogic.hpp"
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Bot\BotObject.hpp"
-#include "Demo1\Data\Missions\Campaign.h"
-#include "StringMgr\StringMgr.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Bot/BotObject.hpp"
+#include "Demo1/Data/Missions/Campaign.h"
+#include "StringMgr/StringMgr.hpp"
 
 //=============================================================================
 //  DEFINES

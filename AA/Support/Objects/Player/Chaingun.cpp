@@ -13,7 +13,7 @@
 #include "AudioMgr/Audio.hpp"
 #include "Demo1/Globals.hpp"
 #include "Objects/Projectiles/bullet.hpp"
-#include "pointlight\pointlight.hpp"
+#include "pointlight/pointlight.hpp"
 #include "GameMgr/GameMgr.hpp"
 
 //==============================================================================

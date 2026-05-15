@@ -12,9 +12,9 @@
 //==============================================================================
 
 #include "GameLogic.hpp"
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Objects\Projectiles\Turret.hpp"
-#include "Objects\Player\PlayerObject.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Objects/Projectiles/Turret.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 //==============================================================================
 //  TYPES

@@ -9,19 +9,19 @@
 //==============================================================================
 
 #ifndef X_STDIO_HPP
-#include "..\x_stdio.hpp"
+#include "../x_stdio.hpp"
 #endif
 
 #ifndef X_STRING_HPP
-#include "..\x_string.hpp"
+#include "../x_string.hpp"
 #endif
 
 #ifndef X_PLUS_HPP
-#include "..\x_plus.hpp"
+#include "../x_plus.hpp"
 #endif
 
 #ifndef X_DEBUG_HPP
-#include "..\x_debug.hpp"
+#include "../x_debug.hpp"
 #endif
 
 //------------------------------------------------------------------------------

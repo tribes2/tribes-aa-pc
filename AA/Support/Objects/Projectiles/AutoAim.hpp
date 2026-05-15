@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Objects\Player\PlayerObject.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 //==============================================================================
 //  VARIABLES

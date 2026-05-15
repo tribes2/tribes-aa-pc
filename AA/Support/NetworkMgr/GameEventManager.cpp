@@ -9,7 +9,7 @@
 #include "connmanager.hpp"
 #include "globals.hpp"
 
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 //=========================================================================
 

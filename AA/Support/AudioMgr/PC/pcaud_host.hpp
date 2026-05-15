@@ -12,7 +12,7 @@
 #include "x_math.hpp"
 #endif
 
-#include "..\..\support\audiomgr\audiodefs.hpp"
+#include "../../support/audiomgr/audiodefs.hpp"
 #define MAX_OUT_BUFFER_SIZE     (160*sizeof(u32))
 
 #endif

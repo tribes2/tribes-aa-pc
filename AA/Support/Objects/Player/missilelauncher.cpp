@@ -14,8 +14,8 @@
 #include "AudioMgr/Audio.hpp"
 #include "Demo1/Globals.hpp"
 #include "Objects/Projectiles/Missile.hpp"
-#include "HUD\hud_Icons.hpp"
-#include "Objects\Vehicles\Vehicle.hpp"
+#include "HUD/hud_Icons.hpp"
+#include "Objects/Vehicles/Vehicle.hpp"
 
 //==============================================================================
 // DEFINES

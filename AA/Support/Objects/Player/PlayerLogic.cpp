@@ -13,7 +13,7 @@
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
 #include "Demo1/globals.hpp"
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 #include "Demo1/fe_globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "PointLight/PointLight.hpp"
@@ -47,7 +47,7 @@
 #include "HUD/hud_manager.hpp"
 #include "HUD/hud_voice_ids.hpp"
 #include "DefaultLoadouts.hpp"
-#include "Demo1\Data\UI\Messages.h"
+#include "Demo1/Data/UI/Messages.h"
 
 //#define DEBUG_TURN_STATS_ON
 #include "Shape/DebugUtils.hpp"

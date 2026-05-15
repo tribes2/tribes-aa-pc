@@ -13,7 +13,7 @@
 #include "ui_font.hpp"
 #include "ui_colors.hpp"
 
-#include "..\StringMgr\StringMgr.hpp"
+#include "../StringMgr/StringMgr.hpp"
 
 //=========================================================================
 //  Defines

@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "Demo1\savedgame.hpp"
+#include "ui/ui_dialog.hpp"
+#include "Demo1/savedgame.hpp"
 #include "dlg_message.hpp"
 #include "support/cardmgr/cardmgr.hpp"
 

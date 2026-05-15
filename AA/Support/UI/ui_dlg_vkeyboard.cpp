@@ -5,8 +5,8 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "AudioMgr\audio.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
 #include "ui_dlg_vkeyboard.hpp"
 #include "ui_manager.hpp"
@@ -15,9 +15,9 @@
 #include "ui_frame.hpp"
 #include "ui_colors.hpp"
 
-#include "StringMgr\StringMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
-#include "demo1\data\ui\ui_strings.h"
+#include "demo1/data/ui/ui_strings.h"
 
 //=========================================================================
 //  Defines

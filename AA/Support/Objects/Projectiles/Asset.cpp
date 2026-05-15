@@ -11,13 +11,13 @@
 #include "Asset.hpp"
 #include "Entropy.hpp"
 #include "e_View.hpp"
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib/BitStream.hpp"
 #include "ParticleObject.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Bubble.hpp"
-#include "ObjectMgr\ColliderCannon.hpp"
+#include "ObjectMgr/ColliderCannon.hpp"
 
 //==============================================================================
 //  LOCAL STORAGE

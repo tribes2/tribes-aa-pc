@@ -8,7 +8,7 @@
 #include <ws2tcpip.h>
 
 #include "x_files.hpp"
-#include "..\NetLib.hpp"
+#include "../NetLib.hpp"
 
 //==============================================================================
 

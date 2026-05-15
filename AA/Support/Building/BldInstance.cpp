@@ -8,7 +8,7 @@
 #include "e_engine.hpp"
 #include "building.hpp"
 #include "aux_bitmap.hpp"
-#include "..\Demo1\globals.hpp"
+#include "../Demo1/globals.hpp"
 
 #define DEBUG_ROTATION      0
 

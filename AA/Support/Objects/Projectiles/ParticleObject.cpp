@@ -11,10 +11,10 @@
 #include "ParticleObject.hpp"
 #include "debris.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
-#include "AudioMgr\Audio.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "PointLight\PointLight.hpp"
+#include "../Demo1/Globals.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
+#include "PointLight/PointLight.hpp"
 #include "netlib/bitstream.hpp"
 
 //==============================================================================

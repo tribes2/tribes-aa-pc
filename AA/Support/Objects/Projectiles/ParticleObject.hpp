@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Particles\ParticleEffect.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Particles/ParticleEffect.hpp"
 
 //==============================================================================
 //  TYPES

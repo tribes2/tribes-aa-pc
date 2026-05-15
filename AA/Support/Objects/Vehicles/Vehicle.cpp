@@ -16,7 +16,7 @@
 #include "Audiomgr/audio.hpp"
 #include "Objects/Bot/BotObject.hpp"
 #include "GameMgr/MsgMgr.hpp"
-#include "Demo1\Data\UI\Messages.h"
+#include "Demo1/Data/UI/Messages.h"
 
 static vector3 PassEyeOffset_3rd( 0.0f, 2.25f, -3.75f );
 static vector3 PassEyeOffset_1st( 0.0f, 1.5f, 0.15f );

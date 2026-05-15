@@ -5,7 +5,7 @@
 //========================================================================================================================================================
 
 #include "c07_logic.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
 #define M07_MISSION_FAILED      M08_SCRUBBED
 #define M07_MOP_UP              M08_MOP_UP

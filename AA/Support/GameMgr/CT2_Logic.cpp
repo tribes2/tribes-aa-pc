@@ -6,10 +6,10 @@
 
 #include "ct2_logic.hpp"
 #include "GameMgr.hpp"
-#include "Objects\Pickups\Pickups.hpp"
-#include "Objects\Projectiles\WayPoint.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "..\Demo1\fe_Globals.hpp"
+#include "Objects/Pickups/Pickups.hpp"
+#include "Objects/Projectiles/WayPoint.hpp"
+#include "LabelSets/Tribes2Types.hpp"
+#include "../Demo1/fe_Globals.hpp"
 
 //=============================================================================
 

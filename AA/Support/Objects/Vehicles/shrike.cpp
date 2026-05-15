@@ -7,19 +7,19 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "ObjectMgr\Object.hpp"
+#include "NetLib/BitStream.hpp"
+#include "ObjectMgr/Object.hpp"
 #include "Shrike.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "audiomgr/audio.hpp"
-#include "objects\projectiles\ShrikeShot.hpp"
+#include "objects/projectiles/ShrikeShot.hpp"
 #include "Objects/Projectiles/AutoAim.hpp"
 #include "contrail.hpp"
 #include "vfx.hpp"
-#include "StringMgr\StringMgr.hpp"
-#include "Data\UI\ui_strings.h"
+#include "StringMgr/StringMgr.hpp"
+#include "Data/UI/ui_strings.h"
 
 //==============================================================================
 //  DEFINES

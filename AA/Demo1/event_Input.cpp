@@ -7,7 +7,7 @@
 #include "Entropy.hpp"
 #include "Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"
-#include "ObjectMgr\ColliderCannon.hpp"
+#include "ObjectMgr/ColliderCannon.hpp"
 #include "Building/BuildingObj.hpp"
 
 //=========================================================================

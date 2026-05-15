@@ -14,9 +14,9 @@
 
 #include "netlib/bitstream.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Bounds.hpp"
-#include "Demo1\Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Bounds.hpp"
+#include "Demo1/Globals.hpp"
 
 //==============================================================================
 //  DEFINES

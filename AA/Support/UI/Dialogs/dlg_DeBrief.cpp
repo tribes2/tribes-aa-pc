@@ -5,35 +5,35 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "objects\player\PlayerObject.hpp"
+#include "Demo1/globals.hpp"
+#include "objects/player/PlayerObject.hpp"
 #include "NetworkMgr/ServerMan.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "StringMgr\StringMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_edit.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_frame.hpp"
-#include "ui\ui_listbox.hpp"
-#include "ui\ui_textbox.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_edit.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_frame.hpp"
+#include "ui/ui_listbox.hpp"
+#include "ui/ui_textbox.hpp"
 
 #include "dlg_DeBrief.hpp"
 #include "dlg_loadsave.hpp"
 
-#include "Demo1\fe_globals.hpp"
-#include "ui\ui_colors.hpp"
+#include "Demo1/fe_globals.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
-#include "StringMgr\StringMgr.hpp"
-#include "Demo1\Data\UI\ui_strings.h"
-#include "Demo1\Data\Missions\Campaign.h"
+#include "StringMgr/StringMgr.hpp"
+#include "Demo1/Data/UI/ui_strings.h"
+#include "Demo1/Data/Missions/Campaign.h"
 
 //=========================================================================
 

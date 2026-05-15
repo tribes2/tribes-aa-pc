@@ -10,10 +10,10 @@
 
 #include "Arcing.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "Objects\Player\PlayerObject.hpp"
-#include "Demo1\Globals.hpp"
-#include "NetworkMgr\GameClient.hpp"
+#include "NetLib/BitStream.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Demo1/Globals.hpp"
+#include "NetworkMgr/GameClient.hpp"
 
 //==============================================================================
 //  DEFINES

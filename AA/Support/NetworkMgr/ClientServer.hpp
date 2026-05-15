@@ -7,7 +7,7 @@
 #ifndef CLIENTSERVER_HPP
 #define CLIENTSERVER_HPP
 
-#include "netlib\netlib.hpp"
+#include "netlib/netlib.hpp"
 
 #define STEP_SESSION_ID
 //#define DEBUG_SHORT_GAMES

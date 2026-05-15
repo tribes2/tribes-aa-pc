@@ -11,12 +11,12 @@
 #include "Disk.hpp"
 #include "ParticleObject.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 
-#include "objects\player\playerobject.hpp"
-#include "pointlight\pointlight.hpp"
+#include "objects/player/playerobject.hpp"
+#include "pointlight/pointlight.hpp"
 
 //==============================================================================
 //  DEFINES

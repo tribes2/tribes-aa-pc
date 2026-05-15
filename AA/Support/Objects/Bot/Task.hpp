@@ -5,8 +5,8 @@
 //  INCLUDES
 //==============================================================================
 #include "entropy.hpp"
-#include "..\Support\Objects\Player\DefaultLoadouts.hpp"
-#include "..\Support\ObjectMgr\Object.hpp"
+#include "../Support/Objects/Player/DefaultLoadouts.hpp"
+#include "../Support/ObjectMgr/Object.hpp"
 //==============================================================================
 //  DEFINES
 //==============================================================================

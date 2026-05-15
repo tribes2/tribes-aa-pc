@@ -5,7 +5,7 @@
 #include "bldmanager.hpp"
 #include "x_files.hpp"  
 
-#include "ObjectMgr\ObjectMgr.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
 
 ///////////////////////////////////////////////////////////////////////////
 // DEFINES 

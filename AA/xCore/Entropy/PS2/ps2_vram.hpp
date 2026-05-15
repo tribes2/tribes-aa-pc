@@ -7,7 +7,7 @@
 #ifndef PS2_VRAM_HPP
 #define PS2_VRAM_HPP
 
-#include "e_view.hpp"
+#include "e_View.hpp"
 #include "x_bitmap.hpp"
 
 //=========================================================================

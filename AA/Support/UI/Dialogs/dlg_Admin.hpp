@@ -11,7 +11,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
+#include "ui/ui_dialog.hpp"
 
 class ui_button;
 class ui_check;

@@ -5,8 +5,8 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "..\AudioMgr\audio.hpp"
-#include "..\LabelSets\Tribes2Types.hpp"
+#include "../AudioMgr/audio.hpp"
+#include "../LabelSets/Tribes2Types.hpp"
 
 #include "ui_check.hpp"
 #include "ui_manager.hpp"

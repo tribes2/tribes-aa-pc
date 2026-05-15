@@ -5,7 +5,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
+#include "ui/ui_dialog.hpp"
 #include "dlg_message.hpp"
 #include "support/netlib/netlib.hpp"
 

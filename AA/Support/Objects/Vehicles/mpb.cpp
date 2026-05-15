@@ -9,11 +9,11 @@
 //==============================================================================
 
 #include "MPB.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "ObjectMgr\Object.hpp"
+#include "ObjectMgr/Object.hpp"
 #include "Audiomgr/Audio.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib/BitStream.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Projectiles/Mortar.hpp"
 #include "Objects/Projectiles/Bullet.hpp"
@@ -22,7 +22,7 @@
 #include "Objects/Projectiles/ParticleObject.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "vfx.hpp"
-#include "HUD\hud_Icons.hpp"
+#include "HUD/hud_Icons.hpp"
 
 //==============================================================================
 //  DEFINES

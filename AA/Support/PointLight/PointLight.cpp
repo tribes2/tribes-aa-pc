@@ -6,16 +6,16 @@
 
 #include "Entropy.hpp"
 #include "pointlight.hpp"
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Objects\Terrain\terrain.hpp"
-#include "Building\BuildingObj.hpp"
-#include "..\..\Demo1\globals.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Objects/Terrain/terrain.hpp"
+#include "Building/BuildingObj.hpp"
+#include "../../Demo1/globals.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Player\CorpseObject.hpp"
-#include "Objects\Bot\BotObject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Player/CorpseObject.hpp"
+#include "Objects/Bot/BotObject.hpp"
 
-#include "poly\poly.hpp"
+#include "poly/poly.hpp"
 
 #define MAX_VERTS               144      // MUST be divisible by 3
 

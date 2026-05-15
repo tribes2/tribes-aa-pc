@@ -19,8 +19,8 @@
 #include "Objects/Projectiles/Aimer.hpp"
 #include "contrail.hpp"
 #include "vfx.hpp"
-#include "StringMgr\StringMgr.hpp"
-#include "Data\UI\ui_strings.h"
+#include "StringMgr/StringMgr.hpp"
+#include "Data/UI/ui_strings.h"
 
 //==============================================================================
 //  STATIC

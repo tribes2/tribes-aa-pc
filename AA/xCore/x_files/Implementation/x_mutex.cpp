@@ -1,6 +1,6 @@
-#include "..\x_types.hpp"
-#include "..\x_debug.hpp"
-#include "..\x_threads.hpp"
+#include "../x_types.hpp"
+#include "../x_debug.hpp"
+#include "../x_threads.hpp"
 
 //==============================================================================
 // This file contains our base level atomic synchronisation primitives. All other

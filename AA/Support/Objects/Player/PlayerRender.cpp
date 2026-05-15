@@ -13,7 +13,7 @@
 #include "Demo1/Globals.hpp"
 #include "Demo1/fe_globals.hpp"
 
-#include "NetworkMgr\GameClient.hpp"
+#include "NetworkMgr/GameClient.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Terrain/Terrain.hpp"
 #include "Objects/Bot/BotObject.hpp"

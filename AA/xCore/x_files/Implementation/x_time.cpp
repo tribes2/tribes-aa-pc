@@ -7,11 +7,11 @@
 //==============================================================================
 
 #ifndef X_PLUS_HPP
-#include "..\x_time.hpp"
+#include "../x_time.hpp"
 #endif
 
 #ifndef X_DEBUG_HPP
-#include "..\x_debug.hpp"
+#include "../x_debug.hpp"
 #endif
 
 #ifdef TARGET_PS2

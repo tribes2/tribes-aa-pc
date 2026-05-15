@@ -8,8 +8,8 @@
 //  INCLUDES
 //==============================================================================
 #include "HunterMasterAI.hpp"
-#include "Objects\Projectiles\Flag.hpp"
-#include "Objects\Projectiles\Nexus.hpp"
+#include "Objects/Projectiles/Flag.hpp"
+#include "Objects/Projectiles/Nexus.hpp"
 
 #define LOCAL_RADIUS 200
 

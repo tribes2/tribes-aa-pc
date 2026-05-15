@@ -11,9 +11,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Shape\ShapeInstance.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Shape/ShapeInstance.hpp"
+#include "../Demo1/Globals.hpp"
 
 //==============================================================================
 //  ENUMS/DEFINES

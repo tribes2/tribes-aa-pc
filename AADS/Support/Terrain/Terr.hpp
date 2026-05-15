@@ -10,7 +10,7 @@
 #include "x_color.hpp"
 #include "x_math.hpp"
 #include "x_bitmap.hpp"
-#include "e_view.hpp"
+#include "e_View.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "ObjectMgr/Collider.hpp"
 #include "fog/fog.hpp"

@@ -6,8 +6,8 @@
 
 #include "ct3_logic.hpp"
 #include "GameMgr.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "..\Demo1\fe_Globals.hpp"
+#include "LabelSets/Tribes2Types.hpp"
+#include "../Demo1/fe_Globals.hpp"
 
 //=============================================================================
 

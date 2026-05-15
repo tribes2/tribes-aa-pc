@@ -9,7 +9,7 @@
 #include "building.hpp"
 #include "BldInstance.hpp"
 #include "BldRender.hpp"
-#include "fog\fog.hpp"
+#include "fog/fog.hpp"
 
 ///////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES

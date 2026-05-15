@@ -11,8 +11,8 @@
 #include "ColliderCannon.hpp"
 #include "ObjectMgr.hpp"
 #include "Entropy.hpp"
-#include "Objects\Terrain\Terrain.hpp"
-#include "Building\BuildingOBJ.hpp"
+#include "Objects/Terrain/Terrain.hpp"
+#include "Building/BuildingOBJ.hpp"
 
 //==============================================================================
 //  STORAGE

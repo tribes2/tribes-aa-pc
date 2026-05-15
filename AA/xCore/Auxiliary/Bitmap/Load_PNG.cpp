@@ -14,8 +14,8 @@
 #include "x_plus.hpp"
 #include "x_stdio.hpp"
 
-#include "PNG\PNG.h"
-#include "PNG\ZLib\ZLib.h"
+#include "PNG/PNG.h"
+#include "PNG/ZLib/ZLib.h"
 
 //==============================================================================
 //  FUNCTIONS

@@ -12,11 +12,11 @@
 #include "GameMgr.hpp"
 #include "MsgMgr.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Bounds.hpp"
-#include "Demo1\Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Bounds.hpp"
+#include "Demo1/Globals.hpp"
 
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
 //==============================================================================
 //  DEFINES

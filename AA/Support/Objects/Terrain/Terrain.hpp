@@ -11,9 +11,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "Terrain\Terr.hpp"
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Fog\fog.hpp"
+#include "Terrain/Terr.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Fog/fog.hpp"
 
 //==============================================================================
 //  TYPES

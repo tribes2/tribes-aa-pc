@@ -34,16 +34,16 @@
 
 #include "ObjectMgr.hpp"
 #include "Entropy.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "Objects\Projectiles\Waypoint.hpp"
-#include "Objects\bot\BotObject.hpp"
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Vehicles\Vehicle.hpp"
-#include "Objects\Vehicles\gndeffect.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "Objects/Projectiles/Waypoint.hpp"
+#include "Objects/bot/BotObject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Vehicles/Vehicle.hpp"
+#include "Objects/Vehicles/gndeffect.hpp"
 
 // HACK HACK 
 // HACK HACK 
-#include "Demo1\Globals.hpp"
+#include "Demo1/Globals.hpp"
 // HACK HACK 
 // HACK HACK 
 

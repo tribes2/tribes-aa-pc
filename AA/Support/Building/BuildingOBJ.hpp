@@ -5,7 +5,7 @@
 // INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
 #include "BldInstance.hpp"
 #include "pointlight/pointlight.hpp"
 

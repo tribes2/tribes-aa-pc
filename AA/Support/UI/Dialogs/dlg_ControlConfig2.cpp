@@ -6,30 +6,30 @@
 
 #include "entropy.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_text.hpp"
-#include "ui\ui_check.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_frame.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_slider.hpp"
-#include "ui\ui_dlg_list.hpp"
-#include "ui\ui_listbox.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_text.hpp"
+#include "ui/ui_check.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_frame.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_slider.hpp"
+#include "ui/ui_dlg_list.hpp"
+#include "ui/ui_listbox.hpp"
 #include "dlg_ControlConfig2.hpp"
 //#include "ui_controllist.hpp"
 #include "dlg_util_rendercontroller.hpp"
 
-#include "StringMgr\StringMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
-#include "ui\ui_colors.hpp"
-#include "Demo1\FrontEnd.hpp"
+#include "ui/ui_colors.hpp"
+#include "Demo1/FrontEnd.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 extern xbool UseAutoAimHelp;
 extern xbool UseAutoAimHint;

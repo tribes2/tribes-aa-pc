@@ -9,12 +9,12 @@
 #include "BotObject.hpp"
 #include "BotLog.hpp"
 #include "ctf_masterai.hpp"
-#include "Support\GameMgr\GameMgr.hpp"
-#include "Support\Objects\Projectiles\Beacon.hpp"
-#include "Support\Building\BuildingOBJ.hpp"
+#include "Support/GameMgr/GameMgr.hpp"
+#include "Support/Objects/Projectiles/Beacon.hpp"
+#include "Support/Building/BuildingOBJ.hpp"
 #include "MAI_Manager.hpp"
-#include "Support\Objects\Vehicles\Vehicle.hpp"
-#include "Support\Objects\Projectiles\Sensor.hpp"
+#include "Support/Objects/Vehicles/Vehicle.hpp"
+#include "Support/Objects/Projectiles/Sensor.hpp"
 
 //==============================================================================
 //  TYPES

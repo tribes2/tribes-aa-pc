@@ -7,10 +7,10 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "tokenizer\tokenizer.hpp"
-#include "poly\poly.hpp"
+#include "tokenizer/tokenizer.hpp"
+#include "poly/poly.hpp"
 
 #include "vfx.hpp"
 

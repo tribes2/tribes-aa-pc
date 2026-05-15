@@ -6,7 +6,7 @@
 
 #include "Entropy.hpp"
 #include "Poly.hpp"
-#include "mcode\memlayout.vu"
+#include "mcode/memlayout.vu"
 
 #ifdef TARGET_PS2
 

@@ -28,7 +28,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "e_view.hpp"
+#include "e_View.hpp"
 #include "x_bitmap.hpp"
 #include "x_color.hpp"
 

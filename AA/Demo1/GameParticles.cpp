@@ -8,14 +8,14 @@
 //  INCLUDES
 //==============================================================================
 
-#include "..\Support\Objects\Projectiles\ParticleObject.hpp"
-#include "..\Support\Particles\ParticleEffect.hpp"
+#include "../Support/Objects/Projectiles/ParticleObject.hpp"
+#include "../Support/Particles/ParticleEffect.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 
-#include "..\Demo1\GameParticles.hpp"
+#include "../Demo1/GameParticles.hpp"
 
 //==============================================================================
 //  DEFINES

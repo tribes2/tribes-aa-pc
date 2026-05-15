@@ -8,7 +8,7 @@
 //  INCLUDES
 //==============================================================================
 #include "CTF_MasterAI.hpp"
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #define PATROL_RADIUS 50
 #define ENGAGE_RADIUS 100

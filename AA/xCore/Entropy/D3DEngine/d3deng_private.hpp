@@ -9,10 +9,10 @@
 #pragma once
 
 #define STRICT
-#include "..\3rdParty\DirectX8\d3d8.h"
-#include "..\3rdParty\DirectX8\d3dx8.h"
-#include "..\3rdParty\DirectX8\d3dx8core.h"
-#include "..\3rdParty\DirectX8\dplay8.h"
+#include "../3rdParty/DirectX8/d3d8.h"
+#include "../3rdParty/DirectX8/d3dx8.h"
+#include "../3rdParty/DirectX8/d3dx8core.h"
+#include "../3rdParty/DirectX8/dplay8.h"
 #include <windows.h>
 #include <mmsystem.h>
 #include "x_files.hpp"

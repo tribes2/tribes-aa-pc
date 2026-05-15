@@ -10,8 +10,8 @@
 
 #include "Bounds.hpp"
 #include "Entropy.hpp"
-#include "Auxiliary\Bitmap\aux_Bitmap.hpp"
-#include "Poly\Poly.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
+#include "Poly/Poly.hpp"
 
 
 

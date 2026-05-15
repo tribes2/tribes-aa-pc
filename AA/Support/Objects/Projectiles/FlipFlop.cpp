@@ -10,9 +10,9 @@
 
 #include "FlipFlop.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "NetLib\BitStream.hpp"
+#include "../Demo1/Globals.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "NetLib/BitStream.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 //==============================================================================

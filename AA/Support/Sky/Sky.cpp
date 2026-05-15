@@ -7,7 +7,7 @@
 #include "Entropy.hpp"
 #include "Sky.hpp"
 #include "aux_Bitmap.hpp"
-#include "poly\poly.hpp"
+#include "poly/poly.hpp"
 
 //=========================================================================
 

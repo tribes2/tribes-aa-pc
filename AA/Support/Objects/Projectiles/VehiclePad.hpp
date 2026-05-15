@@ -11,9 +11,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Shape\ShapeInstance.hpp"
-#include "Objects\Player\PlayerObject.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Shape/ShapeInstance.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 //==============================================================================
 //  TYPES

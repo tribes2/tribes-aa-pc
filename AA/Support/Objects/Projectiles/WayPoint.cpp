@@ -10,10 +10,10 @@
 
 #include "WayPoint.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
-#include "NetLib\BitStream.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "HUD\hud_Icons.hpp"
+#include "../Demo1/Globals.hpp"
+#include "NetLib/BitStream.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "HUD/hud_Icons.hpp"
 
 //==============================================================================
 //  DEFINES

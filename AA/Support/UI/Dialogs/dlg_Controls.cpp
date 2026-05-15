@@ -5,28 +5,28 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "Demo1\FrontEnd.hpp"
-#include "Demo1\fe_globals.hpp"
+#include "Demo1/globals.hpp"
+#include "Demo1/FrontEnd.hpp"
+#include "Demo1/fe_globals.hpp"
 
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_tabbed_dialog.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_frame.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_check.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_tabbed_dialog.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_frame.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_check.hpp"
 
 #include "dlg_controls.hpp"
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 #include "dlg_util_rendercontroller.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 //=========================================================================
 //  Controls Dialog

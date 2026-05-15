@@ -6,10 +6,10 @@
 
 #include "ct4_logic.hpp"
 #include "GameMgr.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "Objects\Projectiles\Beacon.hpp"
-#include "Objects\Projectiles\Station.hpp"
-#include "..\Demo1\fe_Globals.hpp"
+#include "LabelSets/Tribes2Types.hpp"
+#include "Objects/Projectiles/Beacon.hpp"
+#include "Objects/Projectiles/Station.hpp"
+#include "../Demo1/fe_Globals.hpp"
 
 //=============================================================================
 

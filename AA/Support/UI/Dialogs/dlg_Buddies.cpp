@@ -5,30 +5,30 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
+#include "Demo1/globals.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_edit.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_frame.hpp"
-#include "ui\ui_listbox.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_dlg_vkeyboard.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_edit.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_frame.hpp"
+#include "ui/ui_listbox.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_dlg_vkeyboard.hpp"
 
 #include "dlg_Buddies.hpp"
 #include "dlg_loadsave.hpp"
 
-#include "Demo1\fe_globals.hpp"
-#include "ui\ui_colors.hpp"
+#include "Demo1/fe_globals.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
-#include "StringMgr\StringMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
 
 extern xbool g_ControlModified;

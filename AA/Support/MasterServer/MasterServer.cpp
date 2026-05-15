@@ -3,7 +3,7 @@
 #include "masterserver.hpp"
 #include "netlib/netlib.hpp"
 #include "bytestream.hpp"
-#include "NetworkMgr\ServerMan.hpp"
+#include "NetworkMgr/ServerMan.hpp"
 #include "Demo1/SpecialVersion.hpp"
 
 extern xbool g_ServerListChanged;

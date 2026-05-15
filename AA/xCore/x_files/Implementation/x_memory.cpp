@@ -9,7 +9,7 @@
 //==============================================================================
 
 #ifndef X_MEMORY_HPP
-#include "..\x_memory.hpp"
+#include "../x_memory.hpp"
 #endif
 
 #ifndef X_FILES_PRIVATE_HPP
@@ -17,14 +17,14 @@
 #endif
 
 #ifndef X_STDIO_HPP
-#include "..\x_stdio.hpp"
+#include "../x_stdio.hpp"
 #endif
 
 #ifndef X_STRING_HPP
-#include "..\x_string.hpp"
+#include "../x_string.hpp"
 #endif
 
-#include "..\x_threads.hpp"
+#include "../x_threads.hpp"
 
 #include <stdio.h>
 

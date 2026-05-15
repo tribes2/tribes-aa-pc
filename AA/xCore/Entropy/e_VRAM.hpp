@@ -56,7 +56,7 @@ void        vram_Kill           ( void );
 
 #ifdef TARGET_PC
 
-#include "D3DEngine\d3deng_private.hpp"
+#include "D3DEngine/d3deng_private.hpp"
 
 s32                 vram_LoadTexture    ( const char*    pFileName );
 

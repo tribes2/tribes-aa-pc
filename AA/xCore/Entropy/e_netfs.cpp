@@ -21,12 +21,12 @@
 #include "e_netfsdefs.hpp"
 #include "e_Network.hpp"
 #include "Network/netsocket.hpp"
-#include "tokenizer\tokenizer.hpp"
+#include "tokenizer/tokenizer.hpp"
 #include "entropy.hpp"
 #include "x_threads.hpp"
 
 #ifdef TARGET_PS2
-#include "ps2\iop\iop.hpp"
+#include "ps2/iop/iop.hpp"
 #else
 #include <windows.h>
 #endif

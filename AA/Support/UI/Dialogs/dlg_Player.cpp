@@ -5,35 +5,35 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "Demo1\FrontEnd.hpp"
+#include "Demo1/globals.hpp"
+#include "Demo1/FrontEnd.hpp"
 
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_tabbed_dialog.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_check.hpp"
-#include "ui\ui_slider.hpp"
-#include "ui\ui_dlg_list.hpp"
-#include "ui\ui_listbox.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_tabbed_dialog.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_check.hpp"
+#include "ui/ui_slider.hpp"
+#include "ui/ui_dlg_list.hpp"
+#include "ui/ui_listbox.hpp"
 
 #include "dlg_player.hpp"
 #include "dlg_message.hpp"
-#include "NetworkMgr\sm_common.hpp"
+#include "NetworkMgr/sm_common.hpp"
 
-#include "objects\bot\botobject.hpp"
+#include "objects/bot/botobject.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
-#include "ui\ui_colors.hpp"
-#include "Demo1\fe_globals.hpp"
-#include "StringMgr\StringMgr.hpp"
+#include "Demo1/data/ui/ui_strings.h"
+#include "ui/ui_colors.hpp"
+#include "Demo1/fe_globals.hpp"
+#include "StringMgr/StringMgr.hpp"
 
 #include "Demo1/SpecialVersion.hpp"
 extern bot_object::bot_debug g_BotDebug;

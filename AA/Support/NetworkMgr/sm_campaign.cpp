@@ -11,8 +11,8 @@
 #include "gameserver.hpp"
 #include "masterserver/masterserver.hpp"
 #include "serverman.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "Objects\Bot\MAI_Manager.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "Objects/Bot/MAI_Manager.hpp"
 #include "sm_common.hpp"
 #include "FrontEnd.hpp"
 

@@ -7,16 +7,16 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "ObjectMgr\Object.hpp"
+#include "NetLib/BitStream.hpp"
+#include "ObjectMgr/Object.hpp"
 #include "GravCycle.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "audiomgr/audio.hpp"
 #include "vfx.hpp"
-#include "StringMgr\StringMgr.hpp"
-#include "Data\UI\ui_strings.h"
+#include "StringMgr/StringMgr.hpp"
+#include "Data/UI/ui_strings.h"
 
 //==============================================================================
 //  STORAGE

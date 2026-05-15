@@ -6,7 +6,7 @@
 #include "Shape.hpp"
 #include "MCode/PS2_Shape.hpp"    // For micro code and building dlists
 #include "aux_Bitmap.hpp"
-#include "ObjectMgr\collider.hpp"
+#include "ObjectMgr/collider.hpp"
 
 
 // Need all versions of machine specific code for building display lists
@@ -19,8 +19,8 @@
 // For building dlists
 #ifndef TARGET_PS2
 
-#include "PS2\ps2_dlist.hpp" 
-#include "PS2\ps2_vifgif.hpp"
+#include "PS2/ps2_dlist.hpp" 
+#include "PS2/ps2_vifgif.hpp"
 
 // These are from C:\PROJECTS\T2\XCORE\3RDPARTY\PS2\Sony\sce\ee\include\eestruct.h
 #define SCE_VIF1_SET_OFFSET(offset, irq)    ((u_int)(offset) | ((u_int)0x02 << 24) | ((u_int)(irq) << 31))

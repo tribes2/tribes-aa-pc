@@ -12,10 +12,10 @@
 #include "Campaign_Logic.hpp"
 #include "GameMgr.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Flag.hpp"
-#include "Demo1\Globals.hpp"
-#include "Demo1\fe_Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Flag.hpp"
+#include "Demo1/Globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 //==============================================================================

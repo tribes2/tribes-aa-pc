@@ -4,7 +4,7 @@
 //
 //=========================================================================
 #include "globals.hpp"
-#include "Building\BldManager.hpp"
+#include "Building/BldManager.hpp"
 
 t2_globals  tgl;
 

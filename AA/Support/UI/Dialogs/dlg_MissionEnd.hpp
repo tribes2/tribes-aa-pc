@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "GameMgr\GameMgr.hpp"
+#include "ui/ui_dialog.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 //==============================================================================
 //  dlg_online

@@ -1,10 +1,10 @@
 #include "entropy.hpp"
 #include "ParticleEmitter.hpp"
 #include "ParticleEffect.hpp"
-#include "Shape\ShapeInstance.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "Shape/ShapeInstance.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Poly\Poly.hpp"
+#include "Poly/Poly.hpp"
 
 #ifdef TARGET_PS2
 xbool pfx_UseDraw = FALSE;

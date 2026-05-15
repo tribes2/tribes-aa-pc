@@ -5,7 +5,7 @@
 
 #include "BldRender.hpp"
 #include "e_vram.hpp"
-#include "mcode\memlayout.vu"
+#include "mcode/memlayout.vu"
 
 //=============================================================================
 //  VARIABLES

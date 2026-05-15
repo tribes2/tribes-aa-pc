@@ -7,7 +7,7 @@
 
 #include "BotObject.hpp"
 #include "BotLog.hpp"
-#include "Support\GameMgr\GameMgr.hpp"
+#include "Support/GameMgr/GameMgr.hpp"
 #include "Graph.hpp" // For EDGE_COST_ANALYSIS define...
 
 //==============================================================================

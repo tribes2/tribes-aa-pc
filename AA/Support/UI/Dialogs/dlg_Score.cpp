@@ -6,20 +6,20 @@
 
 #include "entropy.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_frame.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_frame.hpp"
 
 #include "dlg_score.hpp"
 
 #include "GameMgr/GameMgr.hpp"
-#include "StringMgr\StringMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 //=========================================================================
 //  Score Dialog

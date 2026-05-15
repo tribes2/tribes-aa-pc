@@ -10,9 +10,9 @@
 
 #include "Mortar.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Demo1\Globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "ParticleObject.hpp"
-#include "objects\player\playerobject.hpp"
+#include "objects/player/playerobject.hpp"
 #include "AudioMgr/Audio.hpp"
 
 

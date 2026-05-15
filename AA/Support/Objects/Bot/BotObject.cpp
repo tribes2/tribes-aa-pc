@@ -13,7 +13,7 @@
 #include "PathFinder.hpp"
 #include "NetLib/Bitstream.hpp"
 #include "Demo1/Globals.hpp"
-#include "Demo1\fe_Globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "ObjectMgr/Object.hpp"
 #include "Objects/Terrain/Terrain.hpp"
@@ -21,7 +21,7 @@
 #include "PathGenerator.hpp"
 #include "Graph.hpp"
 #include "MAI_Manager.hpp"
-#include "Support\Building\BuildingOBJ.hpp"
+#include "Support/Building/BuildingOBJ.hpp"
 #include "GameMgr/GameMgr.hpp"
 
 vector3* g_BotWorldPos;

@@ -15,7 +15,7 @@
 #include "ParticleDefs.hpp"
 #include "ParticlePool.hpp"
 #include "ParticleLibrary.hpp"
-#include "Shape\ShapeInstance.hpp"
+#include "Shape/ShapeInstance.hpp"
 
 class pfx_effect;
 

@@ -6,18 +6,18 @@
 
 #include "ct5_logic.hpp"
 #include "GameMgr.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "ui\dialogs\dlg_Vehicle.hpp"
-#include "ui\dialogs\..\..\Demo1\data\ui\ui_strings.h"
+#include "LabelSets/Tribes2Types.hpp"
+#include "ui/dialogs/dlg_Vehicle.hpp"
+#include "ui/dialogs/../../Demo1/data/ui/ui_strings.h"
 
-#include "Objects\Vehicles\GravCycle.hpp"
-#include "Objects\Vehicles\Shrike.hpp"
-#include "Objects\Vehicles\Bomber.hpp"
-#include "Objects\Vehicles\Transport.hpp"
-#include "Objects\Vehicles\AssTank.hpp"
-#include "Objects\Vehicles\MPB.hpp"
+#include "Objects/Vehicles/GravCycle.hpp"
+#include "Objects/Vehicles/Shrike.hpp"
+#include "Objects/Vehicles/Bomber.hpp"
+#include "Objects/Vehicles/Transport.hpp"
+#include "Objects/Vehicles/AssTank.hpp"
+#include "Objects/Vehicles/MPB.hpp"
 
-#include "..\Demo1\fe_Globals.hpp"
+#include "../Demo1/fe_Globals.hpp"
 
 //=============================================================================
 

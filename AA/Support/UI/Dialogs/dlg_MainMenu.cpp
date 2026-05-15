@@ -5,24 +5,24 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "Demo1\fe_globals.hpp"
+#include "Demo1/globals.hpp"
+#include "Demo1/fe_globals.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui\ui_font.hpp"
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
 
 #include "dlg_MainMenu.hpp"
 
-#include "Demo1\titles.hpp"
+#include "Demo1/titles.hpp"
 
 #include "NetworkMgr/ServerMan.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 #include "Demo1/SpecialVersion.hpp"
 

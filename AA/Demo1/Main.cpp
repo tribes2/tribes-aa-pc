@@ -11,37 +11,37 @@
 //==============================================================================
 
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib/BitStream.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "NetworkMgr/GameClient.hpp"
-#include "Tokenizer\Tokenizer.hpp"
-#include "AudioMgr\Audio.hpp"
-#include "Building\BuildingObj.hpp"
-#include "Objects\Terrain\Terrain.hpp"
+#include "Tokenizer/Tokenizer.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "Building/BuildingObj.hpp"
+#include "Objects/Terrain/Terrain.hpp"
 #include "NetworkMgr/ServerMan.hpp"
-#include "PointLight\PointLight.hpp"
+#include "PointLight/PointLight.hpp"
 #include "e_NetFS.hpp"
-#include "Support\Objects\Bot\Graph.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "GameMgr\GameMgr.hpp"
-#include "Objects\Projectiles\Plasma.hpp"
-#include "Objects\Projectiles\Bullet.hpp"
-#include "Objects\Projectiles\Laser.hpp"
-#include "Objects\Projectiles\Blaster.hpp"
-#include "Objects\Projectiles\Bounds.hpp"
-#include "Objects\Bot\Graph.hpp"
+#include "Support/Objects/Bot/Graph.hpp"
+#include "LabelSets/Tribes2Types.hpp"
+#include "GameMgr/GameMgr.hpp"
+#include "Objects/Projectiles/Plasma.hpp"
+#include "Objects/Projectiles/Bullet.hpp"
+#include "Objects/Projectiles/Laser.hpp"
+#include "Objects/Projectiles/Blaster.hpp"
+#include "Objects/Projectiles/Bounds.hpp"
+#include "Objects/Bot/Graph.hpp"
 #include "cardmgr/cardmgr.hpp"
 #include "titles.hpp"
 #include "poly/poly.hpp"
-#include "StringMgr\StringMgr.hpp"
+#include "StringMgr/StringMgr.hpp"
 
-#include "data\ui\ui_strings.h"
+#include "data/ui/ui_strings.h"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_font.hpp"
-#include "hud\hud_manager.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_font.hpp"
+#include "hud/hud_manager.hpp"
 #include "masterserver/masterserver.hpp"
 #include "NetworkMgr/ServerVersion.hpp"
 #include "NetworkMgr/sm_common.hpp"
@@ -52,8 +52,8 @@
 #define TEST_PATHFIND       0
 
 #if TEST_PATHFIND
-#include "Objects\Bot\BotObject.hpp"
-#include "Objects\Bot\BotLog.hpp"
+#include "Objects/Bot/BotObject.hpp"
+#include "Objects/Bot/BotLog.hpp"
 #endif
 
 #define EXPORT_NAV_GRAPHS   0
@@ -61,13 +61,13 @@
 #define LIGHT_LEVELS        0   // set this to 1 to light all buildings when exporting all missions
 
 #if EXPORT_NAV_GRAPHS
-#include "BotEditor\PathEditor.hpp"
+#include "BotEditor/PathEditor.hpp"
 extern path_editor s_PathEditor;
 extern player_object* g_pPlayer;
 #endif
 
 #if VALIDATE_ASS_FILES  
-#include "BotEditor\AssetEditor.hpp"
+#include "BotEditor/AssetEditor.hpp"
 extern asset_editor s_AssetEditor;
 #endif
 

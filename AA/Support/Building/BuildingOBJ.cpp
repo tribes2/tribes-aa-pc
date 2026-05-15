@@ -5,7 +5,7 @@
 
 #include "BuildingOBJ.hpp"
 #include "Entropy.hpp"
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 //==============================================================================
 // VARIABLES

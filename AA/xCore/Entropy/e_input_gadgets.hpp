@@ -23,7 +23,7 @@
 //  DEFINE THOSE ENUMS
 //==============================================================================
 
-#include "e_input_gadget_defines.hpp"
+#include "e_Input_Gadget_Defines.hpp"
 
 //==============================================================================
 #endif  // #ifndef E_INPUT_GADGETS_HPP

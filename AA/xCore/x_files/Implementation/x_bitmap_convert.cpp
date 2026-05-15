@@ -9,11 +9,11 @@
 //==============================================================================
 
 #ifndef X_BITMAP_HPP
-#include "..\x_bitmap.hpp"
+#include "../x_bitmap.hpp"
 #endif
 
 #ifndef X_MEMORY_HPP
-#include "..\x_memory.hpp"
+#include "../x_memory.hpp"
 #endif
 
 //==============================================================================
@@ -834,7 +834,7 @@ xcolor* xbmp_GenerateColorMipA1( const xcolor* pSource, s32 W, s32 H, s32 Mip )
 // #define DUMP_MIPS
 
 #ifdef DUMP_MIPS
-#include "..\x_string.hpp"
+#include "../x_string.hpp"
 static s32 GlobalMipCount = 0;
 #endif
 

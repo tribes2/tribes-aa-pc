@@ -3,8 +3,8 @@
 // INCLUDES 
 //==============================================================================
 
-#include "..\e_Engine.hpp"
-#include "..\3rdParty\DirectX8\dinput.h"
+#include "../e_Engine.hpp"
+#include "../3rdParty/DirectX8/dinput.h"
 
 //==============================================================================
 // DEFINES

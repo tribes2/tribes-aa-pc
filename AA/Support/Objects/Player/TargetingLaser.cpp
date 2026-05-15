@@ -12,7 +12,7 @@
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "Demo1/Globals.hpp"
-#include "ObjectMgr\Object.hpp"
+#include "ObjectMgr/Object.hpp"
 #include "Objects/Projectiles/Beacon.hpp"
 
 //==============================================================================

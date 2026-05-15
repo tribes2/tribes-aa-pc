@@ -11,9 +11,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "ui\ui_frame.hpp"
-#include "ui\ui_text.hpp"
+#include "ui/ui_dialog.hpp"
+#include "ui/ui_frame.hpp"
+#include "ui/ui_text.hpp"
 #include "dlg_NetworkOptions.hpp"
 #include "Demo1/SpecialVersion.hpp"
 

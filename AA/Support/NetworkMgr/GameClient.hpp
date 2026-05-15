@@ -10,7 +10,7 @@
 #include "netlib/netlib.hpp"
 #include "netlib/bitstream.hpp"
 #include "connmanager.hpp"
-#include "Objects\Player\PlayerObject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 
 //=========================================================================

@@ -4,12 +4,12 @@
 //
 //=========================================================================
 
-#include "..\x_bitstream.hpp"
-#include "..\x_debug.hpp"
-#include "..\x_plus.hpp"
-#include "..\x_color.hpp"
-#include "..\x_string.hpp"
-#include "..\x_files.hpp"
+#include "../x_bitstream.hpp"
+#include "../x_debug.hpp"
+#include "../x_plus.hpp"
+#include "../x_color.hpp"
+#include "../x_string.hpp"
+#include "../x_files.hpp"
 
 //=========================================================================
 

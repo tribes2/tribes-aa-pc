@@ -1,5 +1,5 @@
-#include "..\x_files.hpp"
-#include "..\x_threads.hpp"
+#include "../x_files.hpp"
+#include "../x_threads.hpp"
 
 //
 // Define this to enable profile code. You will also need to make sure the timer routines in x_timer.cpp are

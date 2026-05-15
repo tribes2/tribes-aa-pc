@@ -5,16 +5,16 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "Demo1\FrontEnd.hpp"
-#include "Demo1\fe_globals.hpp"
+#include "Demo1/globals.hpp"
+#include "Demo1/FrontEnd.hpp"
+#include "Demo1/fe_globals.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_font.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_font.hpp"
 
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 //=========================================================================
 //  Controller Element Elements

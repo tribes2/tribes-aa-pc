@@ -13,14 +13,14 @@
 #include "MsgMgr.hpp"
 #include "netlib/bitstream.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Flag.hpp"
-#include "Objects\Projectiles\WayPoint.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Flag.hpp"
+#include "Objects/Projectiles/WayPoint.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Demo1\Globals.hpp"
-#include "HUD\hud_Icons.hpp"
+#include "Demo1/Globals.hpp"
+#include "HUD/hud_Icons.hpp"
 
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
 //==============================================================================
 //  DEFINES

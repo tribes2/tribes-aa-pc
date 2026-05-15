@@ -6,7 +6,7 @@
 #ifndef GAMEPARTICLES_HPP
 #define GAMEPARTICLES_HPP
 
-#include "ObjectMgr\Object.hpp"
+#include "ObjectMgr/Object.hpp"
 
 class pfx_effect;
 class pfx_emitter;

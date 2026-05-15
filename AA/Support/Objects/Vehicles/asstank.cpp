@@ -7,10 +7,10 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "ObjectMgr\Object.hpp"
+#include "NetLib/BitStream.hpp"
+#include "ObjectMgr/Object.hpp"
 #include "AssTank.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Audiomgr/Audio.hpp"

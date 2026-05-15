@@ -11,9 +11,9 @@
 #include "GameLogic.hpp"
 #include "GameMgr.hpp"
 #include "MsgMgr.hpp"
-#include "Objects\Projectiles\Generator.hpp"
+#include "Objects/Projectiles/Generator.hpp"
 
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
 //==============================================================================
 //  DEFINES

@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "Demo1\fe_Globals.hpp"
+#include "ui/ui_dialog.hpp"
+#include "Demo1/fe_Globals.hpp"
 
 //==============================================================================
 //  dlg_controlconfig

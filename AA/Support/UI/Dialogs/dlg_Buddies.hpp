@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "Demo1\fe_globals.hpp"
+#include "ui/ui_dialog.hpp"
+#include "Demo1/fe_globals.hpp"
 
 //==============================================================================
 //  dlg_debrief

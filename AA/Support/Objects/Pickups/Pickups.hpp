@@ -11,9 +11,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
 #include "x_color.hpp"
-#include "Shape\ShapeInstance.hpp"
+#include "Shape/ShapeInstance.hpp"
 
 //==============================================================================
 //  ENUMS/DEFINES

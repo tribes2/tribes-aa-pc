@@ -407,7 +407,7 @@ int main( void )
 /* Test some xcolor stuff and some xbitmap stuff.
 
 #include "x_files.hpp"
-#include "..\Entropy\e_View.hpp"
+#include "../Entropy/e_View.hpp"
 #include <math.h>
 
 xbool   auxbmp_Load     ( xbitmap& Bitmap, const char* pFileName );

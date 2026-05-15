@@ -10,13 +10,13 @@
 
 #include "ParticleObject.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "pointlight\pointlight.hpp"
-#include "NetLib\BitStream.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "pointlight/pointlight.hpp"
+#include "NetLib/BitStream.hpp"
 
 #include "ShrikeShot.hpp"
 #include "textures.hpp"

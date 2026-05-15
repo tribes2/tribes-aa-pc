@@ -5,32 +5,32 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "Demo1\globals.hpp"
-#include "Demo1\FrontEnd.hpp"
+#include "Demo1/globals.hpp"
+#include "Demo1/FrontEnd.hpp"
 
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
-#include "AudioMgr\audio.hpp"
-#include "labelsets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "labelsets/Tribes2Types.hpp"
 
-#include "GameMgr\Campaign_Logic.hpp"
+#include "GameMgr/Campaign_Logic.hpp"
 
-//#include "Objects\Player\PlayerLogic.cpp"
+//#include "Objects/Player/PlayerLogic.cpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_tabbed_dialog.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_button.hpp"
-#include "ui\ui_check.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_tabbed_dialog.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_button.hpp"
+#include "ui/ui_check.hpp"
 
 #include "dlg_debug.hpp"
 #include "NetworkMgr/sm_common.hpp"
 
-#include "objects\bot\botobject.hpp"
+#include "objects/bot/botobject.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
-#include "Demo1\fe_Globals.hpp"
+#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/fe_Globals.hpp"
 
 extern bot_object::bot_debug g_BotDebug;
 extern xbool CTF_LOGIC_HUMANS_ON_SAME_TEAM;

@@ -15,11 +15,11 @@
 
 #include "Bubble.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "NetLib/BitStream.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Vehicles\Vehicle.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Vehicles/Vehicle.hpp"
 
 //==============================================================================
 //  STORAGE

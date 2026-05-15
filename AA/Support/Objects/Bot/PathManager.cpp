@@ -23,8 +23,8 @@
 #include "PathManager.hpp"
 #include "BotLog.hpp"
 #include "ObjectMgr/Object.hpp"
-#include "Support\Building\BuildingOBJ.hpp"
-#include "Demo1\Globals.hpp"
+#include "Support/Building/BuildingOBJ.hpp"
+#include "Demo1/Globals.hpp"
 
 //==============================================================================
 //  VARIABLES

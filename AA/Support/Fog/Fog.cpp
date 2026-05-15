@@ -6,7 +6,7 @@
 
 #include "Entropy.hpp"
 #include "Fog.hpp"
-#include "Demo1\Globals.hpp"
+#include "Demo1/Globals.hpp"
 
 //=========================================================================
 

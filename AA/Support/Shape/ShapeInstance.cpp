@@ -3,7 +3,7 @@
 
 #include "Entropy.hpp"
 #include "ShapeInstance.hpp"
-#include "ObjectMgr\collider.hpp"
+#include "ObjectMgr/collider.hpp"
 
 
 

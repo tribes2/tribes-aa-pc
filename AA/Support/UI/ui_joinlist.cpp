@@ -5,8 +5,8 @@
 //=========================================================================
 
 #include "entropy.hpp"
-#include "AudioMgr\audio.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "AudioMgr/audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 #include "gamemgr/gamemgr.hpp"
 
 #include "ui_listbox.hpp"
@@ -15,8 +15,8 @@
 #include "ui_joinlist.hpp"
 
 #include "NetworkMgr/ServerMan.hpp"
-#include "StringMgr\StringMgr.hpp"
-#include "Demo1\data\ui\ui_strings.h"
+#include "StringMgr/StringMgr.hpp"
+#include "Demo1/data/ui/ui_strings.h"
 
 //=========================================================================
 //  Defines

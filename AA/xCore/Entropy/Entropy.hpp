@@ -21,11 +21,11 @@
 #include "x_files.hpp"
 
 #ifdef TARGET_PC
-#include "D3DEngine\d3deng_Private.hpp"
+#include "D3DEngine/d3deng_Private.hpp"
 #endif
 
 #ifdef TARGET_PS2
-#include "PS2\ps2_Misc.hpp"
+#include "PS2/ps2_Misc.hpp"
 #endif
 
 //==============================================================================

@@ -10,8 +10,8 @@
 
 #include "Nexus.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "NetLib/BitStream.hpp"
+#include "../Demo1/Globals.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 

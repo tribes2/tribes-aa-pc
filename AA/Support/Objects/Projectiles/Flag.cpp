@@ -9,11 +9,11 @@
 //==============================================================================
 
 #include "Flag.hpp"
-#include "GameMgr\GameMgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Demo1\Globals.hpp"
-#include "Objects\Player\PlayerObject.hpp"
-#include "PointLight\PointLight.hpp"
+#include "Demo1/Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "PointLight/PointLight.hpp"
 #include "netlib/bitstream.hpp"
 
 

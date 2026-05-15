@@ -10,7 +10,7 @@
 
 #include "Scenic.hpp"
 #include "Entropy.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 

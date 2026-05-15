@@ -13,7 +13,7 @@
 #include "Objects/Projectiles/Sensor.hpp"
 #include "Objects/Projectiles/Generator.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"
-#include "Demo1\fe_Globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 //#include "Objects/Projectiles/Sensor.hpp"
 #define MIN_DIST_BTWN_TURRETS_SQ 400
 #define MIN_DIST_BTWN_SENSORS    60

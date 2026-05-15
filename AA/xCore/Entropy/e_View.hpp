@@ -324,7 +324,7 @@ protected:
     void    UpdateProjection( void ) const;
 };
 
-#include "Common\e_View_inline.hpp"
+#include "Common/e_View_inline.hpp"
 
 //==============================================================================
 #endif // E_VIEW_HPP

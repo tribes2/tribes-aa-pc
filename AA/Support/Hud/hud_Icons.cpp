@@ -10,7 +10,7 @@
 
 #include "hud_Icons.hpp"
 #include "Entropy.hpp"
-#include "Demo1\Globals.hpp"
+#include "Demo1/Globals.hpp"
 
 //==============================================================================
 //  STORAGE

@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui\ui_dialog.hpp"
-#include "ui\ui_tabbed_dialog.hpp"
+#include "ui/ui_dialog.hpp"
+#include "ui/ui_tabbed_dialog.hpp"
 
 //==============================================================================
 //  dlg_online

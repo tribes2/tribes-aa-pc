@@ -8,8 +8,8 @@
 //  INCLUDES
 //==============================================================================
 #include "CNH_MasterAI.hpp"
-#include "Support\GameMgr\GameMgr.hpp"
-#include "Support\Objects\Projectiles\FlipFlop.hpp"
+#include "Support/GameMgr/GameMgr.hpp"
+#include "Support/Objects/Projectiles/FlipFlop.hpp"
 
 #define ENGAGE_RADIUS 50
 #define RETREAT_RADIUS 75

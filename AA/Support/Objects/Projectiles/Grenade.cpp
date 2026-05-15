@@ -10,11 +10,11 @@
 
 #include "Grenade.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "Demo1\Globals.hpp"
-#include "PointLight\PointLight.hpp"
+#include "Demo1/Globals.hpp"
+#include "PointLight/PointLight.hpp"
 #include "ParticleObject.hpp"
-#include "objects\player\playerobject.hpp"
-#include "GameMgr\\GameMgr.hpp"
+#include "objects/player/playerobject.hpp"
+#include "GameMgr//GameMgr.hpp"
 #include "netlib/bitstream.hpp"
 
 //==============================================================================

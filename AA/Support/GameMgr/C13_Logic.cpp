@@ -5,7 +5,7 @@
 //========================================================================================================================================================
 
 #include "c13_logic.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
 #define M13_GET_SWITCH      M10_GET_SWITCH
 #define M13_MOP_UP          M08_MOP_UP

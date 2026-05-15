@@ -11,11 +11,11 @@
 #include "HUNT_Logic.hpp"
 #include "GameMgr.hpp"
 #include "MsgMgr.hpp"
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Flag.hpp"
-#include "Demo1\Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Flag.hpp"
+#include "Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 //==============================================================================

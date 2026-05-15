@@ -19,8 +19,8 @@
 #include "GameMgr/GameMgr.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"
 #include "Aimer.hpp"
-#include "HUD\hud_Icons.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "HUD/hud_Icons.hpp"
+#include "../Demo1/Globals.hpp"
 
 //==============================================================================
 //  STORAGE

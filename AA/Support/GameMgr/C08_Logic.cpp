@@ -5,9 +5,9 @@
 //========================================================================================================================================================
 
 #include "c08_logic.hpp"
-#include "LabelSets\Tribes2Types.hpp"
-#include "GameMgr\MsgMgr.hpp"
-#include "Demo1\Data\UI\Messages.h"
+#include "LabelSets/Tribes2Types.hpp"
+#include "GameMgr/MsgMgr.hpp"
+#include "Demo1/Data/UI/Messages.h"
 
 #define M08_GET_SWITCH      M10_GET_SWITCH
 

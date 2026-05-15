@@ -5,7 +5,7 @@
 //========================================================================================================================================================
 
 #include "c10_logic.hpp"
-#include "LabelSets\Tribes2Types.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
 #define M10_MISSION_FAILED          M08_SCRUBBED
 #define M10_HIT_SWITCH              M13_HIT_SWITCH

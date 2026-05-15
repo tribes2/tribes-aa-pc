@@ -12,12 +12,12 @@
 #include "GameMgr.hpp"
 #include "netlib/bitstream.hpp"
 
-#include "Objects\Player\PlayerObject.hpp"
-#include "Objects\Projectiles\Flag.hpp"
-#include "Objects\Projectiles\FlipFlop.hpp"
-#include "Demo1\Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "Objects/Projectiles/Flag.hpp"
+#include "Objects/Projectiles/FlipFlop.hpp"
+#include "Demo1/Globals.hpp"
 
-#include "..\Demo1\Data\UI\Messages.h"
+#include "../Demo1/Data/UI/Messages.h"
 
 //==============================================================================
 //  DEFINES

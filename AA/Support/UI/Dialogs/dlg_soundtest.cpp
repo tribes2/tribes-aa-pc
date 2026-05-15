@@ -6,26 +6,26 @@
 
 #include "entropy.hpp"
 
-#include "ui\ui_manager.hpp"
-#include "ui\ui_control.hpp"
-#include "ui\ui_combo.hpp"
-#include "ui\ui_edit.hpp"
-#include "ui\ui_check.hpp"
-#include "ui\ui_text.hpp"
-#include "ui\ui_listbox.hpp"
-#include "ui\ui_slider.hpp"
-#include "ui\ui_tabbed_dialog.hpp"
-#include "ui\ui_font.hpp"
-#include "ui\ui_button.hpp"
+#include "ui/ui_manager.hpp"
+#include "ui/ui_control.hpp"
+#include "ui/ui_combo.hpp"
+#include "ui/ui_edit.hpp"
+#include "ui/ui_check.hpp"
+#include "ui/ui_text.hpp"
+#include "ui/ui_listbox.hpp"
+#include "ui/ui_slider.hpp"
+#include "ui/ui_tabbed_dialog.hpp"
+#include "ui/ui_font.hpp"
+#include "ui/ui_button.hpp"
 #include "audiomgr/audio.hpp"
 
 #include "dlg_SoundTest.hpp"
 #include "dlg_message.hpp"
-#include "Demo1\specialversion.hpp"
+#include "Demo1/specialversion.hpp"
 
-#include "ui\ui_colors.hpp"
+#include "ui/ui_colors.hpp"
 
-#include "Demo1\data\ui\ui_strings.h"
+#include "Demo1/data/ui/ui_strings.h"
 
 #ifdef INCLUDE_SOUND_TEST
 typedef struct s_sound_labels

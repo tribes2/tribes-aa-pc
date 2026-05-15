@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ObjectMgr\ObjectMgr.hpp"
-#include "Shape\ShapeInstance.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
+#include "Shape/ShapeInstance.hpp"
 #include "AudioMgr/Audio.hpp"
 
 //==============================================================================

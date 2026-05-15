@@ -13,8 +13,8 @@
 
 #include "Turret.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
-#include "..\Demo1\Globals.hpp"
+#include "NetLib/BitStream.hpp"
+#include "../Demo1/Globals.hpp"
 #include "ParticleObject.hpp"
 #include "Objects/Projectiles/Aimer.hpp"
 #include "Objects/Projectiles/Plasma.hpp"
@@ -22,8 +22,8 @@
 #include "Objects/Projectiles/Missile.hpp"
 #include "Objects/Projectiles/Mortar.hpp"
 #include "Objects/Projectiles/Generic.hpp"
-#include "Objects\Vehicles\Vehicle.hpp"
-#include "GameMgr\GameMgr.hpp" 
+#include "Objects/Vehicles/Vehicle.hpp"
+#include "GameMgr/GameMgr.hpp" 
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 

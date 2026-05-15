@@ -207,7 +207,7 @@
  */
 
 /* include the compression library's header */
-#include "zlib\zlib.h"
+#include "zlib/zlib.h"
 
 /* include all user configurable info */
 #include "pngconf.h"
