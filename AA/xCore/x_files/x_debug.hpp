@@ -78,7 +78,17 @@ x_debug_crash_fn *x_DebugGetCrashFunction(void);
 // If we can implement BREAK properly on any given platform, do it!
 
 #ifdef TARGET_PC
-#define BREAK      { __asm int 3 }
+
+#ifdef _MSC_VER
+    #define BREAK __debugbreak()
+#else
+    #if defined(__clang__)
+        #define BREAK __builtin_debugtrap()
+    #else
+        #define BREAK __builtin_trap()
+    #endif
+#endif
+
 #endif
 
 #ifdef TARGET_PS2

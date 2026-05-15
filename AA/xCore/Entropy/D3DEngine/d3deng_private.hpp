@@ -16,6 +16,7 @@
 #include <windows.h>
 #include <mmsystem.h>
 #include "x_files.hpp"
+#include "../e_RendererTypes.hpp"
 
 ///////////////////////////////////////////////////////////////////////////
 // DEFINE AND ENUMS
@@ -159,21 +160,6 @@ enum dxerror_enum
 };
 #undef DXERROR
 
-//
-// ENGINE INITIALIZATIONS
-//
-enum d3deng_mode                            // Must OR this modes to get what you want
-{
-    ENG_ACT_DEFAULT             = (0),      // Activates nothing
-    ENG_ACT_FULLSCREEN          = (1<<0),   // Default is Window
-    ENG_ACT_SOFTWARE            = (1<<1),   // Default is Hardware
-    ENG_ACT_BACKBUFFER_LOCK     = (1<<2),   // Default is you can't lock back buffer
-    ENG_ACT_STENCILOFF          = (1<<3),   // Default is you will use stencil
-    ENG_ACT_16_BPP              = (1<<4),   // Default is you will use stencil
-    ENG_ACT_SHADERS_IN_SOFTWARE = (1<<5),   // Default is that the shaders are done in hardware
-    ENG_ACT_LOCK_WINDOW_SIZE    = (1<<6)
-};
-
 ///////////////////////////////////////////////////////////////////////////
 // TYPES
 ///////////////////////////////////////////////////////////////////////////
@@ -258,14 +244,6 @@ xbool       d3deng_IsActive       ( void ) ;
 ///////////////////////////////////////////////////////////////////////////
 // HACK FUNCTIONS
 ///////////////////////////////////////////////////////////////////////////
-
-enum mouse_mode
-{
-    MOUSE_MODE_BUTTONS,
-    MOUSE_MODE_NEVER,
-    MOUSE_MODE_ALWAYS,
-	MOUSE_MODE_ABSOLUTE
-};
 
 void  d3deng_SetMouseMode    ( mouse_mode Mode );
 void  d3deng_ComputeMousePos ( void );

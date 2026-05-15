@@ -56,16 +56,16 @@ void        vram_Kill           ( void );
 
 #ifdef TARGET_PC
 
-#include "D3DEngine/d3deng_private.hpp"
+#include "e_RendererTypes.hpp"
 
-s32                 vram_LoadTexture    ( const char*    pFileName );
+s32                     vram_LoadTexture    ( const char*    pFileName );
 
-IDirect3DTexture8*  vram_GetSurface     ( const xbitmap& Bitmap  );
-IDirect3DTexture8*  vram_GetSurface     (       s32      VRAM_ID );
+RendererTextureHandle   vram_GetSurface     ( const xbitmap& Bitmap  );
+RendererTextureHandle   vram_GetSurface     (       s32      VRAM_ID );
 
 // Register bitmap as a dudv bump map (bitmap should be grey scale height)
 // Until xbitmap supports such formats, the conversion happens when creating the D3D texture 
-s32                 vram_RegisterDuDv   ( const xbitmap& Bitmap ) ;
+s32                     vram_RegisterDuDv   ( const xbitmap& Bitmap ) ;
 
 #endif
 

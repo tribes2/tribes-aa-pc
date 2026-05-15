@@ -21,7 +21,15 @@
 #include "x_files.hpp"
 
 #ifdef TARGET_PC
-#include "D3DEngine/d3deng_Private.hpp"
+#if defined(RENDERER_BACKEND_D3D)
+#include "D3DEngine/d3deng_private.hpp"
+#elif defined(RENDERER_BACKEND_OPENGL)
+#include "OpenGLEngine/opengleng_private.hpp"
+#else
+// Default to D3D for backward compatibility
+#define RENDERER_BACKEND_D3D
+#include "D3DEngine/d3deng_private.hpp"
+#endif
 #endif
 
 #ifdef TARGET_PS2
