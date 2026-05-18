@@ -14,7 +14,7 @@
 #include "..\AADS\Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "AADS\GameClient.hpp"
 
 #include "objects\player\playerobject.hpp"

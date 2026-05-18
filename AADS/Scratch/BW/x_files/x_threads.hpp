@@ -38,7 +38,7 @@
 #include "x_types.hpp"
 #include "x_array.hpp"
 
-#include "implementation/x_files_private.hpp"
+#include "Implementation/x_files_private.hpp"
 
 #define X_MAX_THREADS           16
 #define X_MAX_SEMAPHORES        16

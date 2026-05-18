@@ -4,8 +4,8 @@
 #include "MAI_Manager.hpp"
 #include "Objects/Player/DefaultLoadouts.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "fe_globals.hpp"
-#include "globals.hpp"
+#include "fe_Globals.hpp"
+#include "Globals.hpp"
 //==============================================================================
 //  STORAGE
 //==============================================================================

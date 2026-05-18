@@ -1,5 +1,5 @@
 #include "Miles.h"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "x_stdio.hpp"
 
 

@@ -3,7 +3,7 @@
 //  Globals.cpp
 //
 //=========================================================================
-#include "globals.hpp"
+#include "Globals.hpp"
 #include "Building/BldManager.hpp"
 
 t2_globals  tgl;

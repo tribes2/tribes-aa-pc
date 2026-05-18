@@ -8,17 +8,17 @@
 #define CONNMANAGER_HPP
 
 #include "x_files.hpp"
-#include "netlib/netlib.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/NetLib.hpp"
+#include "NetLib/bitstream.hpp"
 #include "sm_common.hpp"
 
 //=========================================================================
 // MANAGERS
 //=========================================================================
 
-#include "updatemanager.hpp"
-#include "movemanager.hpp"
-#include "gameeventmanager.hpp"
+#include "UpdateManager.hpp"
+#include "MoveManager.hpp"
+#include "GameEventManager.hpp"
 
 //=========================================================================
 

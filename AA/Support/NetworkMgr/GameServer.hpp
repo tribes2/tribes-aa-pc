@@ -7,11 +7,11 @@
 #define GAMESERVER_HPP
 
 #include "x_files.hpp"
-#include "netlib/netlib.hpp"
-#include "netlib/bitstream.hpp"
-#include "connmanager.hpp"
-#include "updatemanager.hpp"
-#include "objectmgr/objectmgr.hpp"
+#include "NetLib/NetLib.hpp"
+#include "NetLib/bitstream.hpp"
+#include "ConnManager.hpp"
+#include "UpdateManager.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
 #include "Demo1/SpecialVersion.hpp"
 
 //=========================================================================

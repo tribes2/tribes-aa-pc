@@ -25,8 +25,8 @@
 #include "PathFinder.hpp"
 #include "PathKeeper.hpp"
 #include "Task.hpp"
-#include "Objects/projectiles/Mine.hpp"
-#include "Objects/projectiles/Turret.hpp"
+#include "Objects/Projectiles/Mine.hpp"
+#include "Objects/Projectiles/Turret.hpp"
 #include "Objects/Projectiles/Station.hpp"
 
 //==============================================================================

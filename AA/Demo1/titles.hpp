@@ -1,7 +1,7 @@
 #ifndef _TITLES_HPP
 #define _TITLES_HPP
 
-#include "savedgame.hpp"
+#include "SavedGame.hpp"
 
 #define NETWORK_OPTIONS		(1<<0)
 #define AUDIO_OPTIONS		(1<<1)

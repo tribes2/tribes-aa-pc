@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui/ui_dialog.hpp"
-#include "objects/player/PlayerObject.hpp"
+#include "UI/ui_dialog.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 //==============================================================================
 //  dlg_inventory

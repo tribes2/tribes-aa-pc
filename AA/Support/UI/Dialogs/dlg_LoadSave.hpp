@@ -3,7 +3,7 @@
 
 //==============================================================================
 //  
-//  dlg_loadsave.hpp
+//  dlg_LoadSave.hpp
 //  
 //==============================================================================
 
@@ -11,10 +11,10 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui/ui_dialog.hpp"
-#include "Demo1/savedgame.hpp"
-#include "dlg_message.hpp"
-#include "support/cardmgr/cardmgr.hpp"
+#include "UI/ui_dialog.hpp"
+#include "Demo1/SavedGame.hpp"
+#include "dlg_Message.hpp"
+#include "Support/CardMgr/CardMgr.hpp"
 
 //==============================================================================
 //  dlg_online

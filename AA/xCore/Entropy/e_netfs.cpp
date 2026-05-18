@@ -21,8 +21,8 @@
 #include "e_netfsdefs.hpp"
 #include "e_Network.hpp"
 #include "Network/netsocket.hpp"
-#include "tokenizer/tokenizer.hpp"
-#include "entropy.hpp"
+#include "Tokenizer/Tokenizer.hpp"
+#include "Entropy.hpp"
 #include "x_threads.hpp"
 
 #ifdef TARGET_PS2

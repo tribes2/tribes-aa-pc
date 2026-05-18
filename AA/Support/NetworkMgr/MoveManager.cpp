@@ -7,8 +7,8 @@
 #include "x_files.hpp"
 #include "movemanager.hpp"
 #include "connmanager.hpp"
-#include "globals.hpp"
-#include "objects/player/playerobject.hpp"
+#include "Globals.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 
 

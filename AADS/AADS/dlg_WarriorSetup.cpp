@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "objects\player\PlayerObject.hpp"
 
 #include "AudioMgr\audio.hpp"
@@ -20,7 +20,7 @@
 
 #include "dlg_WarriorSetup.hpp"
 #include "dlg_Loadsave.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 
 #include "fe_colors.hpp"
 

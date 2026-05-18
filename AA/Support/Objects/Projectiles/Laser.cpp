@@ -13,7 +13,7 @@
 #include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 
 #include "Objects/Player/PlayerObject.hpp"

@@ -1,6 +1,6 @@
 #include "x_files.hpp"
 #include "x_threads.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "telnetdisplay.hpp"
 #include "telnetclient.hpp"
 

@@ -250,7 +250,7 @@ public:
         Read( &nFields, sizeof(nFields), Fp );
         
         // Allocate the field memory
-        pData = new char[ Size ];
+        pData = new char[Size];
         ASSERT( pData );
 
         // Read all the fields in

@@ -4,15 +4,15 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "Demo1/globals.hpp"
 #include "Demo1/FrontEnd.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 
-#include "ui/ui_colors.hpp"
+#include "UI/ui_colors.hpp"
 
 #include "Demo1/data/ui/ui_strings.h"
 

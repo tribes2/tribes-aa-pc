@@ -1,9 +1,9 @@
 #ifndef __SAVEDGAME_HPP
 #define __SAVEDGAME_HPP
 
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "AADS/SpecialVersion.hpp"
-#include "serverversion.hpp"
+#include "ServerVersion.hpp"
 //---------------------------------------------------------
 // This contains all the structs used when a game is saved
 // We have a single file of 'saved_game' type.

@@ -14,12 +14,12 @@
 #include "Entropy.hpp"
 #include "AADS/Globals.hpp"
 #include "AADS/MoveManager.hpp"
-#include "AADS/fe_globals.hpp"
+#include "AADS/fe_Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "pointlight/pointlight.hpp"
+#include "PointLight/PointLight.hpp"
 #include "UI/ui_manager.hpp"
-#include "hud/hud_manager.hpp"
+#include "Hud/hud_manager.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"
 #include "Objects/Projectiles/SatchelCharge.hpp"
@@ -57,7 +57,7 @@ obj_type_info   PlayerObjectTypeInfo( object::TYPE_PLAYER,
                                       object::ATTR_DAMAGEABLE       |
                                       object::ATTR_SENSED );
                   
-random SpawnRandom;
+RandomClass SpawnRandom;
 
               
 //==============================================================================

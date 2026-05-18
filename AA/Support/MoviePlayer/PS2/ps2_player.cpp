@@ -1,8 +1,8 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "movieplayer/movieplayer.hpp"
 #include "x_threads.hpp"
 #include "ps2/iop/iop.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include <libmpeg.h>
 
 

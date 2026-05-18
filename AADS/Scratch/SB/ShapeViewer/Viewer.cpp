@@ -9,7 +9,7 @@
 #include "Shape/ShapeInstance.hpp"
 #include "Config.hpp"
 #include "Entropy.hpp"
-#include "../support/netlib/netlib.hpp"
+#include "../support/NetLib/NetLib.hpp"
 #include "e_netfs.hpp"
 
 

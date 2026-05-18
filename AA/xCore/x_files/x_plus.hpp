@@ -103,17 +103,21 @@
                                       ((((u32)(A)) & 0x0000FF00) << 8) ) 
 
 #ifdef LITTLE_ENDIAN
+#ifndef LITTLE_ENDIAN_16
     #define LITTLE_ENDIAN_16(A)     A 
     #define LITTLE_ENDIAN_32(A)     A
     #define BIG_ENDIAN_16(A)        ENDIAN_SWAP_16(A)
     #define BIG_ENDIAN_32(A)        ENDIAN_SWAP_32(A)
 #endif
+#endif
 
 #ifdef BIG_ENDIAN
+#ifndef LITTLE_ENDIAN_16
     #define LITTLE_ENDIAN_16(A)     ENDIAN_SWAP_16(A) 
     #define LITTLE_ENDIAN_32(A)     ENDIAN_SWAP_32(A)
     #define BIG_ENDIAN_16(A)        A
     #define BIG_ENDIAN_32(A)        A
+#endif
 #endif   
     
 //==============================================================================
@@ -258,11 +262,11 @@ f32     x_frand     ( f32 Min, f32 Max );   // Result in [ Min, Max        ]
 
 //==============================================================================
 
-class random
+class RandomClass
 {
 public:
-            random  ( void );
-            random  ( s32 Seed );
+            RandomClass  ( void );
+            RandomClass  ( s32 Seed );
 
     void    srand   ( s32 Seed );
     s32     rand    ( void );               // Result in [   0, X_RAND_MAX ]

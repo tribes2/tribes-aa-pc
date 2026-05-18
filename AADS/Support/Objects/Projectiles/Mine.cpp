@@ -15,7 +15,7 @@
 #include "Particles/ParticleEffect.hpp"
 #include "ParticleObject.hpp"
 #include "Objects\Player\PlayerObject.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "GameMgr/GameMgr.hpp"
 
 //==============================================================================

@@ -4,20 +4,20 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
-#include "ui/ui_font.hpp"
-#include "ui/ui_frame.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
+#include "UI/ui_font.hpp"
+#include "UI/ui_frame.hpp"
 
 #include "dlg_score.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "StringMgr/StringMgr.hpp"
 
-#include "ui/ui_colors.hpp"
+#include "UI/ui_colors.hpp"
 
 #include "Demo1/data/ui/ui_strings.h"
 

@@ -5,14 +5,14 @@
 //=========================================================================
 
 /*
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "AADS/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 #include "demo1\data\ui\ui_strings.h"
 #include "demo1\data\missions\campaign.h"
 

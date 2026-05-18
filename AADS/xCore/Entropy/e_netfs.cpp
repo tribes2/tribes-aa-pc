@@ -21,7 +21,7 @@
 #include "e_netfsdefs.hpp"
 #include "netlib\netlib.hpp"
 #include "tokenizer\tokenizer.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "x_threads.hpp"
 
 #ifdef TARGET_PS2

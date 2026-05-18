@@ -15,8 +15,8 @@
 #include "AudioMgr/Audio.hpp"
 
 #include "Objects/Player/PlayerObject.hpp"
-#include "pointlight/pointlight.hpp"
-#include "netlib/bitstream.hpp"
+#include "PointLight/PointLight.hpp"
+#include "NetLib/bitstream.hpp"
 
 #include "Blaster.hpp"
 #include "textures.hpp"

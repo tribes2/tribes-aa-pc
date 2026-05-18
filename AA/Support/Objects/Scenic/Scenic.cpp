@@ -24,8 +24,8 @@
 
 
 #ifdef SCENIC_DEBUG
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 #endif     
 
 

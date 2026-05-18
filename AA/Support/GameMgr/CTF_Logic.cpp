@@ -11,7 +11,7 @@
 #include "CTF_Logic.hpp"
 #include "GameMgr.hpp"
 #include "MsgMgr.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Projectiles/Flag.hpp"

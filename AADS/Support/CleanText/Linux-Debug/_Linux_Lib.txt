@@ -1,4 +1,4 @@
 create Linux-Debug/CleanText.lib
-addmod ./Linux-Debug/cleantext.obj
+addmod ./Linux-Debug/CleanText.obj
 save
 end 

@@ -4,21 +4,21 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "Demo1/globals.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 #include "GameMgr/GameMgr.hpp"
 
-#include "AudioMgr/audio.hpp"
-#include "labelsets/Tribes2Types.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_tabbed_dialog.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
-#include "ui/ui_check.hpp"
-#include "ui/ui_frame.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_tabbed_dialog.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
+#include "UI/ui_check.hpp"
+#include "UI/ui_frame.hpp"
 
 #include "dlg_Inventory.hpp"
 

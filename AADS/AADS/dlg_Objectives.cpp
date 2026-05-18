@@ -4,10 +4,10 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "FrontEnd.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 
 #include "GameMgr\GameMgr.hpp"
 

@@ -8,7 +8,7 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "CellRef.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 

@@ -18,7 +18,7 @@
 
 #include "..\HUD\HUD_Manager.hpp"
 
-#include "AADS\fe_globals.hpp"
+#include "AADS\fe_Globals.hpp"
 #include "AADS\Globals.hpp"
 #include "AADS\GameServer.hpp"
 
@@ -37,7 +37,7 @@
 
 msg_mgr  MsgMgr;
 
-static random Random;
+static RandomClass Random;
 
 //------------------------------------------------------------------------------
 

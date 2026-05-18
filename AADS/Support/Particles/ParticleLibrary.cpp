@@ -1,8 +1,8 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "ParticleLibrary.hpp"
-#include "tokenizer/tokenizer.hpp"
+#include "Tokenizer/Tokenizer.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
-#include "labelsets/labelparse.hpp"
+#include "LabelSets/labelparse.hpp"
 #include "e_scratchmem.hpp"
 
 //=============================================================================

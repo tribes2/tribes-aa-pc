@@ -8,7 +8,7 @@
 #include "Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "ObjectMgr/ColliderCannon.hpp"
-#include "Building/BuildingObj.hpp"
+#include "Building/BuildingOBJ.hpp"
 
 //=========================================================================
 

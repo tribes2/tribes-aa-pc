@@ -4,13 +4,13 @@
 //
 //==============================================================================
 
-#include "entropy.hpp"
-#include "common/e_cdfs.hpp"
+#include "Entropy.hpp"
+#include "Common/e_cdfs.hpp"
 #include "netlib\netlib.hpp"
 #include "netlib\bitstream.hpp"
 #include "tokenizer\tokenizer.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
 #include "gameuser.hpp"
@@ -43,7 +43,7 @@
 #include "Objects\scenic\scenic.hpp"
 #include "Building\BuildingOBJ.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "ui\ui_manager.hpp"
 #include "hud\hud_manager.hpp"
 #include "hud\hud_Icons.hpp"
@@ -398,7 +398,7 @@ void EndOfMissionLoad( void )
     {
         vector3 Start( 1268.74f, 266.523f, 1538.92f );
         vector3 End  ( 1103.6f, 204.789f, 1214.67f );
-        random  Rand;
+        RandomClass  Rand;
         f32     R = 0.2f;
         collider Coll;
         s32 i;

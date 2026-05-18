@@ -15,6 +15,8 @@
 #include "x_target.hpp"
 #endif
 
+#include <cstddef>
+
 //
 // For each platform, certain include files are essentially ubiquitous.  
 // Include them here.
@@ -250,7 +252,7 @@
 #ifdef TARGET_GCN
 #define xalloctype unsigned int
 #else
-#define xalloctype u32
+#define xalloctype size_t
 #endif
 
 void* operator new       ( xalloctype Size );
@@ -265,7 +267,9 @@ void  operator delete [] ( void* pMemory, char*, s32 );
 
 
 #ifdef X_MEM_DEBUG
-    #define new new( __FILE__, __LINE__ )
+#ifdef _MSC_VER
+    #define new new(__FILE__, __LINE__ )
+#endif // Linux build no likey
 #endif              
 
 //-----------------------------

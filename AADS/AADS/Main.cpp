@@ -45,8 +45,8 @@
 
 #include "ui\ui_manager.hpp"
 #include "hud\hud_manager.hpp"
-#include "masterserver/masterserver.hpp"
-#include "serverversion.hpp"
+#include "MasterServer/MasterServer.hpp"
+#include "ServerVersion.hpp"
 #include "sm_common.hpp"
 #include "AADS/SpecialVersion.hpp"
 #include "telnetconsole/telnetmgr.hpp"
@@ -810,7 +810,7 @@ void KillPermSystems( void )
 
 //==============================================================================
 
-extern random SpawnRandom;
+extern RandomClass SpawnRandom;
 
 void DoOneGameCycle( void )
 {

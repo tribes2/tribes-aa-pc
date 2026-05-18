@@ -148,7 +148,7 @@ static void PoweroffCallback(void*)
     // so we just directly signal it.
     pPoweroffSemaphore->Release(X_TH_INTERRUPT|X_TH_NOBLOCK);
 }
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 extern void ps2_ResetHardware(void);
 static void PoweroffThread(void)
 {

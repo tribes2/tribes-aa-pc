@@ -18,7 +18,7 @@
 #include "HUNT_Logic.hpp"
 
 #include "AADS\Globals.hpp"
-#include "AADS\fe_globals.hpp"
+#include "AADS\fe_Globals.hpp"
 #include "AADS\GameServer.hpp"
 #include "Objects\Bot\BotObject.hpp"
 #include "Objects\Player\PlayerObject.hpp"

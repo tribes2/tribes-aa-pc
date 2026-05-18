@@ -8,7 +8,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "PathGenerator.hpp"
 #include "CellRef.hpp"
 #include "Objects/Terrain/Terrain.hpp"

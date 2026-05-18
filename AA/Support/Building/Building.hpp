@@ -7,7 +7,7 @@
 
 #include "portal_clipper.hpp"
 #include "BldFileSystem.hpp"
-#include "e_engine.hpp"
+#include "e_Engine.hpp"
 #include "x_bitmap.hpp"
 
 #define ONEPASS     1
@@ -57,10 +57,10 @@ public:
 #ifdef TARGET_PC
         struct pc_data
         {
-            byte*                   pDList;
-            IDirect3DVertexBuffer8* pVBuffer  ;
-            IDirect3DIndexBuffer8*  pIBuffer  ;
-            s32                     FacetCount;
+            byte*                       pDList;
+            RendererVertexBufferHandle  pVBuffer;
+            RendererIndexBufferHandle   pIBuffer;
+            s32                         FacetCount;
         };
 
         struct pc_vertex

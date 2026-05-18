@@ -13,7 +13,7 @@
 #include "..\AADS\Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "..\AADS\Data\UI\Messages.h"
 
@@ -500,7 +500,7 @@ object::update_code missile::OnAcceptUpdate( const bitstream& BitStream, f32 Sec
 
 //==============================================================================
 
-random R;
+RandomClass R;
 
 void missile::OnProvideUpdate( bitstream& BitStream, u32& DirtyBits, f32 Priority )
 {

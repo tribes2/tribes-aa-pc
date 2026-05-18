@@ -74,6 +74,8 @@ s64     x_GetTicksPerMs ( void );
 void    x_TimeInit      ( void );
 void    x_TimeKill      ( void );    
 
+void sleep_ms(int milliseconds);
+
 //==============================================================================
 #endif // X_TIME_HPP
 //==============================================================================

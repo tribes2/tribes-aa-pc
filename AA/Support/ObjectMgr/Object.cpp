@@ -10,7 +10,7 @@
 
 #include "ObjectMgr.hpp"
 #include "Entropy.hpp"      // For DebugRender().
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 
 //==============================================================================

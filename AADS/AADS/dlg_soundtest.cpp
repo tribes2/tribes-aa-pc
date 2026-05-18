@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"
@@ -17,10 +17,10 @@
 #include "ui\ui_tabbed_dialog.hpp"
 #include "ui\ui_font.hpp"
 #include "ui\ui_button.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 
 #include "dlg_SoundTest.hpp"
-#include "dlg_message.hpp"
+#include "dlg_Message.hpp"
 #include "specialversion.hpp"
 
 #include "fe_colors.hpp"
@@ -47,7 +47,7 @@ typedef struct s_sound_labels
 // Ends enum set
 #define END_LABEL_SET(__name__) {NULL,NULL},} ;
 
-#include "labelsets/soundtypes.hpp"
+#include "LabelSets/soundtypes.hpp"
 
 #endif
 //==============================================================================

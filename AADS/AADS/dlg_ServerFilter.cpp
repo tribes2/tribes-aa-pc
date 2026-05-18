@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"
@@ -19,7 +19,7 @@
 #include "ui\ui_font.hpp"
 
 #include "dlg_serverfilter.hpp"
-#include "dlg_loadsave.hpp"
+#include "dlg_LoadSave.hpp"
 #include "gamemgr/gamemgr.hpp"
 
 #include "fe_colors.hpp"

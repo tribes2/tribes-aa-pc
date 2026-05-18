@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "serverman.hpp"
 #include "gamemgr/gamemgr.hpp"
@@ -28,7 +28,7 @@
 #include "dlg_OnlineJoin.hpp"
 #include "ui_joinlist.hpp"
 
-#include "masterserver/masterserver.hpp"
+#include "MasterServer/MasterServer.hpp"
 
 #include "data\ui\ui_strings.h"
 #include "StringMgr\StringMgr.hpp"

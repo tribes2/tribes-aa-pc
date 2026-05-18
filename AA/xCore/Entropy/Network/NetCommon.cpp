@@ -12,7 +12,7 @@
 #include "e_Network.hpp"
 #include "network/netstream.hpp"
 
-static random  Random;
+static RandomClass  Random;
 
 s32             g_SendHistory[NET_HISTORY_SIZE];
 s32             g_ReceiveHistory[NET_HISTORY_SIZE];

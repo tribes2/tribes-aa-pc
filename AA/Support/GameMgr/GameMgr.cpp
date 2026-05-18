@@ -23,7 +23,7 @@
 #include "C04_Logic.hpp"
 #include "C05_Logic.hpp"
 #include "Demo1/Globals.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "Objects/Bot/BotObject.hpp"
 #include "Objects/Player/PlayerObject.hpp"

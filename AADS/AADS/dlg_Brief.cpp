@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "objects\player\PlayerObject.hpp"
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"
@@ -25,7 +25,7 @@
 
 #include "dlg_Brief.hpp"
 
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "fe_colors.hpp"
 
 #include "data\ui\ui_strings.h"
@@ -33,7 +33,7 @@
 #include "StringMgr\StringMgr.hpp"
 #include "Demo1\Data\UI\ui_strings.h"
 #include "Demo1\Data\Missions\Campaign.h"
-#include "masterserver/masterserver.hpp"
+#include "MasterServer/MasterServer.hpp"
 
 //=========================================================================
 

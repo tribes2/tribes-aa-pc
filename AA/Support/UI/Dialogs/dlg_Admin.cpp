@@ -4,37 +4,37 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "Demo1/globals.hpp"
 #include "Demo1/FrontEnd.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 
-#include "AudioMgr/audio.hpp"
-#include "labelsets/Tribes2Types.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_tabbed_dialog.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
-#include "ui/ui_button.hpp"
-#include "ui/ui_check.hpp"
-#include "ui/ui_dlg_list.hpp"
-#include "ui/ui_listbox.hpp"
-#include "ui/ui_font.hpp"
-#include "ui/ui_text.hpp"
-#include "ui/ui_slider.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_tabbed_dialog.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
+#include "UI/ui_button.hpp"
+#include "UI/ui_check.hpp"
+#include "UI/ui_dlg_list.hpp"
+#include "UI/ui_listbox.hpp"
+#include "UI/ui_font.hpp"
+#include "UI/ui_text.hpp"
+#include "UI/ui_slider.hpp"
 
-#include "dlg_message.hpp"
+#include "dlg_Message.hpp"
 #include "dlg_admin.hpp"
 #include "NetworkMgr/sm_common.hpp"
 
 #include "objects/bot/botobject.hpp"
 
 #include "Demo1/data/ui/ui_strings.h"
-#include "ui/ui_colors.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "UI/ui_colors.hpp"
+#include "Demo1/fe_Globals.hpp"
 #include "StringMgr/StringMgr.hpp"
 
 #include "Demo1/SpecialVersion.hpp"

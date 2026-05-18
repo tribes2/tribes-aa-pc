@@ -2539,7 +2539,7 @@ void obj_mgr::StartTypeLoop( object::type Type )
 //==============================================================================
 #ifdef X_DEBUG
 
-void obj_mgr::DbgStartTypeLoop( object::type Type, char* pFile, s32 Line )
+void obj_mgr::DbgStartTypeLoop( object::type Type, const char* pFile, s32 Line )
 {
     m_TypeCursorID++;
     ASSERT( m_TypeCursorID < MAX_TYPE_CURSORS );

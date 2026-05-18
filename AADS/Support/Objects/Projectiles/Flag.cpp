@@ -14,7 +14,7 @@
 #include "AADS\Globals.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 #include "PointLight\PointLight.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 
 //#define FLAG_TIMER

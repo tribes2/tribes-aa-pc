@@ -6,7 +6,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 #include "x_bitmap.hpp"
-#include "building.hpp"
+#include "Building.hpp"
 
 class fog;
 

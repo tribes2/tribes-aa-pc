@@ -1,10 +1,10 @@
 #ifndef SERVERMAN_HPP
 #define SERVERMAN_HPP
 
-#include "serverversion.hpp"
-#include "netlib/netlib.hpp"
+#include "ServerVersion.hpp"
+#include "NetLib/NetLib.hpp"
 #include "x_time.hpp"
-#include "objects/player/playerobject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
 #define SERVER_CURRENT_VERSION  ( SERVER_VERSION )
 

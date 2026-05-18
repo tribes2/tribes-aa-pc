@@ -4,17 +4,17 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "Demo1/globals.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 
-#include "AudioMgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
-#include "ui/ui_font.hpp"
-#include "ui/ui_manager.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
+#include "UI/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
 
 #include "dlg_MainMenu.hpp"
 

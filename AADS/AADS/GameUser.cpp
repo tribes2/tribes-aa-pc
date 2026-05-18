@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
 #include "gameuser.hpp"

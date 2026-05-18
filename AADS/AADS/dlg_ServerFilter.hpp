@@ -12,8 +12,8 @@
 //==============================================================================
 
 #include "ui\ui_dialog.hpp"
-#include "savedgame.hpp"
-#include "dlg_message.hpp"
+#include "SavedGame.hpp"
+#include "dlg_Message.hpp"
 
 //==============================================================================
 //  dlg_online

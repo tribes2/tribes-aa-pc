@@ -10,7 +10,7 @@
 
 #include "CNH_Logic.hpp"
 #include "GameMgr.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Projectiles/Flag.hpp"

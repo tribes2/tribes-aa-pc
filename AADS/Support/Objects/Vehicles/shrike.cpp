@@ -13,7 +13,7 @@
 #include "ObjectMgr\Object.hpp"
 #include "Shrike.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "objects\projectiles\ShrikeShot.hpp"
 #include "Objects/Projectiles/AutoAim.hpp"
 #include "StringMgr\StringMgr.hpp"

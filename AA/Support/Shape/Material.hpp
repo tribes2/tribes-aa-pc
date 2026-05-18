@@ -115,11 +115,7 @@ private:
     s32             m_nStrips ;     // Total number of strips
     dlist_strip*    m_Strips ;      // List of strips   
 
-    #ifdef TARGET_PC
-    LPDIRECT3DVERTEXBUFFER8 m_pVB ;                 // Machine specific vertex buffer etc
-    #else
-    void*                   m_pVB ;
-    #endif
+    RendererVertexBufferHandle m_pVB ; // Machine-specific vertex buffer handle
 
     byte        PADDING[12] ;    // Align to 16 bytes for shape_bin_file_class
 

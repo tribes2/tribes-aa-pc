@@ -1,7 +1,7 @@
 #include "x_files.hpp"
 #include "x_threads.hpp"
-#include "entropy.hpp"
-#include "common/e_cdfs.hpp"
+#include "Entropy.hpp"
+#include "Common/e_cdfs.hpp"
 #include <stdio.h>
 
 #if !defined(TARGET_LINUX)

@@ -1,5 +1,5 @@
 #include "masterserver.hpp"
-#include "masterentity.hpp"
+#include "MasterEntity.hpp"
 
 //-----------------------------------------------------------------------------
 single_entity::single_entity(void)

@@ -16,7 +16,7 @@
 #include "x_math.hpp"
 #endif
 
-#include "ui/ui_listbox.hpp"
+#include "UI/ui_listbox.hpp"
 #include "fe_Globals.hpp"
 
 //==============================================================================

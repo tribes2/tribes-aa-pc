@@ -14,11 +14,11 @@
 #include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "NetworkMgr/GameClient.hpp"
 
-#include "objects/player/playerobject.hpp"
-#include "pointlight/pointlight.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "PointLight/PointLight.hpp"
 
 #define MIN_MOVEMENT_SPEED    0.0f
 #define MAX_MOVEMENT_SPEED  500.0f

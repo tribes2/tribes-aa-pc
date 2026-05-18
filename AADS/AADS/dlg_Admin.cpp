@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "FrontEnd.hpp"
 
 #include "GameMgr\GameMgr.hpp"
@@ -26,7 +26,7 @@
 #include "ui\ui_text.hpp"
 #include "ui\ui_slider.hpp"
 
-#include "dlg_message.hpp"
+#include "dlg_Message.hpp"
 #include "dlg_admin.hpp"
 #include "sm_common.hpp"
 
@@ -34,7 +34,7 @@
 
 #include "data\ui\ui_strings.h"
 #include "fe_colors.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "StringMgr\StringMgr.hpp"
 
 #include "Demo1/SpecialVersion.hpp"

@@ -239,15 +239,15 @@ public:
     // Override new and delete operator so pointers are hooked up if reading from a binary file
     
     // Release versions
-    void* operator new []   ( u32 Size ) ;
-    void* operator new      ( u32 Size ) ;
+    void* operator new []   ( xalloctype Size ) ;
+    void* operator new      ( xalloctype Size ) ;
 
     void operator delete    ( void* pMemory ) ;
     void operator delete [] ( void* pMemory ) ;
 
     // Debug versions
-    void* operator new []   ( u32 Size, char* pFileName, s32 LineNumber  ) ;
-    void* operator new      ( u32 Size, char* pFileName, s32 LineNumber  ) ;
+    void* operator new []   ( xalloctype Size, char* pFileName, s32 LineNumber  ) ;
+    void* operator new      ( xalloctype Size, char* pFileName, s32 LineNumber  ) ;
 
     void operator delete    ( void* pMemory, char* pFileName, s32 LineNumber  ) ;
     void operator delete [] ( void* pMemory, char* pFileName, s32 LineNumber  ) ;

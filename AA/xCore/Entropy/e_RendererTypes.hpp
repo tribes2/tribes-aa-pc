@@ -1,9 +1,13 @@
 #ifndef E_RENDERER_TYPES_HPP
 #define E_RENDERER_TYPES_HPP
 
+#include <stdint.h>
+
 // Abstract handles for backend-specific types
 typedef void* RendererTextureHandle;      // D3D: IDirect3DTexture8*, OpenGL: GLuint
 typedef void* RendererWindowHandle;       // D3D: HWND, OpenGL: GLFWwindow*
+typedef uintptr_t RendererVertexBufferHandle; // D3D: LPDIRECT3DVERTEXBUFFER8, OpenGL: GLuint
+typedef uintptr_t RendererIndexBufferHandle;  // D3D: LPDIRECT3DINDEXBUFFER8, OpenGL: GLuint
 
 // Shared enums (move from d3deng_private.hpp)
 enum d3deng_mode {

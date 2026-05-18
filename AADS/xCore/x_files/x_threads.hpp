@@ -38,7 +38,7 @@
 #include "x_types.hpp"
 #include "x_array.hpp"
 
-#include "implementation/x_files_private.hpp"
+#include "Implementation/x_files_private.hpp"
 
 #if defined(TARGET_LINUX)
 #include <sys/types.h>

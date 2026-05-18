@@ -8,10 +8,10 @@
 
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
-#include "netlib/bitstream.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
+#include "NetLib/bitstream.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
 #include "gameuser.hpp"

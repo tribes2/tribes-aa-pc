@@ -2,7 +2,7 @@
 #define __TELNET_DISPLAY_HPP
 
 #include "x_types.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #define TELNET_LINE_LENGTH 64
 
 #define TELNET_CHAR_UP	0x10

@@ -6,7 +6,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 #include "x_math.hpp"
-#include "ENTROPY.hpp"
+#include "Entropy.hpp"
 
 
 class portal_clipper

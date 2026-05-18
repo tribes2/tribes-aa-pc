@@ -39,9 +39,9 @@ enum __name__                                           \
 #include "HotPointTypes.hpp"
 #include "ParticleTypes.hpp"
 #include "SoundTypes.hpp"
-#include "musictypes.hpp"
-#include "voicetypes.hpp"
-#include "trainingtypes.hpp"
+#include "MusicTypes.hpp"
+#include "VoiceTypes.hpp"
+#include "TrainingTypes.hpp"
 #include "GUITypes.hpp"
 
 

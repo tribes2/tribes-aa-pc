@@ -1,6 +1,6 @@
 #include "x_files.hpp"
-#include "entropy.hpp"
-#include "masterserver/masterserver.hpp"
+#include "Entropy.hpp"
+#include "MasterServer/MasterServer.hpp"
 
 net_address			LocalAddress;
 net_address			RemoteAddress;

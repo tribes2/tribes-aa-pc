@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"
@@ -19,13 +19,13 @@
 #include "ui\ui_font.hpp"
 
 #include "dlg_LoadSave.hpp"
-#include "dlg_message.hpp"
-#include "savedgame.hpp"
-#include "cardmgr/cardmgr.hpp"
-#include "globals.hpp"
+#include "dlg_Message.hpp"
+#include "SavedGame.hpp"
+#include "CardMgr/CardMgr.hpp"
+#include "Globals.hpp"
 #include "titles.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "fe_colors.hpp"
 
 #include "StringMgr\StringMgr.hpp"

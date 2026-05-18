@@ -14,7 +14,7 @@
 #include "ps2_dmaman.hpp"
 #ifdef TARGET_PS2_CLIENT
 #include "e_netfs.hpp"
-#include "../support/netlib/netlib.hpp"
+#include "../support/NetLib/NetLib.hpp"
 #endif
 #include "ps2_except.hpp"
 #include "x_threads.hpp"

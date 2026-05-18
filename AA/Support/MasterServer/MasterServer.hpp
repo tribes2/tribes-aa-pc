@@ -5,10 +5,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "x_types.hpp"
 #include "x_array.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "x_threads.hpp"
 
-#include "masterentity.hpp"
+#include "MasterEntity.hpp"
 
 enum DirGetFlags
 {

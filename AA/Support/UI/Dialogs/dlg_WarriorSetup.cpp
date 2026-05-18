@@ -4,25 +4,25 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "Demo1/globals.hpp"
-#include "objects/player/PlayerObject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 
-#include "AudioMgr/audio.hpp"
-#include "labelsets/Tribes2Types.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
-#include "ui/ui_edit.hpp"
-#include "ui/ui_frame.hpp"
-#include "ui/ui_button.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
+#include "UI/ui_edit.hpp"
+#include "UI/ui_frame.hpp"
+#include "UI/ui_button.hpp"
 
 #include "dlg_WarriorSetup.hpp"
 #include "dlg_Loadsave.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 
-#include "ui/ui_colors.hpp"
+#include "UI/ui_colors.hpp"
 
 #include "StringMgr/StringMgr.hpp"
 

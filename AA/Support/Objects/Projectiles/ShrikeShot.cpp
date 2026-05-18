@@ -15,7 +15,7 @@
 #include "AudioMgr/Audio.hpp"
 
 #include "Objects/Player/PlayerObject.hpp"
-#include "pointlight/pointlight.hpp"
+#include "PointLight/PointLight.hpp"
 #include "NetLib/BitStream.hpp"
 
 #include "ShrikeShot.hpp"

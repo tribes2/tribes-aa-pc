@@ -1,6 +1,6 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "movieplayer/movieplayer.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "ps2/ps2_except.hpp"
 
 #define AVG_FRAMES 100

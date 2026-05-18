@@ -3,12 +3,12 @@
 // TEST0.CPP
 //
 //=========================================================================
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "e_draw.hpp"
 #include "e_input.hpp"
 #include "testrender.hpp"
 
-#include "cardmgr/cardmgr.hpp"
+#include "CardMgr/CardMgr.hpp"
 #ifdef TARGET_PS2
 #include "ps2/iop/iop.hpp"
 #include "ps2/ps2_except.hpp"

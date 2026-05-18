@@ -11,7 +11,7 @@
 #include "PathKeeper.hpp"
 #include "PathFinder.hpp"
 #include "Path.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "BotLog.hpp"
 #include "MAI_Manager.hpp"
 

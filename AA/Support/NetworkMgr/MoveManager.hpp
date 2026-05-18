@@ -7,8 +7,8 @@
 #define MOVEMANAGER_HPP
 
 #include "x_files.hpp"
-#include "netlib/bitstream.hpp"
-#include "objectmgr/objectmgr.hpp"
+#include "NetLib/bitstream.hpp"
+#include "ObjectMgr/ObjectMgr.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 
 

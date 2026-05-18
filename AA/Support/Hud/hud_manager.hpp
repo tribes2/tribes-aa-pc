@@ -324,7 +324,7 @@ protected:
     void            RenderChat          ( user* pUser, const irect& wr ) const;
     void            RenderReticle       ( user* pUser, const irect& wr ) const;
     void            RenderVehicle       ( user* pUser, const irect& wr ) const;
-    void            RenderHealthEnergy  ( user* pUser, const irect& wr, const irect& or ) const;
+    void            RenderHealthEnergy  ( user* pUser, const irect& _wr, const irect& _or ) const;
     void            RenderPanel         ( user* pUser, const irect& wr, xbool IsPlayer1 ) const;
     void            RenderStatBar       ( user* pUser, s32 X, s32 Y,    xbool IsFlipped ) const;
     void            RenderScoreBox      ( const irect& r, xbool Separator ) const;

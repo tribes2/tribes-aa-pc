@@ -237,7 +237,7 @@ void dlist_strip::GetVert( s32 VertIndex, vector3& Pos, vector3& Norm, vector2& 
     }
 #endif
 
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
     d3d_vert&   D3DVert = ((d3d_vert*)m_Pos)[VertIndex] ;
 
     Pos      = D3DVert.vPos ;
@@ -270,7 +270,7 @@ void dlist_strip::SetVert( s32 VertIndex, vector3& Pos, vector3& Norm, vector2& 
     VertTex.v = (s16)TexCoord.Y ;
 #endif
 
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
     d3d_vert&   D3DVert = ((d3d_vert*)m_Pos)[VertIndex] ;
 
     D3DVert.vPos     = Pos ;
@@ -331,7 +331,7 @@ xbool dlist_strip::GetPoly( s32 PolyIndex, vector3* pVert )
     }
 #endif
 
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
     d3d_vert*   pD3DVert = &((d3d_vert*)m_Pos)[PolyIndex] ;
 
     // No kick (1st bit of y pos)?
@@ -470,7 +470,7 @@ s32 dlist_strip::ApplyCollision( collider& Collider, const matrix4& DListL2W, co
 {
     s32     PolysSent = 0 ;
 
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
     // Locals
     vector3                 Verts[3] ;
     f32                     V ;
@@ -598,8 +598,13 @@ material_dlist::~material_dlist()
 
     if (m_pVB)
     {
-        #ifdef TARGET_PC
-        m_pVB->Release() ;
+        #ifdef RENDERER_BACKEND_D3D
+        reinterpret_cast<LPDIRECT3DVERTEXBUFFER8>(m_pVB)->Release();
+        #elif defined(RENDERER_BACKEND_OPENGL)
+        {
+            GLuint VBO = static_cast<GLuint>(m_pVB);
+            glDeleteBuffers(1, &VBO);
+        }
         #endif
     }
 }
@@ -648,7 +653,7 @@ s32 material_dlist::MemoryUsed()
 // On the PC this creates the vertex buffers
 void material_dlist::InitializeForDrawing( void )
 {
-    #ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
 
         // Already done?
         if (m_pVB)
@@ -657,25 +662,44 @@ void material_dlist::InitializeForDrawing( void )
         // Locals
         dxerr   Error ;
         byte*   Buffer ;
+        LPDIRECT3DVERTEXBUFFER8 pVB = NULL;
 
         // Create vertex buffer
         Error = g_pd3dDevice->CreateVertexBuffer(m_DListSize,
-                                                 D3DUSAGE_WRITEONLY, 
-                                                 0, 
-                                                 D3DPOOL_MANAGED, 
-                                                 &m_pVB) ;
+                                                 D3DUSAGE_WRITEONLY,
+                                                 0,
+                                                 D3DPOOL_MANAGED,
+                                                 &pVB) ;
         ASSERT(Error == 0) ;
-        ASSERT(m_pVB) ;
+        ASSERT(pVB) ;
 
         // Copy all the verts (for PC they are at the m_Pos address)
-        Error = m_pVB->Lock( 0, 0, &Buffer, 0);
+        Error = pVB->Lock( 0, 0, &Buffer, 0);
         ASSERT(Error == 0);
         ASSERT(Buffer) ;
         ASSERT(m_DList) ;
         memcpy( Buffer, m_DList, m_DListSize ) ;
-        m_pVB->Unlock();
+        pVB->Unlock();
 
-    #endif
+        m_pVB = reinterpret_cast<RendererVertexBufferHandle>(pVB);
+
+#elif defined(RENDERER_BACKEND_OPENGL)
+
+        // Already done?
+        if (m_pVB)
+            return ;
+
+        GLuint VBO = 0;
+        glGenBuffers(1, &VBO);
+        ASSERT(VBO != 0);
+
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        glBufferData(GL_ARRAY_BUFFER, m_DListSize, m_DList, GL_STATIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+        m_pVB = static_cast<RendererVertexBufferHandle>(VBO);
+
+#endif
 }
 
 //==============================================================================
@@ -921,7 +945,7 @@ void material::InitializeForDrawing( void )
 // Sends and draws geometry via VIF and VU1
 void material::Draw(const material_draw_info& DrawInfo, s32 &CurrentLoadedNode)
 {
-    #ifdef TARGET_PC
+    #if defined(RENDERER_BACKEND_D3D)
         // Draw all dlists
         for (s32 i = 0 ; i < m_nDLists ; i++)
             m_DLists[i].Draw(*this, DrawInfo, CurrentLoadedNode) ;
@@ -2540,7 +2564,7 @@ void material::ActivateColor(const material_draw_info& DrawInfo, const texture_d
 xbool material::ActivateTextures(const material_draw_info& DrawInfo, const texture_draw_info& TexDrawInfo)
 {
 // PC is easy...
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
 
     (void)DrawInfo ;
     (void)TexDrawInfo ;
@@ -3288,7 +3312,7 @@ void material::PS2_BuildDList(vert       ModelVerts[],
 //
 //==============================================================================
 
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
 
 //==============================================================================
 // material display list class
@@ -3831,7 +3855,7 @@ void material::ActivateColor(const material_draw_info& DrawInfo, const texture_d
     #endif
 }
 
-#endif  //#ifdef TARGET_PC
+#endif  //#if defined(RENDERER_BACKEND_D3D)
 
 //==============================================================================
 

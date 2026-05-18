@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "x_stdio.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "clientserver.hpp"
 #include "ServerVersion.hpp"
 

@@ -2,7 +2,7 @@
 #include "telnetmgr.hpp"
 #include "telnetclient.hpp"
 #include "specialversion.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
 #include "chatclient.hpp"
 

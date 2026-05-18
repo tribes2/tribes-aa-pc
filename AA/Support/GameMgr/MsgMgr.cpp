@@ -35,7 +35,7 @@
 
 msg_mgr  MsgMgr;
 
-static random Random;
+static RandomClass Random;
 
 //------------------------------------------------------------------------------
 

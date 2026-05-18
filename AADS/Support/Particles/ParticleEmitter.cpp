@@ -1,4 +1,4 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "ParticleEmitter.hpp"
 #include "ParticleEffect.hpp"
 #include "Shape\ShapeInstance.hpp"

@@ -9,7 +9,7 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "PathFinder.hpp"
 #include "Support/BotEditor/PathEditor.hpp"
 #include "Path.hpp"

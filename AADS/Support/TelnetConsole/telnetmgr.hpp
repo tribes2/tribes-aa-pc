@@ -1,7 +1,7 @@
 #ifndef __TELNETMGR_HPP
 #define __TELNETMGR_HPP
 
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "chatclient.hpp"
 #include "x_threads.hpp"
 

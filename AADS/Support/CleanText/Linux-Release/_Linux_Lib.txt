@@ -1,4 +1,4 @@
 create Linux-Release/CleanText.lib
-addmod ./Linux-Release/cleantext.obj
+addmod ./Linux-Release/CleanText.obj
 save
 end 

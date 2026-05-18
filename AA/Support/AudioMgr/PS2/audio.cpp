@@ -1,4 +1,4 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "audio.hpp"
 #include "ps2/iop/iop.hpp"
 #include "audiodefs.hpp"

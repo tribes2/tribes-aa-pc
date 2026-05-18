@@ -5,98 +5,105 @@
 
 #define SCRATCH_MEM_SIZE (2*1024*1024)
 
-// Stub implementation for OpenGL backend
+struct opengleng_locals
+{
+    GLFWwindow* window;
+    xbool       bActive;
+    xbool       bReady;
+    u32         Mode;
+    s32         Width;
+    s32         Height;
+    xtick       FPSFrameTime[8];
+    xtick       FPSLastTime;
+};
 
-void opengleng_EntryPoint(s32& argc, char**& argv, void* reserved1, void* reserved2, void* reserved3, void* reserved4) {
-    // Initialize GLFW
-    if (!glfwInit()) {
-        // Handle error
+static opengleng_locals s = { nullptr, FALSE, FALSE, ENG_ACT_DEFAULT, 800, 600 };
+
+void opengleng_EntryPoint(s32& argc, char**& argv, void* reserved1, void* reserved2, void* reserved3, void* reserved4)
+{
+    (void)argc;
+    (void)argv;
+    (void)reserved1;
+    (void)reserved2;
+    (void)reserved3;
+    (void)reserved4;
+
+    if (!glfwInit())
+    {
         return;
     }
 
-    // Create window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Tribes AA OpenGL", NULL, NULL);
-    if (!window) {
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
+    s.window = glfwCreateWindow(s.Width, s.Height, "Tribes AA OpenGL", NULL, NULL);
+    if (!s.window)
+    {
         glfwTerminate();
         return;
     }
 
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(s.window);
+    glfwSwapInterval(1);
 
-    // Initialize GLEW
-    if (glewInit() != GLEW_OK) {
-        // Handle error
+    if (glewInit() != GLEW_OK)
+    {
+        glfwDestroyWindow(s.window);
+        glfwTerminate();
+        s.window = nullptr;
         return;
     }
 
     x_Init();
 
-    s.FPSFrameTime[0] = 0;
-    s.FPSFrameTime[1] = 0;
-    s.FPSFrameTime[2] = 0;
-    s.FPSFrameTime[3] = 0;
-    s.FPSFrameTime[4] = 0;
-    s.FPSFrameTime[5] = 0;
-    s.FPSFrameTime[6] = 0;
-    s.FPSFrameTime[7] = 0;
+    s.Mode = ENG_ACT_DEFAULT;
+    s.bActive = TRUE;
+    s.bReady = FALSE;
+
+    for (int i = 0; i < 8; ++i)
+        s.FPSFrameTime[i] = 0;
 
     s.FPSLastTime = x_GetTime();
 
-    // Initialize subsystems
     vram_Init();
     draw_Init();
     smem_Init(SCRATCH_MEM_SIZE);
-    opengleng_InitInput(window);
+    opengleng_InitInput(s.window);
 
-    // Store window handle
-    // ... store in global context
+    s.bReady = TRUE;
 }
 
-s32 opengleng_ExitPoint(void) {
-    // Cleanup
+s32 opengleng_ExitPoint(void)
+{
     vram_Kill();
     draw_Kill();
     smem_Kill();
 
+    if (s.window)
+    {
+        glfwDestroyWindow(s.window);
+        s.window = nullptr;
+    }
+
     glfwTerminate();
+    s.bActive = FALSE;
+
+    x_Kill();
     return 0;
 }
 
-void opengleng_SetPresets(u32 Mode) {
-    // Set presets based on mode
+void opengleng_SetPresets(u32 Mode)
+{
+    s.Mode = Mode;
 }
 
-RendererWindowHandle opengleng_GetWindowHandle(void) {
-    // Return window handle
-    return NULL; // Stub
+RendererWindowHandle opengleng_GetWindowHandle(void)
+{
+    return static_cast<RendererWindowHandle>(s.window);
 }
 
-xbool opengleng_IsActive(void) {
-    return TRUE; // Stub
-}
-
-void opengleng_SetMouseMode(mouse_mode Mode) {
-    // Set mouse mode
-}
-
-f32 opengleng_GetMouseX(void) {
-    return 0.0f; // Stub
-}
-
-f32 opengleng_GetMouseY(void) {
-    return 0.0f; // Stub
-}
-
-f32 opengleng_GetMouseWheel(void) {
-    return 0.0f; // Stub
-}
-
-xbool opengleng_MouseGetLButton(void) {
-    return FALSE; // Stub
-}
-
-xbool opengleng_InitInput(GLFWwindow* window) {
-    // Set up GLFW callbacks for keyboard/mouse
-    // Stub
-    return TRUE;
+xbool opengleng_IsActive(void)
+{
+    return s.bActive;
 }

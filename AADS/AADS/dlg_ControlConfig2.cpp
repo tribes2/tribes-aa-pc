@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"

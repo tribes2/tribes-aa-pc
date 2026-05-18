@@ -9,8 +9,8 @@
 //==============================================================================
 #include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "tokenizer/tokenizer.hpp"
-#include "poly/poly.hpp"
+#include "Tokenizer/Tokenizer.hpp"
+#include "Poly/Poly.hpp"
 
 #include "vfx.hpp"
 

@@ -1,5 +1,7 @@
 #include "BldRender.hpp"
 
+#if defined(RENDERER_BACKEND_D3D)
+
 //=========================================================================
 
 void DebugRender( building& Render )
@@ -149,12 +151,11 @@ void BLDRD_Delay(void)
 void BLDRD_RenderDList( const building::dlist& DList, xbool DoClip )
 {
     building::dlist::pc_data* pData = (building::dlist::pc_data*)DList.pData;
+    LPDIRECT3DVERTEXBUFFER8 pVBuffer = reinterpret_cast<LPDIRECT3DVERTEXBUFFER8>(pData->pVBuffer);
+    LPDIRECT3DINDEXBUFFER8  pIBuffer = reinterpret_cast<LPDIRECT3DINDEXBUFFER8>(pData->pIBuffer);
 
-    
-
-
-    g_pd3dDevice->SetStreamSource   ( 0, pData->pVBuffer, sizeof(building::dlist::pc_vertex) );
-    g_pd3dDevice->SetIndices        ( pData->pIBuffer, 0 );
+    g_pd3dDevice->SetStreamSource   ( 0, pVBuffer, sizeof(building::dlist::pc_vertex) );
+    g_pd3dDevice->SetIndices        ( pIBuffer, 0 );
 
     // Without this check, D3D can crash when the device is lost (due to alt+tab)
     if (g_pd3dDevice->TestCooperativeLevel() == D3D_OK)
@@ -273,4 +274,6 @@ void BLDRD_UpdaloadLightMap ( const xbitmap& Bitmap, s32* pClutHandle )
 void BLDRD_UpdaloadFog( const xbitmap& Bitmap )
 {
 }
+
+#endif // defined(RENDERER_BACKEND_D3D)
 

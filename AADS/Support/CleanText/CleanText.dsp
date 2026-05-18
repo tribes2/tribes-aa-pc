@@ -136,11 +136,11 @@ LIB32=link.exe -lib
 # Name "CleanText - Win32 Linux Release"
 # Begin Source File
 
-SOURCE=.\cleantext.cpp
+SOURCE=.\CleanText.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\cleantext.hpp
+SOURCE=.\CleanText.hpp
 # End Source File
 # End Target
 # End Project

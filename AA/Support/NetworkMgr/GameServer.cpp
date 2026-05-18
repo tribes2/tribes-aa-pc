@@ -4,9 +4,9 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
 #include "Objects/Player/PlayerObject.hpp"
@@ -14,8 +14,8 @@
 #include "LabelSets/Tribes2Types.hpp"
 #include "ServerVersion.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "audiomgr/audio.hpp"
-#include "hud/hud_manager.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "Hud/hud_manager.hpp"
 #include "ClientServer.hpp"
 
 xbool SHOW_SERVER_PACKETS = FALSE;

@@ -4,14 +4,14 @@
 //
 //=========================================================================
 //#define INCLUDE_NET
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "e_draw.hpp"
 #include "e_input.hpp"
 #include "e_netfs.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "ps2/iop/iop.hpp"
 #include "e_threads.hpp"
-#include "masterserver/masterserver.hpp"
+#include "MasterServer/MasterServer.hpp"
 
 //=========================================================================
 

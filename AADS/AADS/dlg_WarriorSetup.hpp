@@ -12,8 +12,8 @@
 //==============================================================================
 
 #include "ui\ui_dialog.hpp"
-#include "cleantext/cleantext.hpp"
-#include "fe_globals.hpp"
+#include "CleanText/CleanText.hpp"
+#include "fe_Globals.hpp"
 
 //==============================================================================
 //  dlg_warrior_setup

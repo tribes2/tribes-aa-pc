@@ -5,11 +5,11 @@
 //==============================================================================
 
 #include "x_types.hpp"
-#include "globals.hpp"
-#include "audiomgr/audio.hpp"
-#include "fe_globals.hpp"
+#include "Globals.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
-#include "masterserver/masterserver.hpp"
+#include "MasterServer/MasterServer.hpp"
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "Objects\Bot\MAI_Manager.hpp"

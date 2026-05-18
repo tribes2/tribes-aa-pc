@@ -132,7 +132,7 @@ Package=<5>
 {{{
     begin source code control
     Perforce Project
-    ..\support\cleantext
+    ..\support\CleanText
     end source code control
 }}}
 

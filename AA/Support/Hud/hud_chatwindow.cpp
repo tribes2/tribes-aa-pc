@@ -4,17 +4,17 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "demo1/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 
 #include "hud_manager.hpp"
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 
-#include "ui/ui_colors.hpp"
+#include "UI/ui_colors.hpp"
 
 //=========================================================================
 //  Defines

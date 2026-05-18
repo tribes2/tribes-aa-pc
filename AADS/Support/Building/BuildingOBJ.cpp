@@ -295,7 +295,7 @@ void building_obj::RenderGridNGons( void )
 {
     /*
     vector3 Vert[64];
-    random  Random;
+    RandomClass  Random;
     const   building::building_grid& m_CollGrid = m_Instance.GetBuilding().m_CGrid;
 
     draw_SetL2W( m_Instance.GetL2W() );
@@ -316,7 +316,7 @@ void building_obj::RenderRayNGons( void )
 {
     /*
     vector3 Vert[64];
-    random  Random;
+    RandomClass  Random;
     const   building::building_grid& Grid = m_Instance.GetBuilding().m_CGrid;
 
     draw_SetL2W( m_Instance.GetL2W() );
@@ -369,7 +369,7 @@ void building_obj::RenderCellNGons( const vector3& Pos )
     /*
     vector3 Vert[64];
     const   building::building_grid& Grid = m_Instance.GetBuilding().m_CGrid;
-    random  Random;
+    RandomClass  Random;
 
     draw_SetL2W( m_Instance.GetL2W() );
 

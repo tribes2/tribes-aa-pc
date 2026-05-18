@@ -138,7 +138,7 @@ struct internet_settings
     net_socket      PacketSwapCaller;
     net_address     PacketSwapDest;
     s32             PacketSwapSize;
-    random          Random;
+    RandomClass          Random;
 };
 
 //------------------------------------------------------------------------------

@@ -545,7 +545,7 @@ s32 model::MemoryUsed()
 // Returns # of polys that would be used in collision detection
 s32 model::GetCollisionPolys()
 {
-//  random Random;
+//  RandomClass Random;
     s32 Polys=0;
 
     // Loop through all materials in model

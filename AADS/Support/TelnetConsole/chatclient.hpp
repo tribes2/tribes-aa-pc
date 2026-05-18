@@ -2,7 +2,7 @@
 #define __CHAT_CLIENT_HPP
 
 #include "x_types.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 
 #define CHAT_BUFFER_HISTORY      64
 #define CHAT_LINE_WIDTH         192

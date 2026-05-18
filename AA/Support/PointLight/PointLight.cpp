@@ -5,17 +5,17 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "pointlight.hpp"
+#include "PointLight.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
-#include "Objects/Terrain/terrain.hpp"
-#include "Building/BuildingObj.hpp"
-#include "../../Demo1/globals.hpp"
+#include "Objects/Terrain/Terrain.hpp"
+#include "Building/BuildingOBJ.hpp"
+#include "../../Demo1/Globals.hpp"
 
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Player/CorpseObject.hpp"
 #include "Objects/Bot/BotObject.hpp"
 
-#include "poly/poly.hpp"
+#include "Poly/Poly.hpp"
 
 #define MAX_VERTS               144      // MUST be divisible by 3
 
@@ -825,13 +825,21 @@ void ptlight_Render( void )
     
 #ifdef TARGET_PC
     
+#ifdef RENDERER_BACKEND_OPENGL
+    glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE );
+    glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE );
+
+    glEnable( GL_BLEND );
+    glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif //RENDERER_BACKEND_OPENGL
+#ifdef RENDERER_BACKEND_D3D
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_ADDRESSU, D3DTADDRESS_CLAMP );
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_ADDRESSV, D3DTADDRESS_CLAMP );
 
     g_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );
     g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,         D3DBLEND_SRCALPHA );
     g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND,        D3DBLEND_ONE );
-
+#endif // RENDERER_BACKEND_D3D
 #endif
 
     s32 NPointLightsRendered=0;
@@ -1019,8 +1027,16 @@ void ptlight_Render( void )
 #endif
 
 #ifdef TARGET_PC
+#ifdef RENDERER_BACKEND_OPENGL
+    glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT );
+    glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT );
+
+    // glDisable( GL_BLEND );
+#endif //RENDERER_BACKEND_OPENGL
+#ifdef RENDERER_BACKEND_D3D
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_ADDRESSU, D3DTADDRESS_WRAP );
     g_pd3dDevice->SetTextureStageState( 0, D3DTSS_ADDRESSV, D3DTADDRESS_WRAP );
+#endif // RENDERER_BACKEND_D3D
 #endif
 
 #ifdef POINTLIGHT_TIMERS
@@ -1436,7 +1452,7 @@ void shadow_RenderVolume( const bbox&    BBox,
     {
         if( SHOW_SHADOW_INFO )
         {
-            random Rand;
+            RandomClass Rand;
             draw_SetZBias(SHADOW_ZBIAS);
             draw_Begin( DRAW_TRIANGLES, DRAW_WIRE_FRAME );
 
@@ -1546,7 +1562,7 @@ asdfas
     //x_printf("NF:%1d\n",NSrcShadFragments);
     if( 0 )
     {
-        random Rand;
+        RandomClass Rand;
         draw_SetZBias(4);
         draw_Begin( DRAW_TRIANGLES, DRAW_USE_ALPHA );
 

@@ -4,9 +4,9 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
@@ -18,7 +18,7 @@
 
 #include "dlg_OptionsMainMenu.hpp"
 #include "titles.hpp"
-#include "dlg_loadsave.hpp"
+#include "dlg_LoadSave.hpp"
 
 #include "serverman.hpp"
 

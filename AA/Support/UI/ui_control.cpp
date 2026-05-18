@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "ui_control.hpp"
 #include "ui_manager.hpp"
 

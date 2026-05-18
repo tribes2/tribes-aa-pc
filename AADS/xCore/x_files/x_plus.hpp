@@ -258,7 +258,7 @@ f32     x_frand     ( f32 Min, f32 Max );   // Result in [ Min, Max        ]
 
 //==============================================================================
 
-class random
+class RandomClass
 {
 public:
             random  ( void );

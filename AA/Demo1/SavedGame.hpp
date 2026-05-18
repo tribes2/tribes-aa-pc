@@ -1,7 +1,7 @@
 #ifndef __SAVEDGAME_HPP
 #define __SAVEDGAME_HPP
 
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "Demo1/SpecialVersion.hpp"
 #include "NetworkMgr/ServerVersion.hpp"
 //---------------------------------------------------------

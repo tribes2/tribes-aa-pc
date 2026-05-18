@@ -13,8 +13,8 @@
 
 #include "ui\ui_dialog.hpp"
 #include "ui\ui_frame.hpp"
-#include "dlg_message.hpp"
-#include "support/netlib/netlib.hpp"
+#include "dlg_Message.hpp"
+#include "Support/NetLib/NetLib.hpp"
 
 //==============================================================================
 //  dlg_online

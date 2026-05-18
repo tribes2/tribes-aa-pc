@@ -12,14 +12,14 @@
 #include "Entropy.hpp"
 #include "NetLib\BitStream.hpp"
 #include "ObjectMgr\Object.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "../projectiles/ParticleObject.hpp"
 #include "../projectiles/debris.hpp"
 #include "GndEffect.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 #include "Objects\Projectiles\Bubble.hpp"
 #include "GameMgr\\GameMgr.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 
 //==============================================================================
 // PHYSICS DEFINES

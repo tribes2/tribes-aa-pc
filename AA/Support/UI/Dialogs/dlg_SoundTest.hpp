@@ -5,9 +5,9 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui/ui_dialog.hpp"
-#include "dlg_message.hpp"
-#include "support/netlib/netlib.hpp"
+#include "UI/ui_dialog.hpp"
+#include "dlg_Message.hpp"
+#include "Support/NetLib/NetLib.hpp"
 
 //==============================================================================
 //  dlg_online

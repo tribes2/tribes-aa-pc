@@ -13,8 +13,8 @@
 #include "e_View.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "ObjectMgr/Collider.hpp"
-#include "fog/fog.hpp"
-#include "pointlight/pointlight.hpp"
+#include "Fog/Fog.hpp"
+#include "PointLight/PointLight.hpp"
 //#include "extrusion.hpp"
 
 //#include "fog.hpp"

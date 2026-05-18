@@ -14,7 +14,7 @@
 #include "ParticleObject.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 
 //==============================================================================

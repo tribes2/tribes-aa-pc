@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"
@@ -21,9 +21,9 @@
 #include "ui\ui_dlg_vkeyboard.hpp"
 
 #include "dlg_Buddies.hpp"
-#include "dlg_loadsave.hpp"
+#include "dlg_LoadSave.hpp"
 
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "fe_colors.hpp"
 
 #include "data\ui\ui_strings.h"

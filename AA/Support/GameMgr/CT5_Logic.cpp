@@ -7,8 +7,8 @@
 #include "ct5_logic.hpp"
 #include "GameMgr.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "ui/dialogs/dlg_Vehicle.hpp"
-#include "ui/dialogs/../../Demo1/data/ui/ui_strings.h"
+#include "UI/Dialogs/dlg_Vehicle.hpp"
+#include "UI/Dialogs/../../Demo1/data/ui/ui_strings.h"
 
 #include "Objects/Vehicles/GravCycle.hpp"
 #include "Objects/Vehicles/Shrike.hpp"

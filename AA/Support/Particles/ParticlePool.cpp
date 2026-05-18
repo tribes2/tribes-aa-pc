@@ -1,4 +1,4 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "e_vram.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "ParticlePool.hpp"

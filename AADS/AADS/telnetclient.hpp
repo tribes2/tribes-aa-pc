@@ -3,7 +3,7 @@
 
 #include "telnetdisplay.hpp"
 #include "x_threads.hpp"
-#include "support/gamemgr/gamemgr.hpp"
+#include "Support/gamemgr/gamemgr.hpp"
 #include "gameserver.hpp"
 
 #define TELNET_LOG_HISTORY 20

@@ -1,9 +1,9 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "x_threads.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "movieplayer/movieplayer.hpp"
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 
 #ifdef TARGET_PS2
 #include "ps2/iop/iop.hpp"

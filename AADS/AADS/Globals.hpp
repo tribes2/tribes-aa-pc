@@ -10,15 +10,15 @@
 #include "x_plus.hpp"
 #include "x_time.hpp"
 #include "x_color.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "Entropy.hpp"
-#include "sky/sky.hpp"
+#include "Sky/Sky.hpp"
 #include "Shape/ShapeManager.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 #include "Particles/ParticleLibrary.hpp"
 #include "Particles/ParticlePool.hpp"
-#include "Particles/postfx.hpp"
-#include "Fog/fog.hpp"
+#include "Particles/PostFX.hpp"
+#include "Fog/Fog.hpp"
 #include "Damage/Damage.hpp"
 #include "Objects\Terrain\Terrain.hpp"
 
@@ -124,7 +124,7 @@ struct t2_globals
     // Available to general users
     s64				LogicTimeMs;
     f32             DeltaLogicTime;
-    random			Random;
+    RandomClass			Random;
     xbool			DisplayStats;
     xbool           LogStats;
     xbool           ShowColliderCannon;

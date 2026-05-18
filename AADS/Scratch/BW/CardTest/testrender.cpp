@@ -1,5 +1,5 @@
 #include "x_files.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 view          View;
 s32             flashcount=0;

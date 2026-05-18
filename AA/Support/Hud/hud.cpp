@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "aux_bitmap.hpp"
 #include "hud.hpp"
 #include "Objects/Player/PlayerObject.hpp"

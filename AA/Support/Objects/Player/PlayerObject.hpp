@@ -559,13 +559,13 @@ public:
         f32         LookY ;             // Look up-down value (-1 to 1)
 
         // Clears out structure
-        void player_input::Clear()
+        void Clear()
         {
             x_memset((void*)this, 0, sizeof(player_input)) ;
         }
 
         // Sets all key presses
-        void player_input::Set()
+        void Set()
         {
             x_memset((void*)this, 0xFF, sizeof(player_input)) ;
             *(u32*)&MoveX = 0x3 ;
@@ -576,7 +576,7 @@ public:
         }
 
         // Constructor - clears out structure
-        player_input::player_input()
+        player_input()
         {
             Clear() ;
         }

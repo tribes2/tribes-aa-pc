@@ -4,9 +4,9 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"

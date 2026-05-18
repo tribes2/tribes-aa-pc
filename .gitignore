@@ -11,6 +11,7 @@
 *.opendb
 *.ipch
 *.vsidx
+*.o
 /AA/Demo1/Data
 /AA/Support/LabelSets/_Win32Debug
 /AA/Support/CardMgr/_Win32Debug

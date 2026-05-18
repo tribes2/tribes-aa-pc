@@ -11,7 +11,7 @@
 #include "PlayerObject.hpp"
 #include "Entropy.hpp"
 #include "AADS/Globals.hpp"
-#include "AADS/fe_globals.hpp"
+#include "AADS/fe_Globals.hpp"
 
 #include "AADS/GameClient.hpp"
 #include "LabelSets/Tribes2Types.hpp"

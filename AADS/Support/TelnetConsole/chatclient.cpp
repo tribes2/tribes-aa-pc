@@ -1,8 +1,8 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "chatclient.hpp"
 #include "gamemgr/gamemgr.hpp"
 #include "telnetmgr.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
 
 #if defined(TARGET_LINUX)

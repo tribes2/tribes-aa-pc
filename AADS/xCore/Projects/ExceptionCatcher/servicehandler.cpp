@@ -1,5 +1,5 @@
 #include "x_types.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "e_threads.hpp"
 #include <windows.h>
 #include "stdio.h"

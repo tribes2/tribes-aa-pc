@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"
@@ -20,7 +20,7 @@
 #include "data\ui\ui_strings.h"
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 
 extern xbool    g_GotJoinPassword;
 extern xwchar   g_JoinPassword[FE_MAX_ADMIN_PASS];

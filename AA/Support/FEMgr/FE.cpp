@@ -3,7 +3,7 @@
 #include "fe.hpp"
 #include "aux_bitmap.hpp"
 
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 
 #include "../demo1/globals.hpp"
 

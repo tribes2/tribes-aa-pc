@@ -4,10 +4,10 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "netlib\netlib.hpp"
 #include "netlib\bitstream.hpp"
-#include "globals.hpp"
+#include "Globals.hpp"
 
 //=========================================================================
 

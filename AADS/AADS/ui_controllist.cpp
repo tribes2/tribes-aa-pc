@@ -4,15 +4,15 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "AudioMgr\audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 
-#include "dlg_controlconfig.hpp"
+#include "dlg_ControlConfig.hpp"
 #include "ui_controllist.hpp"
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
-#include "ui/ui_dlg_list.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
+#include "UI/ui_dlg_list.hpp"
 //#include "ui_dlg_combolist.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 

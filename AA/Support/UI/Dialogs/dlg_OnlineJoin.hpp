@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui/ui_dialog.hpp"
-#include "Demo1/savedgame.hpp"
+#include "UI/ui_dialog.hpp"
+#include "Demo1/SavedGame.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 
 //==============================================================================

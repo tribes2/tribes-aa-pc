@@ -9,7 +9,7 @@
 #include "x_types.hpp"
 #include "x_math.hpp"
 #include "ObjectMgr/Object.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 
 //=============================================================================
 

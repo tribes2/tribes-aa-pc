@@ -15,8 +15,8 @@
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 
-#include "objects/player/playerobject.hpp"
-#include "pointlight/pointlight.hpp"
+#include "Objects/Player/PlayerObject.hpp"
+#include "PointLight/PointLight.hpp"
 
 //==============================================================================
 //  DEFINES

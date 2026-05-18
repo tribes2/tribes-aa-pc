@@ -1,4 +1,4 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "ParticleEffect.hpp"
 #include "aads/globals.hpp"
 

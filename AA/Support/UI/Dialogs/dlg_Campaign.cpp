@@ -4,30 +4,30 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "Demo1/globals.hpp"
-#include "objects/player/PlayerObject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "StringMgr/StringMgr.hpp"
 
-#include "AudioMgr/audio.hpp"
-#include "labelsets/Tribes2Types.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "LabelSets/Tribes2Types.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_control.hpp"
-#include "ui/ui_combo.hpp"
-#include "ui/ui_edit.hpp"
-#include "ui/ui_font.hpp"
-#include "ui/ui_frame.hpp"
-#include "ui/ui_listbox.hpp"
-#include "ui/ui_textbox.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_control.hpp"
+#include "UI/ui_combo.hpp"
+#include "UI/ui_edit.hpp"
+#include "UI/ui_font.hpp"
+#include "UI/ui_frame.hpp"
+#include "UI/ui_listbox.hpp"
+#include "UI/ui_textbox.hpp"
 
 #include "dlg_Campaign.hpp"
 #include "dlg_LoadSave.hpp"
 
-#include "Demo1/fe_globals.hpp"
-#include "ui/ui_colors.hpp"
+#include "Demo1/fe_Globals.hpp"
+#include "UI/ui_colors.hpp"
 
 #include "Demo1/data/ui/ui_strings.h"
 

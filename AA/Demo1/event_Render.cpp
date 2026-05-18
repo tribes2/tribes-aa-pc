@@ -46,25 +46,25 @@
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Player/CorpseObject.hpp"
 #include "Objects/Bot/BotObject.hpp"
-#include "Objects/Vehicles/gravcycle.hpp"
-#include "Objects/Vehicles/asstank.hpp"
-#include "Objects/Vehicles/shrike.hpp"
-#include "Objects/Vehicles/transport.hpp"
-#include "Objects/Vehicles/bomber.hpp"
-#include "Objects/Vehicles/mpb.hpp"
-#include "Objects/Scenic/scenic.hpp"
+#include "Objects/Vehicles/GravCycle.hpp"
+#include "Objects/Vehicles/AssTank.hpp"
+#include "Objects/Vehicles/Shrike.hpp"
+#include "Objects/Vehicles/Transport.hpp"
+#include "Objects/Vehicles/Bomber.hpp"
+#include "Objects/Vehicles/MPB.hpp"
+#include "Objects/Scenic/Scenic.hpp"
 #include "Building/BuildingOBJ.hpp"
 #include "Sky/Sky.hpp"
 #include "ObjectMgr/ColliderCannon.hpp"
-#include "PointLight/Pointlight.hpp"
+#include "PointLight/PointLight.hpp"
 #include "Demo1/SpecialVersion.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "hud/hud_manager.hpp"
-#include "HUD/hud_Icons.hpp"
+#include "UI/ui_manager.hpp"
+#include "Hud/hud_manager.hpp"
+#include "Hud/hud_Icons.hpp"
 
 #include "GameMgr/GameMgr.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "NetworkMgr/sm_common.hpp"
 
 #ifdef TARGET_PC
@@ -1436,7 +1436,7 @@ void event_Render( s32 ViewIndex )
             fp = x_fopen("pickups.txt","at" );
             x_fprintf(fp, "PICKUP HEALTH\t%-3.4f\t%-3.4f\t%-3.4f\t30.0\n", Pos.X, Pos.Y + 0.1f, Pos.Z);
             x_fclose(fp);
-            Sleep(1000);
+            sleep_ms(1000);
             x_printf("Health Pickup Created.\n" );
         }
 
@@ -1447,7 +1447,7 @@ void event_Render( s32 ViewIndex )
             fp = x_fopen("pickups.txt","at" );
             x_fprintf(fp, "PICKUP AMMO\t%-3.4f\t%-3.4f\t%-3.4f\t15.0\n", Pos.X, Pos.Y + 0.1f, Pos.Z);
             x_fclose(fp);
-            Sleep(1000);
+            sleep_ms(1000);
             x_printf("Ammo Pickup Created.\n" );
         }
     }        

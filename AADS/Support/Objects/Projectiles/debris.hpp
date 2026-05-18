@@ -15,7 +15,7 @@
 #include "Shape\ShapeInstance.hpp"
 #include "Arcing.hpp"
 #include "Particles/ParticleEffect.hpp"
-#include "../vehicles/vehicle.hpp"
+#include "..\Vehicles\Vehicle.hpp"
 
 //==============================================================================
 //  TYPES

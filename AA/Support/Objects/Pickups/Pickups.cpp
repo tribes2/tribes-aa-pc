@@ -12,7 +12,7 @@
 #include "Entropy.hpp"
 #include "../../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 
 //==============================================================================

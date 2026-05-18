@@ -1434,7 +1434,7 @@ void shadow_RenderVolume( const bbox&    BBox,
     {
         if( SHOW_SHADOW_INFO )
         {
-            random Rand;
+            RandomClass Rand;
             draw_SetZBias(SHADOW_ZBIAS);
             draw_Begin( DRAW_TRIANGLES, DRAW_WIRE_FRAME );
 

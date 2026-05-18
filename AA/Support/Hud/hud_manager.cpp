@@ -4,15 +4,15 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "demo1/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 
 #include "hud_manager.hpp"
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 #include "demo1/data/ui/ui_strings.h"
 #include "demo1/data/missions/campaign.h"
 
@@ -23,7 +23,7 @@
 #include "objects/vehicles/asstank.hpp"
 #include "objects/projectiles/satchelcharge.hpp"
 
-#include "ui/ui_colors.hpp"
+#include "UI/ui_colors.hpp"
 
 //=========================================================================
 //  Defines
@@ -722,20 +722,20 @@ void hud_manager::Render( void ) const
             RenderPopups( pUser, wr );
 
             // Set rect for health/energy/heat gauge
-            irect or( 0, 0, HealthEnergyWidth,  HealthEnergyHeight );
-            or.Translate(   HealthMeterOffsetX, HealthMeterOffsetY );
+            irect _or( 0, 0, HealthEnergyWidth,  HealthEnergyHeight );
+            _or.Translate(   HealthMeterOffsetX, HealthMeterOffsetY );
             
             // Render health and energy
             if( m_Users.GetCount() == 1 )
             {
-                RenderHealthEnergy( pUser, wr, or );
+                RenderHealthEnergy( pUser, wr, _or );
             }
             else
             {
                 if( i == 0 )
-                    RenderHealthEnergy( pUser, wr, or );
+                    RenderHealthEnergy( pUser, wr, _or );
                 else
-                    RenderHealthEnergy( pUser, wr, or );
+                    RenderHealthEnergy( pUser, wr, _or );
             }
 
             // Render vehicle meter

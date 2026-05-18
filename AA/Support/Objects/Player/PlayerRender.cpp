@@ -11,7 +11,7 @@
 #include "PlayerObject.hpp"
 #include "Entropy.hpp"
 #include "Demo1/Globals.hpp"
-#include "Demo1/fe_globals.hpp"
+#include "Demo1/fe_Globals.hpp"
 
 #include "NetworkMgr/GameClient.hpp"
 #include "LabelSets/Tribes2Types.hpp"
@@ -23,7 +23,7 @@
 #include "Damage/Damage.hpp"
 #include "HUD/hud_Icons.hpp"
 #include "UI/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_font.hpp"
 
 //#define DEBUG_TURN_STATS_ON
 #include "Shape/DebugUtils.hpp"

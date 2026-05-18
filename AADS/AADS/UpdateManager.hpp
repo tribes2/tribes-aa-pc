@@ -7,7 +7,7 @@
 #define UPDATEMANAGER_HPP
 
 #include "x_files.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "objectmgr/objectmgr.hpp"
 #include "GameMgr/MsgMgr.hpp"
 

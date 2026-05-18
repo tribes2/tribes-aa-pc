@@ -4,7 +4,7 @@
 //
 //=========================================================================
 //#define INCLUDE_NET
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "e_draw.hpp"
 #include "e_input.hpp"
 #include "e_netfs.hpp"
@@ -14,8 +14,8 @@
 
 #include "ps2/iop/usb.hpp"
 #include "../../support/audiomgr/audio.hpp"
-#include "../../support/cardmgr/cardmgr.hpp"
-#include "../../support/cleantext/cleantext.hpp"
+#include "../../support/CardMgr/CardMgr.hpp"
+#include "../../support/CleanText/CleanText.hpp"
 //=========================================================================
 
 view          View;

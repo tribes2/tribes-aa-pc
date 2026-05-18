@@ -16,7 +16,7 @@
 
 #include "Objects\Player\PlayerObject.hpp"
 #include "pointlight\pointlight.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 #include "Blaster.hpp"
 #include "textures.hpp"

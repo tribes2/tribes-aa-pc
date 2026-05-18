@@ -13,9 +13,9 @@
 #include "Demo1/Globals.hpp"
 #include "PointLight/PointLight.hpp"
 #include "ParticleObject.hpp"
-#include "objects/player/playerobject.hpp"
+#include "Objects/Player/PlayerObject.hpp"
 #include "GameMgr//GameMgr.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 //==============================================================================
 //  DEFINES

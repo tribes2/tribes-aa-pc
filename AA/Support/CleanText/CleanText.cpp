@@ -1,5 +1,5 @@
-#include "cleantext.hpp"
-#include "cleantext.hpp"
+#include "CleanText.hpp"
+#include "CleanText.hpp"
 
 // Database.
 

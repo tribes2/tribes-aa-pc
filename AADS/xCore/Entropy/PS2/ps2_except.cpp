@@ -7,10 +7,10 @@
 #include <libexcep.h>
 #include "x_files.hpp"
 #include "x_debug.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "ps2/ps2_except.hpp"
 #include "ps2/ps2_exceptiondefs.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "../../demo1/specialversion.hpp"
 
 #define SCREEN_WIDTH 384

@@ -1,5 +1,5 @@
 #include "x_files.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "stdlib.h"
 #include "pp.h"
 

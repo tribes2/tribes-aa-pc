@@ -7,9 +7,7 @@
 #define GAMECLIENT_HPP
 
 #include "x_types.hpp"
-#include "netlib/netlib.hpp"
-#include "netlib/bitstream.hpp"
-#include "connmanager.hpp"
+#include "ConnManager.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 
 

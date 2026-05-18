@@ -26,9 +26,9 @@ static char* s_GameTypes[]=
 // Game specific files needed so that we can gather
 // stats about what's going on
 //
-#include "fe_globals.hpp"
-#include "support/gamemgr/gamemgr.hpp"
-#include "masterserver/masterserver.hpp"
+#include "fe_Globals.hpp"
+#include "Support/gamemgr/gamemgr.hpp"
+#include "MasterServer/MasterServer.hpp"
 #include "gameserver.hpp"
 #include "telnetmgr.hpp"
 

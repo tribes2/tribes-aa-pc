@@ -8,7 +8,7 @@
 #define GAMEEVENTMANAGER_HPP
 
 #include "x_files.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 
 //=========================================================================

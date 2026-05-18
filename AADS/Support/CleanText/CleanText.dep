@@ -1,6 +1,6 @@
 # Microsoft Developer Studio Generated Dependency File, included by CleanText.mak
 
-.\cleantext.cpp : \
+.\CleanText.cpp : \
 	"..\..\xCore\x_files\Implementation\x_array_private.hpp"\
 	"..\..\xCore\x_files\Implementation\x_bitmap_inline.hpp"\
 	"..\..\xCore\x_files\Implementation\x_color_inline.hpp"\
@@ -29,5 +29,5 @@
 	"..\..\xCore\x_files\x_target.hpp"\
 	"..\..\xCore\x_files\x_time.hpp"\
 	"..\..\xCore\x_files\x_types.hpp"\
-	".\cleantext.hpp"\
+	".\CleanText.hpp"\
 	

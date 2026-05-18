@@ -4,14 +4,14 @@
 //
 //=========================================================================
 /*
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "AADS/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
 
 #include "demo1\fe_colors.hpp"
 */

@@ -1,7 +1,7 @@
 #ifndef __MASTERENTITY_HPP
 #define __MASTERENTITY_HPP
 
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "bytestream.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 

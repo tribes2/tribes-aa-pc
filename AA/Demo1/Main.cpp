@@ -11,18 +11,18 @@
 //==============================================================================
 
 #include "Entropy.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "NetworkMgr/GameClient.hpp"
 #include "Tokenizer/Tokenizer.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "Building/BuildingObj.hpp"
+#include "Building/BuildingOBJ.hpp"
 #include "Objects/Terrain/Terrain.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 #include "PointLight/PointLight.hpp"
-#include "e_NetFS.hpp"
+#include "e_netfs.hpp"
 #include "Support/Objects/Bot/Graph.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "GameMgr/GameMgr.hpp"
@@ -32,21 +32,24 @@
 #include "Objects/Projectiles/Blaster.hpp"
 #include "Objects/Projectiles/Bounds.hpp"
 #include "Objects/Bot/Graph.hpp"
-#include "cardmgr/cardmgr.hpp"
+#include "CardMgr/CardMgr.hpp"
 #include "titles.hpp"
-#include "poly/poly.hpp"
+#include "Poly/Poly.hpp"
 #include "StringMgr/StringMgr.hpp"
 
-#include "data/ui/ui_strings.h"
+#include "Data/UI/ui_strings.h"
 
-#include "ui/ui_manager.hpp"
-#include "ui/ui_font.hpp"
-#include "hud/hud_manager.hpp"
-#include "masterserver/masterserver.hpp"
+#include "UI/ui_manager.hpp"
+#include "UI/ui_font.hpp"
+#include "Hud/hud_manager.hpp"
+#include "MasterServer/MasterServer.hpp"
 #include "NetworkMgr/ServerVersion.hpp"
 #include "NetworkMgr/sm_common.hpp"
 #include "FrontEnd.hpp"
 #include "Demo1/SpecialVersion.hpp"
+
+// required for _exit(0)
+#include <cstdlib>
 
 #define EXPORT_MISSIONS		0	// set this to 1 to export all missions
 #define TEST_PATHFIND       0
@@ -783,7 +786,12 @@ void TribesCrashMessageBuilder(char *pBuff,s32 Length)
 void InitEngine( void )
 {
     #ifdef TARGET_PC
+    #ifdef RENDERER_BACKEND_OPENGL
+    opengleng_SetPresets( ENG_ACT_LOCK_WINDOW_SIZE );
+    #endif
+    #ifdef RENDERER_BACKEND_D3D
     d3deng_SetPresets( ENG_ACT_LOCK_WINDOW_SIZE );
+    #endif
     #endif
 
     eng_Init();
@@ -1107,7 +1115,7 @@ void KillPermSystems( void )
 
 xbool SHOW_ANDY_BOT_TIMER = FALSE;
 xbool SHOW_ANDY_BOTINTTASK_TIMER = FALSE;
-extern random SpawnRandom;
+extern RandomClass SpawnRandom;
 
 void DoOneGameCycle( void )
 {
@@ -1680,7 +1688,7 @@ void ExportMissions( void )
     KillEngine();
 
     // HACK UNTIL WE CAN SHUT DOWN PROPERLY
-    _exit(0);
+    _Exit(0);
 }
 
 #endif
@@ -2172,7 +2180,7 @@ void AppMain( s32 argc, char* argv[] )
 #endif
     // HACK UNTIL WE CAN SHUT DOWN PROPERLY
 #ifndef TARGET_PS2    
-    _exit(0);
+    _Exit(0);
 #endif
 }
 

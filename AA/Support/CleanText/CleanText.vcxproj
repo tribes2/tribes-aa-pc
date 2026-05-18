@@ -72,10 +72,10 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cleantext.cpp" />
+    <ClCompile Include="CleanText.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cleantext.hpp" />
+    <ClInclude Include="CleanText.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

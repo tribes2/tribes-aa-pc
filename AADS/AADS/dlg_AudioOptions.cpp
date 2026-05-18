@@ -4,7 +4,7 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"
@@ -18,16 +18,16 @@
 #include "ui\ui_font.hpp"
 #include "ui\ui_button.hpp"
 #include "serverman.hpp"
-#include "cardmgr/cardmgr.hpp"
-#include "audiomgr/audio.hpp"
+#include "CardMgr/CardMgr.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 
 #include "dlg_AudioOptions.hpp"
-#include "dlg_message.hpp"
-#include "dlg_loadsave.hpp"
-#include "masterserver/masterserver.hpp"
-#include "fe_globals.hpp"
-#include "globals.hpp"
+#include "dlg_Message.hpp"
+#include "dlg_LoadSave.hpp"
+#include "MasterServer/MasterServer.hpp"
+#include "fe_Globals.hpp"
+#include "Globals.hpp"
 
 #include "fe_colors.hpp"
 

@@ -15,7 +15,7 @@
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "PointLight/PointLight.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 
 //==============================================================================
 //  DEFINES

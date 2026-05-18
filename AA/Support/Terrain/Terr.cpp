@@ -3799,7 +3799,7 @@ void terr::BuildLightingData( const vector3&    LightDir,
         // Do tracing in light direction
         {
             s32 NShadSamples = 1+16;
-            random Rand;
+            RandomClass Rand;
             //x_DebugMsg("Computing lighting and shadows\n");
 
             collider Ray;

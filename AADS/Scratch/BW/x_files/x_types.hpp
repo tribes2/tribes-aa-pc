@@ -172,7 +172,7 @@
     typedef u16                 xwchar;
 //#if defined(TARGET_PS2_IOP)
 #if 1
-	#include "implementation/x_math_soft_float.hpp"
+	#include "Implementation/x_math_soft_float.hpp"
 #else
     typedef          float      f32;
     typedef          double     f64;

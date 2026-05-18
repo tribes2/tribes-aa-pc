@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"
@@ -27,7 +27,7 @@
 #include "ui\ui_button.hpp"
 
 #include "dlg_OnlineHost.hpp"
-#include "dlg_loadsave.hpp"
+#include "dlg_LoadSave.hpp"
 #include "dlg_MissionLoad.hpp"
 
 #include "data\ui\ui_strings.h"

@@ -7,7 +7,7 @@
 
 #include "ObjectMgr/ObjectMgr.hpp"
 #include "BldInstance.hpp"
-#include "pointlight/pointlight.hpp"
+#include "PointLight/PointLight.hpp"
 
 //==============================================================================
 // TYPES

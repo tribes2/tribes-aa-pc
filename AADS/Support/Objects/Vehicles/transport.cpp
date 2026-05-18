@@ -14,7 +14,7 @@
 #include "ObjectMgr\Object.hpp"
 #include "Transport.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "Objects/Projectiles/Turret.hpp"
 #include "StringMgr\StringMgr.hpp"
 #include "Data\UI\ui_strings.h"

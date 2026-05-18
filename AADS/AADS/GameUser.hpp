@@ -7,8 +7,8 @@
 #define GAMEUSER_HPP
 
 #include "x_types.hpp"
-#include "netlib/netlib.hpp"
-#include "netlib/bitstream.hpp"
+#include "NetLib/NetLib.hpp"
+#include "NetLib/bitstream.hpp"
 
 //=========================================================================
 

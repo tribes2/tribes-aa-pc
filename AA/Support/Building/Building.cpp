@@ -2,7 +2,7 @@
 #include "Building.hpp"
 
 #include "AUX_Bitmap.hpp"
-#include "bldmanager.hpp"
+#include "BldManager.hpp"
 #include "x_files.hpp"  
 
 #include "ObjectMgr/ObjectMgr.hpp"
@@ -167,7 +167,7 @@ void building::DeleteBuilding()
 
 void building::CompilePCData( dlist& DList )
 {
-#ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
 
     //
     // Allocate the pc data
@@ -175,8 +175,8 @@ void building::CompilePCData( dlist& DList )
     dlist::pc_data* pPCData = new dlist::pc_data;
     ASSERT( pPCData );
 
-    pPCData->pVBuffer        = NULL;
-    pPCData->pIBuffer        = NULL;
+    pPCData->pVBuffer        = 0;
+    pPCData->pIBuffer        = 0;
     pPCData->FacetCount      = 0;
 
     //
@@ -197,24 +197,28 @@ void building::CompilePCData( dlist& DList )
     temp_uv*            pUV        = (temp_uv*) ( ((u32*)&pPS2Vertex[ DList.nVertices ]) + 4 );
 
 
+    LPDIRECT3DVERTEXBUFFER8 pVBuffer = NULL;
+    LPDIRECT3DINDEXBUFFER8  pIBuffer = NULL;
+
     Error = g_pd3dDevice->CreateVertexBuffer( DList.nVertices * sizeof(dlist::pc_vertex), 
                                               D3DUSAGE_WRITEONLY, 0, 
                                               D3DPOOL_MANAGED, 
-                                              &pPCData->pVBuffer );
+                                              &pVBuffer );
     ASSERT( Error == 0 );
+    pPCData->pVBuffer = reinterpret_cast<RendererVertexBufferHandle>(pVBuffer);
 
     Error = g_pd3dDevice->CreateIndexBuffer( DList.nVertices*3*sizeof(s16), 
                                              D3DUSAGE_WRITEONLY  , 
                                              D3DFMT_INDEX16, 
                                              D3DPOOL_MANAGED,
-                                             &pPCData->pIBuffer );
+                                             &pIBuffer );
+    ASSERT( Error == 0 );
+    pPCData->pIBuffer = reinterpret_cast<RendererIndexBufferHandle>(pIBuffer);
+
+    Error = pVBuffer->Lock( 0, 0, (byte**)&pVertex, 0);
     ASSERT( Error == 0 );
 
-
-    Error = pPCData->pVBuffer->Lock( 0, 0, (byte**)&pVertex, 0);
-    ASSERT( Error == 0 );
-
-    Error = pPCData->pIBuffer->Lock( 0, 0, (byte**)&pIndex, 0);
+    Error = pIBuffer->Lock( 0, 0, (byte**)&pIndex, 0);
     ASSERT( Error == 0 );
 
     for( c = 100, i=0; i<DList.nVertices; i++ )
@@ -266,8 +270,8 @@ void building::CompilePCData( dlist& DList )
         }
     }
 
-    pPCData->pVBuffer->Unlock();
-    pPCData->pIBuffer->Unlock();
+    pVBuffer->Unlock();
+    pIBuffer->Unlock();
     pPCData->FacetCount = m/3;
 
     pPCData->pDList = DList.pData;

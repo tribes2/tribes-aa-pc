@@ -1,7 +1,7 @@
 #include "x_files.hpp"
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "masterserver.hpp"
-#include "netlib/netlib.hpp"
+#include "NetLib/NetLib.hpp"
 #include "bytestream.hpp"
 #include "../../AADS/serverman.hpp"
 

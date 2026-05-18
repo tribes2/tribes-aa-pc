@@ -14,7 +14,7 @@
 #include "Objects\Projectiles\Generator.hpp"
 #include "StringMgr\StringMgr.hpp"
 
-#include "AADS\fe_globals.hpp"
+#include "AADS\fe_Globals.hpp"
 #include "AADS\Data\UI\Messages.h"
 
 //==============================================================================

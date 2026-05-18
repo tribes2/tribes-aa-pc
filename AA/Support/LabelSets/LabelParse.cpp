@@ -1,4 +1,4 @@
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "../tokenizer/tokenizer.hpp"
 #include "labelparse.hpp"
 

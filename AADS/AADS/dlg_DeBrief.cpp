@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "globals.hpp"
+#include "Entropy.hpp"
+#include "Globals.hpp"
 #include "objects\player\PlayerObject.hpp"
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"
@@ -24,9 +24,9 @@
 #include "ui\ui_textbox.hpp"
 
 #include "dlg_DeBrief.hpp"
-#include "dlg_loadsave.hpp"
+#include "dlg_LoadSave.hpp"
 
-#include "fe_globals.hpp"
+#include "fe_Globals.hpp"
 #include "fe_colors.hpp"
 
 #include "data\ui\ui_strings.h"

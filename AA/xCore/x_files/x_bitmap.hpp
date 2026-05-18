@@ -93,8 +93,7 @@ public:
         
         #ifdef LITTLE_ENDIAN
             FMT_XCOLOR = FMT_32_ARGB_8888,
-        #endif
-        #ifdef BIG_ENDIAN
+        #else
             FMT_XCOLOR = FMT_32_BGRA_8888,
         #endif
     };

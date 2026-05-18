@@ -2,7 +2,7 @@
 #define __audio_HPP
 
 #include "x_types.hpp"
-#include "e_engine.hpp"
+#include "e_Engine.hpp"
 #include "audiodefs.hpp"
 
 //

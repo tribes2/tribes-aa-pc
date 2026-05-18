@@ -556,31 +556,31 @@ f32 x_frand( f32 Min, f32 Max )
 }
 
 //==============================================================================
-//  Functions for class random.
+//  Functions for class RandomClass.
 //==============================================================================
 
-random::random( void )
+RandomClass::RandomClass( void )
 {
     m_Seed = 2;
 }
 
 //==============================================================================
 
-random::random( s32 Seed )
+RandomClass::RandomClass( s32 Seed )
 {
     m_Seed = Seed;
 }                
 
 //==============================================================================
 
-void random::srand( s32 Seed )
+void RandomClass::srand( s32 Seed )
 {
     m_Seed = Seed;
 }
 
 //==============================================================================
 
-s32 random::rand( void )
+s32 RandomClass::rand( void )
 {
     m_Seed = m_Seed * 214013 + 2531011;
     return( (s32)((m_Seed >> 16) & X_RAND_MAX) );
@@ -588,7 +588,7 @@ s32 random::rand( void )
 
 //==============================================================================
 
-s32 random::irand( s32 Min, s32 Max )
+s32 RandomClass::irand( s32 Min, s32 Max )
 {
     ASSERT( Max >= Min );
     return( (rand() % (Max-Min+1)) + Min );
@@ -596,7 +596,7 @@ s32 random::irand( s32 Min, s32 Max )
 
 //==============================================================================
 
-f32 random::frand( f32 Min, f32 Max )
+f32 RandomClass::frand( f32 Min, f32 Max )
 {
     ASSERT( Max >= Min );
     return( (((f32)rand() / (f32)X_RAND_MAX) * (Max-Min)) + Min );
@@ -604,7 +604,7 @@ f32 random::frand( f32 Min, f32 Max )
 
 //==============================================================================
 
-vector2 random::v2( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY )
+vector2 RandomClass::v2( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY )
 {
     return( vector2( frand(MinX,MaxX),
                      frand(MinY,MaxY) ) );
@@ -612,7 +612,7 @@ vector2 random::v2( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY )
 
 //==============================================================================
 
-vector3 random::v3( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY, f32 MinZ, f32 MaxZ )
+vector3 RandomClass::v3( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY, f32 MinZ, f32 MaxZ )
 {
     return( vector3( frand(MinX,MaxX),
                      frand(MinY,MaxY),
@@ -621,7 +621,7 @@ vector3 random::v3( f32 MinX, f32 MaxX, f32 MinY, f32 MaxY, f32 MinZ, f32 MaxZ )
 
 //==============================================================================
 
-xcolor random::color( u8 A )
+xcolor RandomClass::color( u8 A )
 {
     return( xcolor( irand(0,255), 
                     irand(0,255), 

@@ -290,7 +290,7 @@ void shape_instance::SetCollisionModelByType(s32 Type)
 // Draws the currently associated collision model
 s32 shape_instance::DrawCollisionModel()
 {
-    random Random;
+    RandomClass Random;
     s32 Polys=0;
 
     // Any collision model there?

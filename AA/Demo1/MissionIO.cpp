@@ -4,16 +4,16 @@
 //
 //==============================================================================
 
-#include "entropy.hpp"
-#include "common/e_cdfs.hpp"
-#include "netlib/netlib.hpp"
-#include "netlib/bitstream.hpp"
-#include "tokenizer/tokenizer.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Entropy.hpp"
+#include "Common/e_cdfs.hpp"
+#include "NetLib/NetLib.hpp"
+#include "NetLib/bitstream.hpp"
+#include "Tokenizer/Tokenizer.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "NetworkMgr/GameClient.hpp"
-#include "Sky/sky.hpp"
+#include "Sky/Sky.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 #include "Objects/PlaceHolder/PlaceHolder.hpp"
 #include "Objects/Terrain/Terrain.hpp"
@@ -31,33 +31,33 @@
 #include "Objects/Projectiles/ForceField.hpp"
 #include "Objects/Projectiles/Projector.hpp"
 #include "Objects/Bot/BotObject.hpp"
-#include "Objects/Pickups/pickups.hpp"
+#include "Objects/Pickups/Pickups.hpp"
 #include "Objects/Projectiles/Flag.hpp"
 #include "Objects/Projectiles/Blaster.hpp"
 #include "Objects/Projectiles/Station.hpp"
-#include "Objects/vehicles/gravcycle.hpp"
-#include "Objects/vehicles/shrike.hpp"
-#include "Objects/vehicles/asstank.hpp"
-#include "Objects/vehicles/transport.hpp"
-#include "Objects/vehicles/bomber.hpp"
-#include "Objects/vehicles/mpb.hpp"
-#include "Objects/scenic/scenic.hpp"
+#include "Objects/Vehicles/GravCycle.hpp"
+#include "Objects/Vehicles/Shrike.hpp"
+#include "Objects/Vehicles/AssTank.hpp"
+#include "Objects/Vehicles/Transport.hpp"
+#include "Objects/Vehicles/Bomber.hpp"
+#include "Objects/Vehicles/MPB.hpp"
+#include "Objects/Scenic/Scenic.hpp"
 #include "Building/BuildingOBJ.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
-#include "support/movieplayer/movieplayer.hpp"
-#include "ui/ui_manager.hpp"
-#include "hud/hud_manager.hpp"
-#include "hud/hud_Icons.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "Support/MoviePlayer/MoviePlayer.hpp"
+#include "UI/ui_manager.hpp"
+#include "Hud/hud_manager.hpp"
+#include "Hud/hud_Icons.hpp"
 #include "StringMgr/StringMgr.hpp"
 #include "Demo1/SpecialVersion.hpp"
 
 #include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "pointlight/pointlight.hpp"
+#include "PointLight/PointLight.hpp"
 #include "titles.hpp"
 
-#include "objects/bot/pathgenerator.hpp"
+#include "Objects/Bot/PathGenerator.hpp"
 
 #include "Objects/Bot/MAI_Manager.hpp"
 
@@ -447,7 +447,7 @@ void EndOfMissionLoad( void )
     {
         vector3 Start( 1268.74f, 266.523f, 1538.92f );
         vector3 End  ( 1103.6f, 204.789f, 1214.67f );
-        random  Rand;
+        RandomClass  Rand;
         f32     R = 0.2f;
         collider Coll;
         s32 i;

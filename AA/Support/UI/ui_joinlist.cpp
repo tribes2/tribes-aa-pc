@@ -4,8 +4,8 @@
 //
 //=========================================================================
 
-#include "entropy.hpp"
-#include "AudioMgr/audio.hpp"
+#include "Entropy.hpp"
+#include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "gamemgr/gamemgr.hpp"
 

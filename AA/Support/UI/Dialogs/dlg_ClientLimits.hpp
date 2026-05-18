@@ -11,8 +11,8 @@
 //  INCLUDES
 //==============================================================================
 
-#include "ui/ui_dialog.hpp"
-#include "dlg_message.hpp"
+#include "UI/ui_dialog.hpp"
+#include "dlg_Message.hpp"
 
 //==============================================================================
 //  dlg_clientlimits

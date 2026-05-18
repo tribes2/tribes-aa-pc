@@ -4,12 +4,12 @@
 //
 //==============================================================================
 
-#include "entropy.hpp"
+#include "Entropy.hpp"
 #include "netlib\netlib.hpp"
 #include "netlib\bitstream.hpp"
 #include "tokenizer\tokenizer.hpp"
-#include "globals.hpp"
-#include "fe_globals.hpp"
+#include "Globals.hpp"
+#include "fe_Globals.hpp"
 #include "gameserver.hpp"
 #include "gameclient.hpp"
 #include "gameuser.hpp"
@@ -32,9 +32,9 @@
 #include "Objects\vehicles\bomber.hpp"
 #include "Building\BuildingOBJ.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "audiomgr/audio.hpp"
-#include "masterserver/masterserver.hpp"
-#include "savedgame.hpp"
+#include "AudioMgr/Audio.hpp"
+#include "MasterServer/MasterServer.hpp"
+#include "SavedGame.hpp"
 #include "serverman.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "GameMgr\MsgMgr.hpp"

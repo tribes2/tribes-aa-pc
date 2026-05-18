@@ -177,7 +177,7 @@ public:
                                       const collider::collision& Collision );
 
 #ifdef X_DEBUG
-        void        DbgStartTypeLoop( object::type Type, char* pFile, s32 Line );
+        void        DbgStartTypeLoop( object::type Type, const char* pFile, s32 Line );
 #endif
         void        StartTypeLoop   ( object::type Type );
         object*     GetNextInType   ( void );
