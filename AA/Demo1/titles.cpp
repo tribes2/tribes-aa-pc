@@ -127,7 +127,7 @@ s32 title_MemcardCheck(s32 cardnum,xbool &LoadOptions)
         pFile = card_Open(name,"rb");
         // If the file exists, we don't have to worry about the remaining
         // amount of space since it's already been created.
-        if ((s32)pFile>0)
+        if ((intptr_t)pFile > 0)
         {
             saved_game *pSavedData;
             s32 checksum,SavedChecksum;
@@ -174,9 +174,9 @@ s32 title_MemcardCheck(s32 cardnum,xbool &LoadOptions)
         }
         else
         {
-            if ((s32)pFile != CARD_ERR_NOTFOUND)
+            if ((intptr_t)pFile != CARD_ERR_NOTFOUND)
             {
-                CurrentState = (s32)pFile;
+                CurrentState = (intptr_t)pFile;
             }
             else
             {
@@ -497,7 +497,7 @@ void title_Init_Advance(f32 DeltaTime)
 {
     xbool           message;
     char            ErrorString[512];
-    char            *pHeader;
+    const char            *pHeader;
     f32             MessageDuration;
     s32             soundeffect;
 
