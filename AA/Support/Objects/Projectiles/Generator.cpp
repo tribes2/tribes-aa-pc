@@ -13,7 +13,7 @@
 #include "Debris.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "ParticleObject.hpp"
 #include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"

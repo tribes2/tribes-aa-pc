@@ -21,7 +21,7 @@
 #include "Objects/Projectiles/Flag.hpp"
 #include "Objects/Projectiles/AutoAim.hpp"
 #include "Damage/Damage.hpp"
-#include "HUD/hud_Icons.hpp"
+#include "Hud/hud_Icons.hpp"
 #include "UI/ui_manager.hpp"
 #include "UI/ui_font.hpp"
 

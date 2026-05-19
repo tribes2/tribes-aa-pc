@@ -10,7 +10,7 @@
 
 #include "Arcing.hpp"
 #include "Entropy.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "Demo1/Globals.hpp"
 #include "NetworkMgr/GameClient.hpp"

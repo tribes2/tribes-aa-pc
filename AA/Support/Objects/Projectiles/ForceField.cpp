@@ -13,7 +13,7 @@
 #include "ForceField.hpp"
 #include "Entropy.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Projectiles/Bounds.hpp"

@@ -12,7 +12,7 @@
 #include "Entropy.hpp"
 #include "..\AADS\Globals.hpp"
 #include "GameMgr\GameMgr.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 //==============================================================================

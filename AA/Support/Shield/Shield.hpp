@@ -11,7 +11,7 @@
 //=========================================================================
 
 #include "Shape/ShapeInstance.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 
 
 

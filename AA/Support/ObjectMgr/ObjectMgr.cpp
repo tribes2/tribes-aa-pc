@@ -35,7 +35,7 @@
 #include "ObjectMgr.hpp"
 #include "Entropy.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "Objects/Projectiles/Waypoint.hpp"
+#include "Objects/Projectiles/WayPoint.hpp"
 #include "Objects/bot/BotObject.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"

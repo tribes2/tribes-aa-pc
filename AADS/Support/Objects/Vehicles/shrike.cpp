@@ -9,7 +9,7 @@
 //==============================================================================
 #include "..\AADS\Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "ObjectMgr\Object.hpp"
 #include "Shrike.hpp"
 #include "LabelSets/Tribes2Types.hpp"

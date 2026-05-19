@@ -4,7 +4,7 @@
 //
 //========================================================================================================================================================
 
-#include "c08_logic.hpp"
+#include "C08_Logic.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "GameMgr/MsgMgr.hpp"
 #include "Demo1/Data/UI/Messages.h"

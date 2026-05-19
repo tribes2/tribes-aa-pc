@@ -9,7 +9,7 @@
 //==============================================================================
 
 #include "PlayerObject.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Demo1/Globals.hpp"
 #include "NetworkMgr/MoveManager.hpp"
 #include "NetworkMgr/GameClient.hpp"

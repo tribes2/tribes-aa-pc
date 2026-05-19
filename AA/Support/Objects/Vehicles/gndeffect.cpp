@@ -10,7 +10,7 @@
 
 #include "../Demo1/Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "ObjectMgr/Object.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "../projectiles/ParticleObject.hpp"

@@ -23,7 +23,7 @@
 #include "Objects/Projectiles/SatchelCharge.hpp"
 #include "Shape/SelectionList.hpp"
 #include "GameMgr/GameMgr.hpp"
-#include "HUD/hud_Manager.hpp"
+#include "Hud/hud_Manager.hpp"
 
 
 //==============================================================================

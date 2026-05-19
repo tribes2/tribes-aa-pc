@@ -6,8 +6,8 @@
 ///////////////////////////////////////////////////////////////////////////
 
 #include "e_engine.hpp"
-#include "building.hpp"
-#include "aux_bitmap.hpp"
+#include "Building.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "..\AADS\globals.hpp"
 
 #define DEBUG_ROTATION      0

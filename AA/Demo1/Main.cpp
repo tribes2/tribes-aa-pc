@@ -48,7 +48,7 @@
 #include "FrontEnd.hpp"
 #include "Demo1/SpecialVersion.hpp"
 
-// required for _exit(0)
+// required for _Exit(0)
 #include <cstdlib>
 
 #define EXPORT_MISSIONS		0	// set this to 1 to export all missions

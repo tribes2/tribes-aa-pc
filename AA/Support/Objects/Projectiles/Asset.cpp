@@ -13,7 +13,7 @@
 #include "e_View.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "ParticleObject.hpp"
 #include "../Demo1/Globals.hpp"
 #include "Bubble.hpp"

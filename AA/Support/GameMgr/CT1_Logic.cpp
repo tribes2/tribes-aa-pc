@@ -4,7 +4,7 @@
 //
 //=============================================================================
 
-#include "ct1_logic.hpp"
+#include "CT1_Logic.hpp"
 #include "GameMgr.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "../Demo1/fe_Globals.hpp"

@@ -16,7 +16,7 @@
 
 #include "Objects/Player/PlayerObject.hpp"
 #include "PointLight/PointLight.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 
 #include "ShrikeShot.hpp"
 #include "textures.hpp"

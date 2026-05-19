@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "aux_bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "hud_font.hpp"
 
 #ifdef TARGET_PS2

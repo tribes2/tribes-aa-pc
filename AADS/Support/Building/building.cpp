@@ -1,7 +1,7 @@
 
 #include "Building.hpp"
 
-#include "AUX_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "bldmanager.hpp"
 #include "x_files.hpp"  
 

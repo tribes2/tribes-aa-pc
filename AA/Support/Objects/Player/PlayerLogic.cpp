@@ -44,8 +44,8 @@
 #include "Objects/Bot/BotObject.hpp"
 #include "UI/ui_manager.hpp"
 #include "UI/ui_tabbed_dialog.hpp"
-#include "HUD/hud_manager.hpp"
-#include "HUD/hud_voice_ids.hpp"
+#include "Hud/hud_manager.hpp"
+#include "Hud/hud_voice_ids.hpp"
 #include "DefaultLoadouts.hpp"
 #include "Demo1/Data/UI/Messages.h"
 

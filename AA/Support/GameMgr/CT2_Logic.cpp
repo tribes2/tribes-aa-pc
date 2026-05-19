@@ -4,7 +4,7 @@
 //
 //=============================================================================
 
-#include "ct2_logic.hpp"
+#include "CT2_Logic.hpp"
 #include "GameMgr.hpp"
 #include "Objects/Pickups/Pickups.hpp"
 #include "Objects/Projectiles/WayPoint.hpp"

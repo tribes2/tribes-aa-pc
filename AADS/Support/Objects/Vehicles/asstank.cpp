@@ -9,7 +9,7 @@
 //==============================================================================
 #include "..\Demo1\Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "ObjectMgr\Object.hpp"
 #include "AssTank.hpp"
 #include "LabelSets/Tribes2Types.hpp"

@@ -26,7 +26,7 @@
 #include "UI/ui_colors.hpp"
 #include "dlg_util_rendercontroller.hpp"
 
-#include "HUD/hud_manager.hpp"
+#include "Hud/hud_manager.hpp"
 
 #include "Demo1/data/ui/ui_strings.h"
 

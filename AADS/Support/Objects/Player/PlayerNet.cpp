@@ -9,7 +9,7 @@
 //==============================================================================
 
 #include "PlayerObject.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "AADS/Globals.hpp"
 #include "AADS/MoveManager.hpp"
 #include "AADS/GameClient.hpp"

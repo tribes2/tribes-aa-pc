@@ -18,7 +18,7 @@
 #include "Objects/Projectiles/WayPoint.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Demo1/Globals.hpp"
-#include "HUD/hud_Icons.hpp"
+#include "Hud/hud_Icons.hpp"
 
 #include "../Demo1/Data/UI/Messages.h"
 

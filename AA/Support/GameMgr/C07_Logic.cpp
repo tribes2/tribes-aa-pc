@@ -4,7 +4,7 @@
 //
 //========================================================================================================================================================
 
-#include "c07_logic.hpp"
+#include "C07_Logic.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 #define M07_MISSION_FAILED      M08_SCRUBBED

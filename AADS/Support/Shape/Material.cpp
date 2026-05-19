@@ -4,7 +4,7 @@
 #include "Model.hpp"
 #include "Node.hpp"
 #include "Shape.hpp"
-#include "aux_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "ObjectMgr\collider.hpp"
 
 

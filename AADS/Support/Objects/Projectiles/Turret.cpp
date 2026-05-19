@@ -13,7 +13,7 @@
 
 #include "Turret.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "..\AADS\Globals.hpp"
 #include "ParticleObject.hpp"
 #include "Objects/Projectiles/Aimer.hpp"

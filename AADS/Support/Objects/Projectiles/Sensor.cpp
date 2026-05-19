@@ -11,7 +11,7 @@
 #include "Sensor.hpp"
 #include "Entropy.hpp"
 #include "GameMgr\GameMgr.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "ParticleObject.hpp"
 #include "..\AADS\Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"

@@ -16,7 +16,7 @@
 #endif
 
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
 #include "GameServer.hpp"

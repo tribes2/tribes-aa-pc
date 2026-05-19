@@ -11,7 +11,7 @@
 #include "WayPoint.hpp"
 #include "Entropy.hpp"
 #include "..\AADS\Globals.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "HUD\hud_Icons.hpp"
 

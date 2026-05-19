@@ -1,6 +1,6 @@
 #include "Entropy.hpp"
 #include "ParticleEffect.hpp"
-#include "aads/globals.hpp"
+#include "aads/Globals.hpp"
 
 //=============================================================================
 //  Particle globals

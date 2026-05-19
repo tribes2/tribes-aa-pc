@@ -4,7 +4,7 @@
 //
 //=============================================================================
 
-#include "ct4_logic.hpp"
+#include "CT4_Logic.hpp"
 #include "GameMgr.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Projectiles/Beacon.hpp"

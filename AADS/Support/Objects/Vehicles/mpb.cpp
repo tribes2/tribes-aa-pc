@@ -13,7 +13,7 @@
 #include "Entropy.hpp"
 #include "ObjectMgr\Object.hpp"
 #include "Audiomgr/Audio.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Projectiles/Mortar.hpp"
 #include "Objects/Projectiles/Bullet.hpp"

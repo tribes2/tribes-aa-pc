@@ -15,7 +15,7 @@
 #include "Objects/Bot/MAI_Manager.hpp"
 #include "sm_common.hpp"
 #include "FrontEnd.hpp"
-#include "HUD/hud_manager.hpp"
+#include "Hud/hud_manager.hpp"
 #include "ClientServer.hpp"
 
 xbool InitFrontEnd( f32 DeltaSec );

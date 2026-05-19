@@ -4,7 +4,7 @@
 //
 //========================================================================================================================================================
 
-#include "c13_logic.hpp"
+#include "C13_Logic.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 #define M13_GET_SWITCH      M10_GET_SWITCH

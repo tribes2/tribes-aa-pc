@@ -10,7 +10,7 @@
 
 #include "Beacon.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "..\AADS\Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects\Player\PlayerObject.hpp"

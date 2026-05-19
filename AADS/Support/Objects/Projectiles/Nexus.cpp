@@ -10,7 +10,7 @@
 
 #include "Nexus.hpp"
 #include "Entropy.hpp"
-#include "NetLib\BitStream.hpp"
+#include "NetLib\bitstream.hpp"
 #include "..\AADS\Globals.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"

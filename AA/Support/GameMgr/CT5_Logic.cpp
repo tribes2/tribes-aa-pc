@@ -4,7 +4,7 @@
 //
 //=============================================================================
 
-#include "ct5_logic.hpp"
+#include "CT5_Logic.hpp"
 #include "GameMgr.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "UI/Dialogs/dlg_Vehicle.hpp"

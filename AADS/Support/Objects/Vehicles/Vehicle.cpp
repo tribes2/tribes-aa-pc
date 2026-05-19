@@ -9,7 +9,7 @@
 //==============================================================================
 #include "../AADS/Globals.hpp"
 #include "Entropy.hpp"
-#include "NetLib/BitStream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Vehicle.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Damage/Damage.hpp"
