@@ -13,7 +13,7 @@
 #include "hud_manager.hpp"
 #include "UI/ui_manager.hpp"
 #include "UI/ui_font.hpp"
-#include "demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "demo1/data/missions/campaign.h"
 
 #include "StringMgr/StringMgr.hpp"

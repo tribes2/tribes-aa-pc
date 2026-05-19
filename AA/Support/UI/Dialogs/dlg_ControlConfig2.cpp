@@ -29,7 +29,7 @@
 #include "UI/ui_colors.hpp"
 #include "Demo1/FrontEnd.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 
 extern xbool UseAutoAimHelp;
 extern xbool UseAutoAimHint;

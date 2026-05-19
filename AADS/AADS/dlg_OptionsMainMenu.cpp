@@ -20,7 +20,7 @@
 #include "titles.hpp"
 #include "dlg_LoadSave.hpp"
 
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 
 #include "data\ui\ui_strings.h"
 

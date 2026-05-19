@@ -29,7 +29,7 @@
 
 #include "objects/bot/botobject.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "Demo1/fe_Globals.hpp"
 
 extern bot_object::bot_debug g_BotDebug;

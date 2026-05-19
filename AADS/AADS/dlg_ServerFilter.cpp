@@ -20,7 +20,7 @@
 
 #include "dlg_serverfilter.hpp"
 #include "dlg_LoadSave.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #include "fe_colors.hpp"
 

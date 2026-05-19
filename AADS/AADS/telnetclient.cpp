@@ -15,9 +15,9 @@ enum
 // stats about what's going on
 //
 #include "fe_Globals.hpp"
-#include "Support/gamemgr/gamemgr.hpp"
+#include "Support/GameMgr/GameMgr.hpp"
 #include "MasterServer/MasterServer.hpp"
-#include "gameserver.hpp"
+#include "GameServer.hpp"
 
 extern server_manager*  pSvrMgr;
 

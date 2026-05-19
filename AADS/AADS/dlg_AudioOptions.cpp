@@ -17,7 +17,7 @@
 #include "ui\ui_tabbed_dialog.hpp"
 #include "ui\ui_font.hpp"
 #include "ui\ui_button.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "CardMgr/CardMgr.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"

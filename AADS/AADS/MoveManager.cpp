@@ -6,7 +6,7 @@
 
 #include "x_files.hpp"
 #include "movemanager.hpp"
-#include "connmanager.hpp"
+#include "ConnManager.hpp"
 #include "Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 

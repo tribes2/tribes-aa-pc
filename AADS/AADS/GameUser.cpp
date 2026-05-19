@@ -6,8 +6,8 @@
 
 #include "Entropy.hpp"
 #include "Globals.hpp"
-#include "gameserver.hpp"
-#include "gameclient.hpp"
+#include "GameServer.hpp"
+#include "GameClient.hpp"
 #include "gameuser.hpp"
 
 //=========================================================================

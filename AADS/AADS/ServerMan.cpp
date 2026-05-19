@@ -1,8 +1,8 @@
 #include "Entropy.hpp"
 #include "x_types.hpp"
 #include "NetLib/NetLib.hpp"
-#include "serverman.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "ServerMan.hpp"
+#include "GameMgr/GameMgr.hpp"
 #include "MasterServer/MasterServer.hpp"
 #include "fe_Globals.hpp"
 //#include "dlg_Message.hpp"
@@ -10,7 +10,7 @@
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
 #include "sm_common.hpp"
-#include "gameserver.hpp"
+#include "GameServer.hpp"
 
 #include "telnetconsole/telnetmgr.hpp"
 

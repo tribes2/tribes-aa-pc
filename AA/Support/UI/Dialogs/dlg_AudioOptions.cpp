@@ -31,7 +31,7 @@
 
 #include "UI/ui_colors.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 
 #include "StringMgr/StringMgr.hpp"
 

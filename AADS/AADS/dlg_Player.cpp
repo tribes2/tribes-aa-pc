@@ -9,7 +9,7 @@
 #include "FrontEnd.hpp"
 
 #include "GameMgr\GameMgr.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"

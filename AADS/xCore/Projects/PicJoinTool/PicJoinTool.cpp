@@ -15,7 +15,7 @@
 //==============================================================================
 
 #include "x_files.hpp"
-#include "aux_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include <stdio.h>
 #include <io.h>
 #include <process.h>

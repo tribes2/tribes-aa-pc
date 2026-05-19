@@ -6,9 +6,9 @@
 
 #include "x_files.hpp"
 #include "Demo1/SpecialVersion.hpp"
-#include "updatemanager.hpp"
-#include "connmanager.hpp"
-#include "Globals.hpp"
+#include "UpdateManager.hpp"
+#include "ConnManager.hpp"
+#include "Demo1/Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"                
 #include "GameServer.hpp"
 

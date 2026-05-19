@@ -3,7 +3,7 @@
 
 #include "NetLib/NetLib.hpp"
 #include "bytestream.hpp"
-#include "../AADS/serverman.hpp"
+#include "../AADS/ServerMan.hpp"
 
 #define ME_MAX_ATTRIB_LENGTH    16
 #define ME_MAX_NAME_LENGTH      16

@@ -7,7 +7,7 @@
 #include "Entropy.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 
 #include "AudioMgr\audio.hpp"

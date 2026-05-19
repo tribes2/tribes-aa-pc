@@ -19,7 +19,7 @@
 #include "dlg_OnlineMainMenu.hpp"
 #include "titles.hpp"
 
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 
 #include "data\ui\ui_strings.h"
 

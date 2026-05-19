@@ -527,7 +527,7 @@
 	".\GameUser.hpp"\
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\
@@ -662,7 +662,7 @@
 	".\GameServer.hpp"\
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\
@@ -1046,7 +1046,7 @@
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
 	".\SavedGame.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\
@@ -1844,7 +1844,7 @@
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
 	".\SavedGame.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\
@@ -1996,7 +1996,7 @@
 	".\GameServer.hpp"\
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\
@@ -2357,7 +2357,7 @@
 	".\GameUser.hpp"\
 	".\Globals.hpp"\
 	".\MoveManager.hpp"\
-	".\serverman.hpp"\
+	".\ServerMan.hpp"\
 	".\ServerVersion.hpp"\
 	".\sm_common.hpp"\
 	".\SpecialVersion.hpp"\

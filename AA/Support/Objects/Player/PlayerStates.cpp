@@ -12,7 +12,7 @@
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
 #include "demo1/Globals.hpp"
-#include "NetworkMgr/gameserver.hpp"
+#include "NetworkMgr/GameServer.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "Objects/Projectiles/Grenade.hpp"

@@ -14,7 +14,7 @@
 //#define DEBUG_PLAYER
 #ifdef DEBUG_PLAYER
 
-    #include "../../AADS/globals.hpp"
+    #include "../../AADS/Globals.hpp"
     #include "LabelSets/Tribes2Types.hpp"
     #undef BEGIN_LABEL_SET
     #undef LABEL

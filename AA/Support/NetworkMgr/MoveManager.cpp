@@ -5,9 +5,9 @@
 //=========================================================================
 
 #include "x_files.hpp"
-#include "movemanager.hpp"
-#include "connmanager.hpp"
-#include "Globals.hpp"
+#include "MoveManager.hpp"
+#include "ConnManager.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 
 

@@ -10,7 +10,7 @@
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 
 #include "ui\ui_manager.hpp"
 #include "ui\ui_control.hpp"

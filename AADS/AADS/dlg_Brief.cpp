@@ -7,7 +7,7 @@
 #include "Entropy.hpp"
 #include "Globals.hpp"
 #include "objects\player\PlayerObject.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "StringMgr\StringMgr.hpp"
 

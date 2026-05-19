@@ -8,7 +8,7 @@
 
 #include "BotObject.hpp"
 #include "BotLog.hpp"
-#include "ctf_masterai.hpp"
+#include "CTF_MasterAI.hpp"
 #include "Support\GameMgr\GameMgr.hpp"
 #include "Support\Objects\Projectiles\Beacon.hpp"
 #include "Support\Building\BuildingOBJ.hpp"

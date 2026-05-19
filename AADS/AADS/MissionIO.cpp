@@ -11,8 +11,8 @@
 #include "tokenizer\tokenizer.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
-#include "gameserver.hpp"
-#include "gameclient.hpp"
+#include "GameServer.hpp"
+#include "GameClient.hpp"
 #include "gameuser.hpp"
 #include "Sky\sky.hpp"
 #include "ObjectMgr\ObjectMgr.hpp"
@@ -50,7 +50,7 @@
 #include "StringMgr\StringMgr.hpp"
 #include "specialversion.hpp"
 
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "pointlight\pointlight.hpp"
 

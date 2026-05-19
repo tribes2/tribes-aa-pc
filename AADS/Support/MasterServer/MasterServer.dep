@@ -27,7 +27,7 @@
 
 .\masterentity.cpp : \
 	"..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
-	"..\..\AADS\serverman.hpp"\
+	"..\..\AADS\ServerMan.hpp"\
 	"..\..\AADS\ServerVersion.hpp"\
 	"..\..\AADS\SpecialVersion.hpp"\
 	"..\..\xCore\3rdParty\DirectX8\d3d8.h"\
@@ -123,7 +123,7 @@
 
 .\MasterServer.cpp : \
 	"..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
-	"..\..\AADS\serverman.hpp"\
+	"..\..\AADS\ServerMan.hpp"\
 	"..\..\AADS\ServerVersion.hpp"\
 	"..\..\AADS\SpecialVersion.hpp"\
 	"..\..\xCore\3rdParty\DirectX8\d3d8.h"\
@@ -219,7 +219,7 @@
 
 .\masterstates.cpp : \
 	"..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Include\BASETSD.H"\
-	"..\..\AADS\serverman.hpp"\
+	"..\..\AADS\ServerMan.hpp"\
 	"..\..\AADS\ServerVersion.hpp"\
 	"..\..\AADS\SpecialVersion.hpp"\
 	"..\..\xCore\3rdParty\DirectX8\d3d8.h"\

@@ -7,7 +7,7 @@
 #include "x_files.hpp"
 #include "GameEventManager.hpp"
 #include "ConnManager.hpp"
-#include "Globals.hpp"
+#include "../Demo1/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 

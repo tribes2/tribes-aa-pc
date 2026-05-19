@@ -9,7 +9,7 @@
 #include "UI/ui_font.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "MasterServer/MasterServer.hpp"
 #include "sm_common.hpp"
 #include "ui\ui_win.hpp"

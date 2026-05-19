@@ -8,7 +8,7 @@
 	"..\..\AADS\GameServer.hpp"\
 	"..\..\AADS\Globals.hpp"\
 	"..\..\AADS\MoveManager.hpp"\
-	"..\..\AADS\serverman.hpp"\
+	"..\..\AADS\ServerMan.hpp"\
 	"..\..\AADS\ServerVersion.hpp"\
 	"..\..\AADS\sm_common.hpp"\
 	"..\..\AADS\SpecialVersion.hpp"\

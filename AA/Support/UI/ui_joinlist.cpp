@@ -7,7 +7,7 @@
 #include "Entropy.hpp"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #include "ui_listbox.hpp"
 #include "ui_manager.hpp"
@@ -16,7 +16,7 @@
 
 #include "NetworkMgr/ServerMan.hpp"
 #include "StringMgr/StringMgr.hpp"
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 
 //=========================================================================
 //  Defines

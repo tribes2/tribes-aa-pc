@@ -5,17 +5,17 @@
 //==============================================================================
 
 #include "x_types.hpp"
-#include "Globals.hpp"
+#include "../Demo1/Globals.hpp"
 #include "AudioMgr/Audio.hpp"
-#include "fe_Globals.hpp"
-#include "gameserver.hpp"
-#include "gameclient.hpp"
+#include "../Demo1/fe_Globals.hpp"
+#include "GameServer.hpp"
+#include "GameClient.hpp"
 #include "MasterServer/MasterServer.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "Objects/Bot/MAI_Manager.hpp"
 #include "sm_common.hpp"
-#include "FrontEnd.hpp"
+#include "../Demo1/FrontEnd.hpp"
 
 void sm_SetState( s32 StateType );
 xbool InitFrontEnd( f32 DeltaSec );

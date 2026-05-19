@@ -9,7 +9,7 @@
 #include "x_types.hpp"
 #include "NetLib/NetLib.hpp"
 #include "NetLib/bitstream.hpp"
-#include "connmanager.hpp"
+#include "ConnManager.hpp"
 #include "Objects\Player\PlayerObject.hpp"
 
 

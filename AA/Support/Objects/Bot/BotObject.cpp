@@ -11,7 +11,7 @@
 #include "BotLog.hpp"
 #include "BotObject.hpp"
 #include "PathFinder.hpp"
-#include "NetLib/Bitstream.hpp"
+#include "NetLib/bitstream.hpp"
 #include "Demo1/Globals.hpp"
 #include "Demo1/fe_Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"

@@ -3,7 +3,7 @@
 
 #include "telnetdisplay.hpp"
 #include "x_threads.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #define MAX_CLIENTS 32
 

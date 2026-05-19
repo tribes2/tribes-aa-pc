@@ -30,7 +30,7 @@
 #include "dlg_LoadSave.hpp"
 #include "dlg_MissionLoad.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "StringMgr/StringMgr.hpp"
 
 //==============================================================================

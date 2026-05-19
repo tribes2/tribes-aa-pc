@@ -28,7 +28,7 @@
 
 #include "Hud/hud_manager.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 
 //=========================================================================
 //  Objectives Dialog

@@ -471,7 +471,7 @@ SOURCE=.\serverman.cpp
 # End Source File
 # Begin Source File
 
-SOURCE=.\serverman.hpp
+SOURCE=.\ServerMan.hpp
 # End Source File
 # End Group
 # Begin Group "Events"

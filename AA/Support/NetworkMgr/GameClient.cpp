@@ -9,11 +9,11 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "Globals.hpp"
-#include "fe_Globals.hpp"
+#include "../Demo1/Globals.hpp"
+#include "../Demo1/fe_Globals.hpp"
 #include "NetLib/bitstream.hpp"
-#include "gameserver.hpp"
-#include "gameclient.hpp"
+#include "GameServer.hpp"
+#include "GameClient.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Player/DefaultLoadouts.hpp"
 #include "LabelSets/Tribes2Types.hpp"
@@ -110,8 +110,9 @@ void game_client::ProcessPacket( bitstream& BitStream, net_address& SenderAddr )
     }
 
     // Get what type of a packet is it
-    s32 PacketType;
-    BitStream.ReadS32( PacketType );
+    // type used to be s32 but u32 is more suitable for the very large numbers being used for packet types (>signed 32)
+    u32 PacketType;
+    BitStream.ReadU32( PacketType );
     //x_DebugMsg("------ Client received packet type %08X, Size %1d, Ping %f\n",PacketType,BitStream.GetNBytes(),m_ConnManager.GetPing());
 
     switch( PacketType )

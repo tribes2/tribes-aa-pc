@@ -7,14 +7,14 @@
 #include "Entropy.hpp"
 #include "AudioMgr\audio.hpp"
 #include "LabelSets\Tribes2Types.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #include "ui\ui_listbox.hpp"
 #include "ui\ui_manager.hpp"
 #include "ui\ui_font.hpp"
 #include "ui_joinlist.hpp"
 
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "StringMgr\StringMgr.hpp"
 #include "data\ui\ui_strings.h"
 

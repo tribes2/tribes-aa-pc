@@ -10,13 +10,13 @@
 //  INCLUDES
 //==============================================================================
 #include "BotObject.hpp"
-#include "Disk.hpp"
-#include "Plasma.hpp"
-#include "Bullet.hpp"
-#include "Blaster.hpp"
-#include "Grenade.hpp"
-#include "Aimer.hpp"
-#include "Objects/Vehicles/Vehicle.hpp"
+#include "Support/Objects/Projectiles/Disk.hpp"
+#include "Support/Objects/Projectiles/Plasma.hpp"
+#include "Support/Objects/Projectiles/Bullet.hpp"
+#include "Support/Objects/Projectiles/Blaster.hpp"
+#include "Support/Objects/Projectiles/Grenade.hpp"
+#include "Support/Objects/Projectiles/Aimer.hpp"
+#include "Support/Objects/Vehicles/Vehicle.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
 //==============================================================================
@@ -1053,7 +1053,7 @@ player_object*  bot_object::GetNearestEnemy( void ) const
         if ( !(GetTeamBits() & TestPlayer->GetTeamBits())
             && ((GetPos() - TestPlayer->GetPos()).LengthSquared()
                 < NearestDistSQ)
-            && (s32)this != (s32)TestPlayer )
+            && (intptr_t)this != (intptr_t)TestPlayer )
         {
             NearestDistSQ = (GetPos() - TestPlayer->GetPos()).LengthSquared();
             NearestEnemy = TestPlayer;

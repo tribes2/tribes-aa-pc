@@ -9,7 +9,7 @@
 #include "x_files.hpp"
 #include "NetLib/NetLib.hpp"
 #include "NetLib/bitstream.hpp"
-#include "connmanager.hpp"
+#include "ConnManager.hpp"
 #include "updatemanager.hpp"
 #include "objectmgr/objectmgr.hpp"
 

@@ -16,13 +16,14 @@
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 
-#include "../HUD/HUD_Manager.hpp"
+#include "../Hud/hud_manager.hpp"
 
-#include "../Demo1/Globals.hpp"
+#include "../../Demo1/Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 
 #include "../Demo1/Data/UI/Messages.h"
-#include "../Demo1/Data/UI/UI_Strings.h"
+#include "../../Demo1/Data/UI/ui_strings.h"
+
 
 //==============================================================================
 //  TYPES

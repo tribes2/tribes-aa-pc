@@ -36,8 +36,8 @@
 #include "Objects/Vehicles/Vehicle.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "NetworkMgr/sm_common.hpp"
-#include "Demo1/Data/UI/ui_Strings.h"
-#include "Demo1/Data/UI/Messages.h"
+#include "../../Demo1/Data/UI/ui_strings.h"
+#include "../../Demo1/Data/UI/Messages.h"
 #include "StringMgr/StringMgr.hpp"
 #include "MsgMgr.hpp"
 

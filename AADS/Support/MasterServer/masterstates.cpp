@@ -3,7 +3,7 @@
 #include "masterserver.hpp"
 #include "NetLib/NetLib.hpp"
 #include "bytestream.hpp"
-#include "../../AADS/serverman.hpp"
+#include "../../AADS/ServerMan.hpp"
 
 
 s32 s_EntityCount;

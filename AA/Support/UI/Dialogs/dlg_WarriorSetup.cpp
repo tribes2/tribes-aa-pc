@@ -26,7 +26,7 @@
 
 #include "StringMgr/StringMgr.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "demo1/specialversion.hpp"
 
 //=========================================================================

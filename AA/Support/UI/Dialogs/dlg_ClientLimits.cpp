@@ -17,7 +17,7 @@
 #include "UI/ui_colors.hpp"
 #include "dlg_clientlimits.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Demo1/specialversion.hpp"

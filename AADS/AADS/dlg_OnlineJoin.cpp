@@ -7,8 +7,8 @@
 #include "Entropy.hpp"
 #include "Globals.hpp"
 #include "fe_Globals.hpp"
-#include "serverman.hpp"
-#include "gamemgr/gamemgr.hpp"
+#include "ServerMan.hpp"
+#include "GameMgr/GameMgr.hpp"
 
 #include "AudioMgr\audio.hpp"
 #include "labelsets\Tribes2Types.hpp"

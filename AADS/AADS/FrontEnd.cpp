@@ -46,7 +46,7 @@
 #include "dlg_DeBrief.hpp"
 #include "ui_joinlist.hpp"
 
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 #include "GameMgr\GameMgr.hpp"
 #include "pointlight\pointlight.hpp"
 

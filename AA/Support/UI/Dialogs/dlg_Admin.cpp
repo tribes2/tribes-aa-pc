@@ -32,7 +32,7 @@
 
 #include "objects/bot/botobject.hpp"
 
-#include "Demo1/data/ui/ui_strings.h"
+#include "Demo1/Data/UI/ui_strings.h"
 #include "UI/ui_colors.hpp"
 #include "Demo1/fe_Globals.hpp"
 #include "StringMgr/StringMgr.hpp"

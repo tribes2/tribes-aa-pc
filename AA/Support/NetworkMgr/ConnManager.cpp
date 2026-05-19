@@ -5,8 +5,8 @@
 //=========================================================================
 
 #include "x_files.hpp"
-#include "connmanager.hpp"
-#include "Globals.hpp"
+#include "ConnManager.hpp"
+#include "../Demo1/Globals.hpp"
 #include "Demo1/SpecialVersion.hpp"
 #include "ServerVersion.hpp"
 

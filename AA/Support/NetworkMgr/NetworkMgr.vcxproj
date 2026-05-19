@@ -94,7 +94,7 @@
     <ClInclude Include="GameEventManager.hpp" />
     <ClInclude Include="GameServer.hpp" />
     <ClInclude Include="MoveManager.hpp" />
-    <ClInclude Include="serverman.hpp" />
+    <ClInclude Include="ServerMan.hpp" />
     <ClInclude Include="ServerVersion.hpp" />
     <ClInclude Include="sm_common.hpp" />
     <ClInclude Include="UpdateManager.hpp" />

@@ -13,7 +13,7 @@
 
 #include "ui\ui_dialog.hpp"
 #include "SavedGame.hpp"
-#include "serverman.hpp"
+#include "ServerMan.hpp"
 
 //==============================================================================
 //  dlg_online
