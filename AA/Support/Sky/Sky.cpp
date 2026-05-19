@@ -6,8 +6,8 @@
 
 #include "Entropy.hpp"
 #include "Sky.hpp"
-#include "aux_Bitmap.hpp"
-#include "poly/poly.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
+#include "Poly/Poly.hpp"
 
 //=========================================================================
 

@@ -111,7 +111,7 @@
     <ClCompile Include="PNG\ZLib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="aux_Bitmap.hpp" />
+    <ClInclude Include="Auxiliary/Bitmap/aux_Bitmap.hpp" />
     <ClInclude Include="PNG\png.h" />
     <ClInclude Include="PNG\pngasmrd.h" />
     <ClInclude Include="PNG\pngconf.h" />

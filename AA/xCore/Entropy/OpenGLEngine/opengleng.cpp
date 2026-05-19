@@ -3,6 +3,10 @@
 #include "x_threads.hpp"
 #include "../Common/e_cdfs.hpp"
 
+// Weird forward declaration stuff. Why weren't these put in a header? Who knows. Too lazy to extract from D3Dengine, sorry boss
+void  draw_Init         ( void );
+void  draw_Kill         ( void );
+
 #define SCRATCH_MEM_SIZE (2*1024*1024)
 
 struct opengleng_locals

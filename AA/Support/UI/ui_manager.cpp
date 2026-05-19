@@ -23,7 +23,7 @@
 #include "ui_tabbed_dialog.hpp"
 #include "ui_dlg_list.hpp"
 
-#include "aux_bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 
 //=========================================================================
 //  Defines

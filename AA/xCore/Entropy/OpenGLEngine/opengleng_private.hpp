@@ -2,6 +2,7 @@
 #define OPENGLENG_PRIVATE_HPP
 
 #include "../e_RendererTypes.hpp"
+#include "Entropy.hpp"
 
 // OpenGL-specific includes
 #include <GL/glew.h>

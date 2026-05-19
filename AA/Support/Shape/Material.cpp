@@ -5,7 +5,7 @@
 #include "Node.hpp"
 #include "Shape.hpp"
 #include "MCode/PS2_Shape.hpp"    // For micro code and building dlists
-#include "aux_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "ObjectMgr/collider.hpp"
 
 

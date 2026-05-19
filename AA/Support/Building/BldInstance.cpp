@@ -5,10 +5,10 @@
 // ADDITIONAL INCLUDES
 ///////////////////////////////////////////////////////////////////////////
 
-#include "e_engine.hpp"
-#include "building.hpp"
-#include "aux_bitmap.hpp"
-#include "../Demo1/globals.hpp"
+#include "e_Engine.hpp"
+#include "Building.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
+#include "../Demo1/Globals.hpp"
 
 #define DEBUG_ROTATION      0
 
@@ -559,7 +559,7 @@ void bld_instance::SetAlarmLighting( xbool State )
 //========================================================================================================================================================
 //========================================================================================================================================================
 
-static char* s_TexturePath="data\\interiors\\ps2tex\\";
+static const char* s_TexturePath="data\\interiors\\ps2tex\\";
 
 void bld_instance::LightBuilding( void )
 {

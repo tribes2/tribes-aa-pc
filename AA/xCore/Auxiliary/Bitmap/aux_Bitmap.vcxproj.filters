@@ -236,6 +236,6 @@
     <ClInclude Include="PNG\ZLib\zutil.h">
       <Filter>Implementation\PNG\ZLib</Filter>
     </ClInclude>
-    <ClInclude Include="aux_Bitmap.hpp" />
+    <ClInclude Include="Auxiliary/Bitmap/aux_Bitmap.hpp" />
   </ItemGroup>
 </Project>

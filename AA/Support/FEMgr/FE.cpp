@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "Entropy.hpp"
 #include "fe.hpp"
-#include "aux_bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 
 #include "AudioMgr/Audio.hpp"
 
-#include "../demo1/globals.hpp"
+#include "../demo1/Globals.hpp"
 
 
 // Declare shp and xbmp output paths

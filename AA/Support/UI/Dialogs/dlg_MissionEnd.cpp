@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "Demo1/globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "Demo1/fe_Globals.hpp"
 #include "NetworkMgr/ServerMan.hpp"
 #include "GameMgr/GameMgr.hpp"

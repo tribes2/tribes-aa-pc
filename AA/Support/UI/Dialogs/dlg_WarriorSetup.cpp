@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "Demo1/globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 
 #include "AudioMgr/Audio.hpp"

@@ -7,7 +7,7 @@
 #include "ps2_misc.hpp"
 #include "x_debug.hpp"
 #include "x_bitmap.hpp"
-#include "e_vram.hpp"
+#include "e_VRAM.hpp"
 #include "e_engine.hpp"
 
 #define OFFSET_X    (2048-(512/2))

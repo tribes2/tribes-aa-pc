@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "Demo1/globals.hpp"
+#include "Demo1/Globals.hpp"
 
 #include "AudioMgr/Audio.hpp"
 #include "LabelSets/Tribes2Types.hpp"

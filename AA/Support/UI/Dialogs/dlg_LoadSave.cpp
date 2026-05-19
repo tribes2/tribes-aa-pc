@@ -22,7 +22,7 @@
 #include "dlg_Message.hpp"
 #include "Demo1/SavedGame.hpp"
 #include "CardMgr/CardMgr.hpp"
-#include "Demo1/globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "Demo1/titles.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"

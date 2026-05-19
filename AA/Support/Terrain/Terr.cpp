@@ -15,7 +15,7 @@
 #include "terr.hpp"
 #include "e_engine.hpp"
 #include "e_draw.hpp"
-#include "e_vram.hpp"
+#include "e_VRAM.hpp"
 #include "Tokenizer/Tokenizer.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
 

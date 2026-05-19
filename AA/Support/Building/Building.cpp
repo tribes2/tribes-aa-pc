@@ -1,7 +1,7 @@
 
 #include "Building.hpp"
 
-#include "AUX_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "BldManager.hpp"
 #include "x_files.hpp"  
 
@@ -21,7 +21,7 @@ building::zone_walk building::s_ZoneWalk;
 
 #define NUM_SKIP_NAMES  3
 
-static char* s_SkipNames[NUM_SKIP_NAMES]=
+static const char* s_SkipNames[NUM_SKIP_NAMES]=
 {
     "spir",
     "rock",
@@ -333,12 +333,12 @@ s32 building::ImportData( X_FILE* Fp, bld_fileio& FileIO, xbool LoadAlarmMaps )
         s32 i ;
         for( i=0; i<m_nDLists; i++ )
         {
-            m_pDList[i].pData = (byte*)((u32)m_pDListData + (u32)m_pDList[i].pData - (u32)pData);
+            m_pDList[i].pData = (byte*)((intptr_t)m_pDListData + (intptr_t)m_pDList[i].pData - (intptr_t)pData);
         }
 
         for( i=0; i<m_CGrid.m_nNGons; i++ )
         {
-            m_CGrid.m_pNGon[i].pVert = (vector4*)((u32)m_pDListData + (u32)m_CGrid.m_pNGon[i].pVert - (u32)pData);
+            m_CGrid.m_pNGon[i].pVert = (vector4*)((intptr_t)m_pDListData + (intptr_t)m_CGrid.m_pNGon[i].pVert - (intptr_t)pData);
         }
     }
     
@@ -1453,7 +1453,7 @@ xcolor  building::LookupLighting( const building_grid::ngon& NGon,
 #ifdef TARGET_PS2
     s32 D;
     for( D=0; D<m_nDLists; D++ )
-    if( (((u32)NGon.pVert) - ((u32)m_pDList[D].pData)) < ((u32)m_pDList[D].SizeData) )
+    if( (((intptr_t)NGon.pVert) - ((intptr_t)m_pDList[D].pData)) < ((intptr_t)m_pDList[D].SizeData) )
         break;
 #endif
 
@@ -1462,7 +1462,7 @@ xcolor  building::LookupLighting( const building_grid::ngon& NGon,
     for( D=0; D<m_nDLists; D++ )
     {
         byte* PS2Data = (byte*)(((dlist::pc_data*)m_pDList[D].pData)->pDList);
-        if( (((u32)NGon.pVert) - ((u32)PS2Data)) < ((u32)m_pDList[D].SizeData) )
+        if( (((intptr_t)NGon.pVert) - ((intptr_t)PS2Data)) < ((intptr_t)m_pDList[D].SizeData) )
             break;
     }
 #endif
@@ -1480,7 +1480,7 @@ xcolor  building::LookupLighting( const building_grid::ngon& NGon,
 #ifdef TARGET_PS2
     // Compute UV ptr
     {
-        s32 VertIndex = ((u32)NGon.pVert - (u32)(m_pDList[D].pData+32)) / sizeof(vector4);
+        s32 VertIndex = ((intptr_t)NGon.pVert - (intptr_t)(m_pDList[D].pData+32)) / sizeof(vector4);
         byte* pBaseUV = m_pDList[D].pData + 32 + 16 + sizeof(vector4)*m_pDList[D].nVertices;
         pUV = &((dlist_uv*)pBaseUV)[VertIndex];
     }
@@ -1490,7 +1490,7 @@ xcolor  building::LookupLighting( const building_grid::ngon& NGon,
     // Compute UV ptr
     {
         byte* PS2Data = (byte*)(((dlist::pc_data*)m_pDList[D].pData)->pDList);
-        s32 VertIndex = ((u32)NGon.pVert - (u32)(PS2Data+32)) / sizeof(vector4);
+        s32 VertIndex = ((intptr_t)NGon.pVert - (intptr_t)(PS2Data+32)) / sizeof(vector4);
         byte* pBaseUV = PS2Data + 32 + 16 + sizeof(vector4)*m_pDList[D].nVertices;
         pUV = &((dlist_uv*)pBaseUV)[VertIndex];
     }

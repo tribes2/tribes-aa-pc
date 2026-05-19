@@ -5,8 +5,8 @@
 // ADDITIONAL INCLUDES
 ///////////////////////////////////////////////////////////////////////////
 
-#include "AUX_Bitmap.hpp"
-#include "building.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
+#include "Building.hpp"
 #include "BldInstance.hpp"
 #include "BldRender.hpp"
 #include "Fog/Fog.hpp"
@@ -868,7 +868,7 @@ void bld_manager::AddDisplayListInHash( dlist_node&     Node,
 
 #ifndef TARGET_PC
 f32 g_MaxLod = 0.25f;
-//#include "demo1/globals.hpp"
+//#include "demo1/Globals.hpp"
 #endif
 
 volatile xbool BLDMANAGER_Log = FALSE;

@@ -30,6 +30,10 @@
 #define RENDERER_BACKEND_D3D
 #include "D3DEngine/d3deng_private.hpp"
 #endif
+#ifndef WIN32
+#include <stdlib.h>
+#include <cstring>
+#endif
 #endif
 
 #ifdef TARGET_PS2

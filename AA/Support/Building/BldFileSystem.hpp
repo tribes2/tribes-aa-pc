@@ -98,7 +98,7 @@ public:
 
                     if( Padding )
                     {
-                        static const s32 Pad[]={ 0xDDDDDDDD, 0xDDDDDDDD, 0xDDDDDDDD, 0xDDDDDDDD };
+                        static const u32 Pad[]={ 0xDDDDDDDD, 0xDDDDDDDD, 0xDDDDDDDD, 0xDDDDDDDD };
                         Write( Pad, Padding, m_Field_Fp );
                     }
                 }

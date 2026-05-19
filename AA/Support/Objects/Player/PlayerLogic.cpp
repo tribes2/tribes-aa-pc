@@ -12,7 +12,7 @@
 #include "CorpseObject.hpp"
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
-#include "Demo1/globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "UI/ui_colors.hpp"
 #include "Demo1/fe_Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"

@@ -8,7 +8,7 @@
 //  INCLUDES
 //==============================================================================
 
-#include "aux_Bitmap.hpp"
+#include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "x_debug.hpp"
 #include "x_string.hpp"
 #include "x_math.hpp"
