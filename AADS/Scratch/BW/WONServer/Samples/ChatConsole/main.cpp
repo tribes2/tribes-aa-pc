@@ -181,7 +181,7 @@ void Init()
 	printf_flush("Getting MOTD (hit 'c' to cancel)... ");
 	while(aGetMOTD->Pending())
 	{
-		if(gConsole.kbhit() && gConsole.getch()=='c')
+		if(gConsole.kbhit() && gConsole.getchar()=='c')
 			break;
 
 		gAPI.Pump(20);
@@ -401,7 +401,7 @@ void JoinGroup()
 		gAPI.Pump(20);
 		if(gConsole.kbhit())
 		{
-			if(gConsole.getch()=='c')
+			if(gConsole.getchar()=='c')
 				break;
 		}
 	}
@@ -662,7 +662,7 @@ int main(int argc, char *argv[])
 	{
 		while(aPos>0 || gConsole.kbhit())
 		{
-			aChar = gConsole.getch();
+			aChar = gConsole.getchar();
 			if (aChar == '\b')      // handle backspace
 			{
 				if(aPos>0) 

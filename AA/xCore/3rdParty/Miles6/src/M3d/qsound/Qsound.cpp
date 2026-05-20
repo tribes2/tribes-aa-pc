@@ -24,7 +24,7 @@
 #define  diag_printf //AIL_debug_printf
 
 #include <stdio.h>
-#include <conio.h>
+#include <stdio.h>
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>

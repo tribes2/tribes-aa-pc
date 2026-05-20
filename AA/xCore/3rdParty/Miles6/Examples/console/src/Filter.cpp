@@ -252,7 +252,7 @@ static HPROVIDER Ask_user_for_filter()
   {
     printf("\nEnter choice or ESC to exit: ");
 
-    S32 index = getch();
+    S32 index = getchar();
 
     if (index == 27)
     {
@@ -396,7 +396,7 @@ void MSS_MAIN_DEF main(S32 argc, C8 **argv)
       S32 i;
       char ch;
 
-      ch = getch();
+      ch = getchar();
 
       switch (ch)
       {

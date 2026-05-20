@@ -29,7 +29,7 @@
 //#define  EXPAND_A3D_ERRORS       1     // Expand error codes into text
 
 #include <stdio.h>
-#include <conio.h>
+#include <stdio.h>
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>

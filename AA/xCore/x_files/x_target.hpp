@@ -10,6 +10,8 @@
 #ifndef X_ASSERT
 //#define X_ASSERT
 #endif
+#undef LITTLE_ENDIAN
+#undef BIG_ENDIAN
 
 //==============================================================================
 //  

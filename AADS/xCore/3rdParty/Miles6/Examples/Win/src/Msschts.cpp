@@ -18,7 +18,7 @@
 #include <stdlib.h>
 #include <dos.h>
 #include <string.h>
-#include <conio.h>
+#include <stdio.h>
 #include <ctype.h>
 #include <assert.h>
 
@@ -603,7 +603,7 @@ S32 CALLBACK XMIT_stream_CB(U32       user, //)
          return 0;
          }
 
-//      if (kbhit() && getch())
+//      if (kbhit() && getchar())
 //         {
 //         return 0;
 //         }
@@ -734,7 +734,7 @@ S32 CALLBACK RECV_stream_CB(U32       user, //)
       // keyboard hit
       //
 
-//      if (kbhit() && getch())
+//      if (kbhit() && getchar())
 //         {
 //         return 0;
 //         }

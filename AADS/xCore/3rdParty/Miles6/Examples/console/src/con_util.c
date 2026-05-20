@@ -64,7 +64,7 @@ int r_getch( void )
 
 #else
 
-#include <conio.h>
+#include <stdio.h>
 
 static void set_up_console( int autoclose )
 {

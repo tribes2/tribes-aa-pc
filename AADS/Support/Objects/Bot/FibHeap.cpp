@@ -48,9 +48,9 @@
 
 #if TESTING_FIB_HEAP
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdio.h>
-#include <conio.h>
+#include <stdio.h>
 #endif
 
 #include "FibHeap.hpp"
@@ -489,10 +489,10 @@ void FibHeap::Print(FibHeapNode *Tree, FibHeapNode *theParent)
 
         Temp = Temp->Right;
 
-        if (kbhit() && getch() == 27)
+        if (kbhit() && getchar() == 27)
         {
             x_printf( "Hit a key to resume or ESC to break\n" );
-            if (getch() == 27)
+            if (getchar() == 27)
                 break;
         }
     } while (Temp != NULL && Temp != Tree);

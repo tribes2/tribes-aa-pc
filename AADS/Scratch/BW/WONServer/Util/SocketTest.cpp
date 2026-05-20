@@ -70,5 +70,5 @@ void main()
 	aListenSocket->SetRepeatCompletion(new OpCompletion(AcceptCompletion));
 	aListenSocket->SetRepeatOp(new AcceptOp);
 
-	getch();
+	getchar();
 }

@@ -53,7 +53,7 @@ SUPPORT_SOURCES = \
     $(wildcard ../Support/NetworkMgr/*.cpp) \
     $(wildcard ../Support/Objects/*.cpp) \
     $(wildcard ../Support/Objects/Terrain/*.cpp) \
-    $(wildcard ../Support/Objects/Bot/*.cpp) \
+    $(filter-out ../Support/Objects/Bot/FibTest.cpp,$(wildcard ../Support/Objects/Bot/*.cpp)) \
     $(wildcard ../Support/Objects/Projectiles/*.cpp) \
     $(wildcard ../Support/EventMgr/*.cpp) \
     $(wildcard ../Support/ObjectMgr/*.cpp) \

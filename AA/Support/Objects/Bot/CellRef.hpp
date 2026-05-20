@@ -1,6 +1,8 @@
 #ifndef CELLREF_HPP
 #define CELLREF_HPP
 
+#include "x_types.hpp"
+
 struct cell_attribute
 {
     cell_attribute( void )

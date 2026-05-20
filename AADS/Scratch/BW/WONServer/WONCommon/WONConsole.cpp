@@ -51,12 +51,12 @@ static void SetCanonical(bool)
 
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-int Console::getch()
+int Console::getchar()
 {
 #if defined(_LINUX) || defined(_XBOX)
 	return ::getchar();
 #else
-	return ::getch();
+	return ::getchar();
 #endif
 }
 
@@ -106,7 +106,7 @@ string Console::ReadLine(int theEchoChar)
 
 	while(true)
 	{
-		int aChar = getch();
+		int aChar = getchar();
 		if(aChar==EOF || aChar=='\r' || aChar=='\n')
 		{
 			printf("\n");

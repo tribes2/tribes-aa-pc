@@ -279,7 +279,7 @@ void MSS_MAIN_DEF main(S32 argc, C8 **argv)
 
    printf("\nEnter choice or ESC to exit: ");
 
-   S32 index = getch();
+   S32 index = getchar();
 
    if ( ( index >= 'a' ) && ( index <= 'z' ) )
      index = index - 'a' + 'A';
@@ -400,7 +400,7 @@ void MSS_MAIN_DEF main(S32 argc, C8 **argv)
 
       if (kbhit())
       {
-         S32 ch = getch();
+         S32 ch = getchar();
 
          switch (ch)
          {

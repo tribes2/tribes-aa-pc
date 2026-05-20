@@ -122,7 +122,7 @@ void MSS_MAIN_DEF main(int argc, char *argv[])
 
     if (kbhit())
     {
-      switch ( getch() )
+      switch ( getchar() )
       {
         case 27:
           goto done;         

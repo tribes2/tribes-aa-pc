@@ -12,7 +12,7 @@
 
 #if defined(TARGET_PC)
 #include <process.h>
-#include <conio.h>
+#include <stdio.h>
 #endif
 
 #include "Entropy.hpp"
@@ -815,7 +815,7 @@ extern RandomClass SpawnRandom;
 void DoOneGameCycle( void )
 {
 #if 0
-    if( _kbhit() && (_getch() == 27) )
+    if( _kbhit() && (_getchar() == 27) )
     {
         tgl.ExitApp = TRUE;
         return;

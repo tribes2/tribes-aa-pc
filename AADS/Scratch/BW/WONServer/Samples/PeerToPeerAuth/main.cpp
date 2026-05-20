@@ -97,7 +97,7 @@ void Server(int theListenPort)
 
 	printf("Waiting for connections (press 'q' to quit)\n");
 	Console aConsole;
-	while(tolower(aConsole.getch()!='q'))
+	while(tolower(aConsole.getchar()!='q'))
 	{
 	}
 }

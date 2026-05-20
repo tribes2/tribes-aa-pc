@@ -17,7 +17,7 @@
 #include <sys/ioctl.h>
 
 #elif defined(TARGET_PC)
-#include <conio.h>
+#include <stdio.h>
 #else
 #error This is a PC/Linux only file. Please exclude it from the build rules
 #endif
@@ -304,7 +304,7 @@ const char telnet_display::GetChar(void)
 		{
 #if defined(TARGET_PC)
             if (_kbhit())
-				return _getch();
+				return _getchar();
 #endif
 		}
 

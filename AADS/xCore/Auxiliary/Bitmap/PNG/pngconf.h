@@ -188,7 +188,7 @@ __dont__ include it again
  * "feature"?
  */
 #ifdef __TURBOC__
-//#include <mem.h>
+//#include <cstring>
 //#include "alloc.h"
 #endif
 

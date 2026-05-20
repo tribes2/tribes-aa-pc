@@ -21,7 +21,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <stdio.h>
 
 #include "mss.h"
 
@@ -205,7 +205,7 @@ void MSS_MAIN_DEF main( int argc, char *argv[] )
 
     if (kbhit())
     {
-      getch();
+      getchar();
       break;
     }
   }

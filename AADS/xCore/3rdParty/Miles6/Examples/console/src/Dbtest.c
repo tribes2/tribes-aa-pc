@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
+#include <stdio.h>
 #include <fcntl.h>
 #include <sys\stat.h>
 #include <io.h>
@@ -185,7 +185,7 @@ void MSS_MAIN_DEF main( int argc, char *argv[] )
   }
 
   if (kbhit())
-    getch();
+    getchar();
 
   //
   // Clean up

@@ -182,7 +182,7 @@ void MSS_MAIN_DEF main( int argc, char *argv[] )
 
     if (kbhit())
     {
-      ch=getch();
+      ch=getchar();
  
       switch (ch)
       {

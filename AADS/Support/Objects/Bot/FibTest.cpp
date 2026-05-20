@@ -7,11 +7,11 @@
 //***************************************************************************
 
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 #include <stdio.h>
-#include <conio.h>
+#include <stdio.h>
 #include <ctype.h>
-#include <mem.h>
+#include <cstring>
 #include <time.h>
 
 #include "fibheap.h"
@@ -146,7 +146,7 @@ char UserInputMode='y', TimingTestMode='r';
                }
 	  }
 
-	  if (kbhit() && getch()==27)
+	  if (kbhit() && getchar()==27)
 	      break;
 
 // Generate or read the test sequence and build the heap

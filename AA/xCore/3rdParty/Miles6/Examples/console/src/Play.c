@@ -80,7 +80,7 @@ void MSS_MAIN_DEF main(int argc, char *argv[])
   {
     if ( kbhit() )
     {
-      getch();
+      getchar();
       break;
     }
   }

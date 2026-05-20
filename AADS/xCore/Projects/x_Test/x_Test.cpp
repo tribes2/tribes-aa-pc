@@ -617,7 +617,7 @@ int main( void )
 /*
 
 #include "x_files.hpp"
-#include <conio.h>
+#include <stdio.h>
 
 int main( void )
 {
@@ -636,7 +636,7 @@ int main( void )
     {
         if( _kbhit() )
         {
-            char Key = _getch();
+            char Key = _getchar();
             switch( Key )
             {
             case  27:   Finished = TRUE;        break;

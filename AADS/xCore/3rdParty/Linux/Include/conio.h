@@ -1,5 +1,5 @@
 /*
- * conio.h
+ * conio
  *
  * Low level console I/O functions. Pretty please try to use the ANSI
  * standard ones if you are writing new code.

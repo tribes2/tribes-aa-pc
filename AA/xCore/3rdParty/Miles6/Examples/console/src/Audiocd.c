@@ -210,7 +210,7 @@ void MSS_MAIN_DEF main( void)
       //
       // get the character that was pressed
 
-      c=getch();
+      c=getchar();
 
       //
       // convert the CD track ranges all to A to Z
