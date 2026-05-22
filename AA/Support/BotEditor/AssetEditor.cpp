@@ -2,6 +2,7 @@
 #include "AssetEditor.hpp"
 #include "e_draw.hpp"
 #include "Entropy.hpp"
+#include "osdialog.h"
 #include "Objects/Bot/BotObject.hpp"
 #include "Objects/Player/DefaultLoadouts.hpp"
 #include "Objects/Projectiles/Station.hpp"
@@ -125,7 +126,7 @@ xbool asset_editor::AddInven                ( void )
 
     if (g_SelectedAsset == NULL && Team->m_nInvens >= asset_spot::MAX_INVENS)
     {
-        MessageBox(NULL, "Maximum Deployable Invens Reached", "Deploy Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Deployable Invens Reached");
         return FALSE;
     }
 
@@ -162,7 +163,7 @@ xbool asset_editor::AddInven                ( void )
             {
                 if ((Collision.Point - Team->m_pInvenList[i].GetAssetPos()).LengthSquared() < 1.0)
                 {
-                    MessageBox(NULL, "Already have Inven Station there!", "Deploy Error", MB_OK);
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Inven Station there!");
                     return FALSE;
                 }
             }
@@ -216,7 +217,7 @@ xbool asset_editor::AddTurret                ( void )
 
     if (g_SelectedAsset == NULL && Team->m_nTurrets >= asset_spot::MAX_TURRETS)
     {
-        MessageBox(NULL, "Maximum Deployable Turrets Reached", "Deploy Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Deployable Turrets Reached");
         return FALSE;
     }
 
@@ -266,7 +267,7 @@ xbool asset_editor::AddTurret                ( void )
             {
                 if ((Collision.Point - Team->m_pTurretList[i].GetAssetPos()).LengthSquared() < 0.1)
                 {
-                    MessageBox(NULL, "Already have Turret there!", "Deploy Error", MB_OK);
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Turret there!");
                     return FALSE;
                 }
             }
@@ -323,7 +324,7 @@ xbool asset_editor::AddSensor                ( void )
 
     if (g_SelectedAsset == NULL && Team->m_nSensors >= asset_spot::MAX_SENSORS)
     {
-        MessageBox(NULL, "Maximum Deployable Sensors Reached", "Deploy Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Deployable Sensors Reached");
         return FALSE;
     }
 
@@ -348,7 +349,7 @@ xbool asset_editor::AddSensor                ( void )
         // If slope of surfce is worse than 30 degrees from vertical.
         if( Collision.Plane.Normal.Y < 0.8660f )
         {
-            MessageBox(NULL, "Terrain Too Steep for Sensor", "Deploy Error", MB_OK);
+            osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Terrain Too Steep for Sensor");
             return FALSE;
         }
 
@@ -359,7 +360,7 @@ xbool asset_editor::AddSensor                ( void )
             {
                 if ((Collision.Point - Team->m_pSensorList[i].GetAssetPos()).LengthSquared() < 1.0)
                 {
-                    MessageBox(NULL, "Already have Sensor there!", "Deploy Error", MB_OK);
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Sensor there!");
                     return FALSE;
                 }
             }
@@ -414,7 +415,7 @@ xbool asset_editor::AddMine               ( void )
 
     if (Team->m_nMines >= asset_spot::MAX_MINES)
     {
-        MessageBox(NULL, "Maximum Deployable Mines Reached", "Deploy Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Deployable Mines Reached");
         return FALSE;
     }
 
@@ -424,7 +425,7 @@ xbool asset_editor::AddMine               ( void )
         if (   g_pPlayer->GetPosition() == Team->m_pMineList[i].GetAssetPos()
             && g_pPlayer->GetRot() == Team->m_pMineList[i].GetPlayerRot()    )
         {
-            MessageBox(NULL, "Already have Mine there!", "Deploy Error", MB_OK);
+            osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Mine there!");
             return FALSE;
         }
     }
@@ -456,7 +457,7 @@ xbool asset_editor::AddMine               ( void )
             if (   g_pPlayer->GetPosition() == Team->m_pMineList[i].GetAssetPos()
                 && g_pPlayer->GetRot() == Team->m_pMineList[i].GetPlayerRot()    )
             {
-                MessageBox(NULL, "Already have Mine there!", "Deploy Error", MB_OK);
+                osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Mine there!");
                 return FALSE;
             }
         }
@@ -996,7 +997,7 @@ void asset_editor::DeleteSelected ( void )
 {
     if (!g_SelectedAsset)
     {
-        MessageBox(NULL, "No asset selected!", "DELETE ERROR", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "No asset selected!");
         return;
     }
 
@@ -1837,7 +1838,7 @@ void asset_editor::Save( const char* pFileName )
     Fp = x_fopen( pFileName, "wb" );
     if( !Fp )
     {
-        MessageBox(NULL, "Save Failed! (read-only file?)", "Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Save Failed! (read-only file?)");
         return;
     }
 
@@ -1964,7 +1965,7 @@ void asset_editor::Load( const char* pFileName)
 //#if DESIGNER_BUILD
     if( Fp == NULL ) 
     {
-        MessageBox(NULL, "Load Failed!", "Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Load Failed!");
         return;
     }
 #endif
@@ -2354,7 +2355,7 @@ void asset_editor::AddSnipePoint( void )
     s32 nPoints = Team->m_nSnipePoints;
     if (nPoints >= MAX_SNIPE_POINTS)
     {
-        MessageBox(NULL, "Maximum Snipe Points Reached", "Record Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Snipe Points Reached");
         return ;
     }
 
@@ -2363,7 +2364,7 @@ void asset_editor::AddSnipePoint( void )
     {
         if ((g_pPlayer->GetPosition() - Team->m_pSnipePoint[i]).Length() < 5.0)
         {
-            MessageBox(NULL, "Already have Snipe Point near there!", "Record Error", MB_OK);
+            osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Snipe Point near there!");
             return;
         }
     }
@@ -2388,7 +2389,7 @@ void asset_editor::AddSnipePoint( void )
         nPoints = Team->m_nSnipePoints;
         if (nPoints >= MAX_SNIPE_POINTS)
         {
-            MessageBox(NULL, "Maximum Snipe Points Reached", "Record Error", MB_OK);
+            osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Maximum Snipe Points Reached");
             return ;
         }
 
@@ -2396,7 +2397,7 @@ void asset_editor::AddSnipePoint( void )
         {
             if ((g_pPlayer->GetPosition() - Team->m_pSnipePoint[i]).Length() < 5.0)
             {
-                MessageBox(NULL, "Already have Snipe Point near there!", "Record Error", MB_OK);
+                osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Already have Snipe Point near there!");
                 return;
             }
         }

@@ -8,8 +8,8 @@
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 #include "hud.hpp"
 #include "Objects/Player/PlayerObject.hpp"
-#include "demo1/Globals.hpp"
-#include "demo1/GameClient.hpp"
+#include "Demo1/Globals.hpp"
+#include "Support/NetworkMgr/GameClient.hpp"
 
 #include "VoiceLayout.hpp"
 
@@ -547,7 +547,7 @@ void hud::RenderWeapons( s32 x, s32 y )
         }
 */
         // Render Reticle for Weapon
-        if((WeaponCurrentType != 0) && ( m_pPlayer->GetViewType() == player_object::VIEW_TYPE_1ST_PERSON ))
+        if((WeaponCurrentType != 0) && ( m_pPlayer->GetPlayerViewType() == player_object::VIEW_TYPE_1ST_PERSON ))
         {
             if( (WeaponCurrentType>=0) && (WeaponCurrentType<num_weapons) )
             {

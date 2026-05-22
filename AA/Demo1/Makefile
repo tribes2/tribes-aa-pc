@@ -5,13 +5,13 @@ RENDERER_BACKEND ?= OPENGL
 CXX = g++
 CXXFLAGS = -I../xCore -I../Support -I../Support/BotEditor -I.. \
            -I../xCore/x_files -I../xCore/Entropy -I../xCore/Auxiliary/bitmap \
-           -I../xCore/Entropy/Common -DTARGET_PC -DX_DEBUG -std=c++11 \
+           -I../xCore/Entropy/Common -I../../osdialog -DTARGET_PC -DX_DEBUG -std=c++11 \
            -Wall -Wno-unused-variable -Wno-unused-function -fPIC
 
 # Conditional backend setup
 ifeq ($(RENDERER_BACKEND), OPENGL)
   CXXFLAGS += -DRENDERER_BACKEND_OPENGL -I../xCore/Entropy/OpenGLEngine
-  LDFLAGS = -lm -lpthread -ldl -lGL -lGLEW -lglfw
+  LDFLAGS = -lm -lpthread -ldl -lGL -lGLEW -lglfw $(shell pkg-config --libs gtk+-3.0)
   BACKEND_SOURCES = \
     ../xCore/Entropy/OpenGLEngine/opengleng.cpp \
     ../xCore/Entropy/OpenGLEngine/opengleng_draw.cpp \
@@ -19,7 +19,7 @@ ifeq ($(RENDERER_BACKEND), OPENGL)
     ../xCore/Entropy/OpenGLEngine/opengleng_vram.cpp
 else
   CXXFLAGS += -DRENDERER_BACKEND_D3D -I../xCore/Entropy/D3DEngine
-  LDFLAGS = -lm -lpthread -ldl
+  LDFLAGS = -lm -lpthread -ldl $(shell pkg-config --libs gtk+-3.0)
   # Note: On Linux, DirectX libs may not be available; adjust as needed
   BACKEND_SOURCES = \
     ../xCore/Entropy/D3DEngine/d3deng.cpp \
@@ -71,13 +71,16 @@ XCORE_SOURCES = \
     $(wildcard ../xCore/x_files/*.cpp) \
     $(wildcard ../xCore/Auxiliary/*.cpp) \
     $(wildcard ../xCore/Auxiliary/bitmap/*.cpp) \
-    $(wildcard ../xCore/Entropy/Common/*.cpp)
+    $(wildcard ../xCore/Entropy/Common/*.cpp) \
+    ../../osdialog/osdialog.c \
+    ../../osdialog/osdialog_gtk.c
 
 # Combine all sources
 SOURCES = $(DEMO_SOURCES) $(SUPPORT_SOURCES) $(XCORE_SOURCES) $(BACKEND_SOURCES)
 
 # Generate object file list (preserve directory structure via sed)
 OBJS = $(addprefix obj/,$(SOURCES:.cpp=.o))
+OBJS := $(OBJS:.c=.o)
 
 # Main target
 TribesAADemo1: obj $(OBJS)
@@ -91,6 +94,11 @@ obj:
 
 # Compile rule with automatic directory creation
 obj/%.o: %.cpp
+	@mkdir -p $(dir $@)
+	@echo "Compiling $(notdir $<)..."
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+obj/%.o: %.c
 	@mkdir -p $(dir $@)
 	@echo "Compiling $(notdir $<)..."
 	$(CXX) $(CXXFLAGS) -c $< -o $@

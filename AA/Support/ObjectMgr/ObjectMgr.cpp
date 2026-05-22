@@ -36,7 +36,7 @@
 #include "Entropy.hpp"
 #include "GameMgr/GameMgr.hpp"
 #include "Objects/Projectiles/WayPoint.hpp"
-#include "Objects/bot/BotObject.hpp"
+#include "Objects/Bot/BotObject.hpp"
 #include "Objects/Player/PlayerObject.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"
 #include "Objects/Vehicles/gndeffect.hpp"
@@ -2513,7 +2513,7 @@ void obj_mgr::SanityCheck( void )
 //==============================================================================
 
 #ifdef X_DEBUG
-static char*           om_pFile[10];
+static const char*           om_pFile[10];
 static s32             om_Line [10];
 static object::type    om_Type [10];
 static f32             om_Time [10];

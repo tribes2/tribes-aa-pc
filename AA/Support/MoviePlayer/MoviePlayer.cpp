@@ -4,7 +4,7 @@
 #include "movieplayer/movieplayer.hpp"
 #include "UI/ui_manager.hpp"
 #include "UI/ui_font.hpp"
-#include "../demo1/specialversion.hpp"
+#include "../Demo1/specialversion.hpp"
 
 #ifdef TARGET_PS2
 #include "ps2/iop/iop.hpp"

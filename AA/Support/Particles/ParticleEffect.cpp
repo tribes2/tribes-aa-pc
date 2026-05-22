@@ -1,6 +1,6 @@
 #include "Entropy.hpp"
 #include "ParticleEffect.hpp"
-#include "demo1/Globals.hpp"
+#include "Demo1/Globals.hpp"
 
 //=============================================================================
 //  Particle globals

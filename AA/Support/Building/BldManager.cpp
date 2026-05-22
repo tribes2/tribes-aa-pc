@@ -868,7 +868,7 @@ void bld_manager::AddDisplayListInHash( dlist_node&     Node,
 
 #ifndef TARGET_PC
 f32 g_MaxLod = 0.25f;
-//#include "demo1/Globals.hpp"
+//#include "Demo1/Globals.hpp"
 #endif
 
 volatile xbool BLDMANAGER_Log = FALSE;

@@ -19,11 +19,11 @@
 
 #include "Objects/Player/PlayerObject.hpp"
 #include "PointLight/PointLight.hpp"
-#include "grenade.hpp"
+#include "Grenade.hpp"
 #include "Objects/Vehicles/Vehicle.hpp"
 
 #include "Missile.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES

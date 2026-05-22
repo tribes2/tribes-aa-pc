@@ -210,8 +210,12 @@ void ui_frame::RenderNewFrame( irect& Position )
     if( IsAdditive )
     {
 #ifdef TARGET_PC
+#ifdef RENDERER_BACKEND_D3D
         g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
         g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
         gsreg_Begin();

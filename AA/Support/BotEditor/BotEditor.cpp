@@ -2,6 +2,7 @@
 #include "BotEditor.hpp"
 #include "AssetEditor.hpp"
 #include "PathEditor.hpp"
+#include "osdialog.h"
 #include "Entropy.hpp"
 #include "resource.h"
 #include "Objects/Bot/BotObject.hpp"
@@ -384,8 +385,7 @@ LRESULT CALLBACK TemplateDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lP
                 //
                 if( s_pBuilding == NULL ) 
                 {
-                    MessageBox( NULL, "You must select a building",
-                                      "Error", MB_OK | MB_ICONINFORMATION );                    
+                    osdialog_message(OSDIALOG_WARNING, OSDIALOG_OK, "You must select a building");                    
                     break;
                 }
 
@@ -395,12 +395,11 @@ LRESULT CALLBACK TemplateDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lP
                 matrix4 W2L = s_pBuilding->GetW2L();
                 if( s_PathEditor.SaveTemplate( xfs( "%s.pth", s_pBName ), W2L ) == FALSE )
                 {
-                    MessageBox( NULL, "Fail to save the building",
-                                      "Error", MB_OK | MB_ICONINFORMATION );                    
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Fail to save the building");                    
                 }
                 else 
                 {
-                    MessageBox( NULL, "Templaed Saved", "Info", MB_OK );                    
+                    osdialog_message(OSDIALOG_INFO, OSDIALOG_OK, "Templaed Saved");                    
                 }
 
                 break;
@@ -412,8 +411,7 @@ LRESULT CALLBACK TemplateDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lP
                 //
                 if( s_pBuilding == NULL ) 
                 {
-                    MessageBox( NULL, "You must select a building",
-                                      "Error", MB_OK | MB_ICONINFORMATION );                    
+                    osdialog_message(OSDIALOG_WARNING, OSDIALOG_OK, "You must select a building");                    
                     break;
                 }
 
@@ -423,8 +421,7 @@ LRESULT CALLBACK TemplateDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lP
                 matrix4 L2W = s_pBuilding->GetL2W();
                 if( s_PathEditor.LoadTemplate( xfs( "%s.pth", s_pBName), L2W ) == FALSE )
                 {
-                    MessageBox( NULL, "Fail to load the building",
-                                      "Error", MB_OK | MB_ICONINFORMATION );                    
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Fail to load the building");                    
                 }
 
                 break;
@@ -576,14 +573,13 @@ LRESULT CALLBACK AssetDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
                 s32 Answer;
                 do
                 {
-                    Answer = MessageBox( NULL, "Do you want to save the current Assets File?",
-                                         "Asset Editor Warning", MB_YESNO | MB_ICONINFORMATION );                    
+                    Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save the current Assets File?");                    
 
                     // Take care of business
-                    if( Answer == IDYES )
+                    if( Answer )
                         AssetDlgProc( hWnd, WM_COMMAND, IDC_SAVE, 0 );
                 }
-                while (g_AssetsChanged && Answer == IDYES);
+                while (g_AssetsChanged && Answer);
             }
             s_AssetDlg = 0;
             break;
@@ -660,14 +656,13 @@ LRESULT CALLBACK AssetDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
                     s32 Answer;
                     do
                     {
-                        Answer = MessageBox( NULL, "Do you want to save the current Assets File?",
-                                             "Asset Editor Warning", MB_YESNO | MB_ICONINFORMATION );                    
+                        Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save the current Assets File?");                    
 
                         // Take care of business
-                        if( Answer == IDYES )
+                        if( Answer )
                             AssetDlgProc( hWnd, WM_COMMAND, IDC_SAVE, 0 );
                     }
-                    while (g_AssetsChanged && Answer == IDYES);
+                    while (g_AssetsChanged && Answer);
                 }
 
                 char FileName[256];
@@ -699,19 +694,18 @@ LRESULT CALLBACK AssetDlgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPara
                     s32 Answer;
                     do
                     {
-                        Answer = MessageBox( NULL, "Do you want to save the current Assets File?",
-                                             "Asset Editor Warning", MB_YESNO | MB_ICONINFORMATION );                    
+                        Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save the current Assets File?");                    
 
                         // Take care of business
-                        if( Answer == IDYES )
+                        if( Answer )
                             AssetDlgProc( hWnd, WM_COMMAND, IDC_SAVE, 0 );
                     }
-                    while (g_AssetsChanged && Answer == IDYES);
+                    while (g_AssetsChanged && Answer);
                 }
                 if (s_AssetEditor.ReportAll("AssReport.txt"))
-                    MessageBox( NULL, "Wrote file AssReport.txt", "Done", MB_OK );
+                    osdialog_message(OSDIALOG_INFO, OSDIALOG_OK, "Wrote file AssReport.txt");
                 else
-                    MessageBox( NULL, "Could not write AssReport.txt!", "Error", MB_OK );
+                    osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Could not write AssReport.txt!");
             }
             break;
         }; // END 2 SWITCH Avalon
@@ -736,11 +730,10 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
         {
             if( bUpdated )
             {
-                s32 Answer = MessageBox( NULL, "Do you want to save before exiting?",
-                                         "Bot Editor Warning", MB_YESNO | MB_ICONINFORMATION );                    
+                s32 Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save before exiting?");                    
 
                 // Take care of business
-                if( Answer == IDYES )
+                if( Answer )
                     DlgBotProc( hWnd, WM_COMMAND, ID_SAVE, 0 );
             }
             break;
@@ -1035,15 +1028,14 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
                 s32 Answer;
                 do
                 {
-                    Answer = MessageBox( NULL, "Do you want to save before closing this map?",
-                                         "Bot Editor Warning - Map Changed", MB_YESNO | MB_ICONINFORMATION );                    
+                    Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save before closing this map?");                    
 
 
                     // Take care of business
-                    if( Answer == IDYES )
+                    if( Answer )
                         DlgBotProc( hWnd, WM_COMMAND, ID_SAVE, 0 );
                 }
-                while (bUpdated && Answer == IDYES);
+                while (bUpdated && Answer);
             }
             char FileName[256];
             if( GetLoadFileName( FileName ) )
@@ -1087,8 +1079,7 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
                                     && s_PathEditor.m_NodeList[i].Type != path_editor::NDTYPE_ADJUSTED)
                                     s_PathEditor.m_NodeList[i].Type = path_editor::NDTYPE_NULL;
                         }
-                        MessageBox( NULL, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions",
-                            "Error", MB_OK | MB_ICONINFORMATION );
+                        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions");
                     }
                     else
                     {
@@ -1184,8 +1175,7 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
                     x_DebugMsg("done.  Testing continuity...");
                     if ( !g_Graph.DebugConnected() )
                     {
-                        MessageBox( NULL, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions",
-                            "Error", MB_OK | MB_ICONINFORMATION );
+                        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions");
                     }
                     else
                         x_DebugMsg("OK\n");
@@ -1319,8 +1309,7 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
                     x_DebugMsg("done.  Testing continuity...");
                     if ( !g_Graph.DebugConnected() )
                     {
-                        MessageBox( NULL, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions",
-                            "Error", MB_OK | MB_ICONINFORMATION );
+                        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions");
                     }
                     else
                         x_DebugMsg("OK\n");
@@ -1339,11 +1328,10 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
 
         case ID_IMPORT:
         {
-            s32 Answer = MessageBox( NULL, "Do you want to save before clearing?",
-                                     "Bot Editor Warning", MB_YESNO | MB_ICONINFORMATION );                    
+            s32 Answer = osdialog_message(OSDIALOG_WARNING, OSDIALOG_YES_NO, "Do you want to save before clearing?");                    
 
             // Take care of business
-            if( Answer == IDYES )
+            if( Answer )
                 DlgBotProc( hWnd, WM_COMMAND, ID_SAVE, 0 );
 
             char FileName[256];
@@ -1357,8 +1345,7 @@ LRESULT CALLBACK DlgBotProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam 
 #endif
             if ( !g_Graph.DebugConnected() )
             {
-                MessageBox( NULL, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions",
-                    "Error", MB_OK | MB_ICONINFORMATION );
+                osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions");
             }
 
             break;
@@ -1474,7 +1461,7 @@ void Initialize( void )
             NULL 
         );
 
-        MessageBox( NULL, (LPCTSTR)lpMsgBuf, "Error", MB_OK | MB_ICONINFORMATION );
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, (LPCTSTR)lpMsgBuf);
         LocalFree( lpMsgBuf );
     }
     else

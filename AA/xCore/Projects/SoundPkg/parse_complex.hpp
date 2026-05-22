@@ -1,7 +1,7 @@
 #ifndef __PARSE_COMPLEX_H
 #define __PARSE_COMPLEX_H
 
-#include "../../support/tokenizer/tokenizer.hpp"
+#include "../../support/Tokenizer/Tokenizer.hpp"
 #include "parse.hpp"
 
 // Complex included at the top level within a control file

@@ -20,7 +20,7 @@
 #include "x_threads.hpp"
 #include "sifcmd.h"
 
-#include "../../demo1/specialversion.hpp"
+#include "../../Demo1/specialversion.hpp"
 
 
 #include "libscedemo.h"

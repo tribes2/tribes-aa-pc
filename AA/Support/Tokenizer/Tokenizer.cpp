@@ -7,7 +7,7 @@
 #include "x_types.hpp"
 #include "x_stdio.hpp"
 #include "x_memory.hpp"
-#include "tokenizer.hpp"
+#include "Tokenizer.hpp"
 
 //==============================================================================
 
@@ -29,7 +29,7 @@ token_stream::~token_stream   (void)
 {
     if (m_pAllocFunction)
     {
-        m_pAllocFunction(TOKEN_ALLOC_FREE,(s32)m_FileBuffer);
+        m_pAllocFunction(TOKEN_ALLOC_FREE, (intptr_t)m_FileBuffer);
     }
     else
     {
@@ -102,7 +102,7 @@ xbool    token_stream::OpenFile    ( const char* pFileName )
     {
         if (m_pAllocFunction)
         {
-            m_pAllocFunction(TOKEN_ALLOC_FREE,(s32)m_FileBuffer);
+            m_pAllocFunction(TOKEN_ALLOC_FREE,(intptr_t)m_FileBuffer);
         }
         else
         {
@@ -125,7 +125,7 @@ void    token_stream::CloseFile   ( void )
 {
     if (m_pAllocFunction)
     {
-        m_pAllocFunction(TOKEN_ALLOC_FREE,(s32)m_FileBuffer);
+        m_pAllocFunction(TOKEN_ALLOC_FREE,(intptr_t)m_FileBuffer);
     }
     else
     {

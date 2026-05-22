@@ -289,8 +289,8 @@ public:
     s32             GetNumUserDialogs   ( s32 UserID );
     ui_dialog*      GetTopmostDialog    ( s32 UserID );
 
-    s32             CreateUser          ( s32 ControllerID, const irect& Bounds, s32 Data = 0 );
-    void            DeleteUser          ( s32 UserID );
+    intptr_t             CreateUser          ( s32 ControllerID, const irect& Bounds, s32 Data = 0 );
+    void            DeleteUser          ( intptr_t UserID );
     void            DeleteAllUsers      ( void );
     user*           GetUser             ( s32 UserID ) const;
     s32             GetUserData         ( s32 UserID ) const;

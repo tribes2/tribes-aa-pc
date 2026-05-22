@@ -179,7 +179,7 @@
     <ClInclude Include="linear.hpp">
       <Filter>Support</Filter>
     </ClInclude>
-    <ClInclude Include="textures.hpp">
+    <ClInclude Include="Textures.hpp">
       <Filter>Support</Filter>
     </ClInclude>
     <ClInclude Include="Asset.hpp">
@@ -209,7 +209,7 @@
     <ClInclude Include="Bubble.hpp">
       <Filter>Misc</Filter>
     </ClInclude>
-    <ClInclude Include="debris.hpp">
+    <ClInclude Include="Debris.hpp">
       <Filter>Misc</Filter>
     </ClInclude>
     <ClInclude Include="Flag.hpp">

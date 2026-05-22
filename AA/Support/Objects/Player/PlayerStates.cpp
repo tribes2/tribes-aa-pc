@@ -11,7 +11,7 @@
 #include "PlayerObject.hpp"
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
-#include "demo1/Globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "NetworkMgr/GameServer.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "AudioMgr/Audio.hpp"

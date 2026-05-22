@@ -504,8 +504,12 @@ void pfx_emitter::RenderPoint( void )
         if( pd->Flags & PFX_PF_ADDITIVE )
         {
 #ifdef TARGET_PC
-            g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
-            g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#ifdef RENDERER_BACKEND_D3D
+        g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
+        g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
             gsreg_Begin();
@@ -591,8 +595,12 @@ void pfx_emitter::RenderPoint( void )
             if( pd->Flags & PFX_PF_ADDITIVE )
             {
 #ifdef TARGET_PC
-                g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
-                g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#ifdef RENDERER_BACKEND_D3D
+        g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
+        g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
                 gsreg_Begin();
@@ -703,8 +711,12 @@ void pfx_emitter::RenderOrientedPoint( void )
         if( pd->Flags & PFX_PF_ADDITIVE )
         {
 #ifdef TARGET_PC
-            g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
-            g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#ifdef RENDERER_BACKEND_D3D
+        g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
+        g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
             gsreg_Begin();
@@ -800,8 +812,12 @@ void pfx_emitter::RenderOrientedPoint( void )
             if( pd->Flags & PFX_PF_ADDITIVE )
             {
 #ifdef TARGET_PC
-                g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
-                g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#ifdef RENDERER_BACKEND_D3D
+        g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
+        g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
                 gsreg_Begin();

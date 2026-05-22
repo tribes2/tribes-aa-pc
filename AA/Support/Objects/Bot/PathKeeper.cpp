@@ -7,7 +7,7 @@
 //==============================================================================
 //  INCLUDES
 //==============================================================================
-#include "Globals.hpp"
+#include "Demo1/Globals.hpp"
 #include "PathKeeper.hpp"
 #include "PathFinder.hpp"
 #include "Path.hpp"

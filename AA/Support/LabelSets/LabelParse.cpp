@@ -1,6 +1,6 @@
 #include "Entropy.hpp"
-#include "../tokenizer/tokenizer.hpp"
-#include "labelparse.hpp"
+#include "../Tokenizer/Tokenizer.hpp"
+#include "LabelParse.hpp"
 
 
 

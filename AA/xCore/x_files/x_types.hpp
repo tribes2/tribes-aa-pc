@@ -165,6 +165,11 @@
     typedef u8                  byte;
     typedef s32                 xbool;
     typedef u16                 xwchar;
+    // class POINT {
+    //   public:
+    //    s32 x;
+    //    s32 y;
+    // };
   #endif
   
 #endif

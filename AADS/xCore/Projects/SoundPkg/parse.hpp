@@ -1,7 +1,7 @@
 #ifndef __PARSE_HPP
 #define __PARSE_HPP
 
-#include "../../support/tokenizer/tokenizer.hpp"
+#include "../../support/Tokenizer/Tokenizer.hpp"
 #include "parse_variable.hpp"
 #include "iopaud_container.h"
 #include "main.hpp"

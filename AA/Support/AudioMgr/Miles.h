@@ -2,8 +2,8 @@
 #define _MILES_H_
 
 #include "x_types.hpp"
-#include "e_engine.hpp"
-#include "3rdparty/miles6/include/mss.h"
+#include "e_Engine.hpp"
+#include "3rdParty/Miles6/include/Mss.h"
 
 #define MAX_PROVIDERS           64                      // Enumerate all the provider and pick the one that we want.
 #define SPEAKER_TYPE            AIL_3D_2_SPEAKER        // Can be AIL_3D_2_SPEAKER, AIL_3D_4_SPEAKER or AIL_3D_HEADPHONE.

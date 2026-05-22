@@ -261,20 +261,20 @@ public:
     void            Init                ( ui_manager* pUIManager );
     void            Kill                ( void );
 
-    s32             CreateUser          ( player_object* pPlayer, s32 UIUserID );
-    void            DeleteUser          ( s32 UserID );
+    intptr_t             CreateUser          ( player_object* pPlayer, s32 UIUserID );
+    void            DeleteUser          ( intptr_t UserID );
     void            DeleteAllUsers      ( void );
-    user*           GetUser             ( s32 UserID ) const;
-    player_object*  GetPlayer           ( s32 UserID ) const;
+    user*           GetUser             ( intptr_t UserID ) const;
+    player_object*  GetPlayer           ( intptr_t UserID ) const;
 
     void            Update              ( f32 DeltaTime );
-    xbool           ProcessInput        ( s32 UserID, s32 ControllerID, f32 DeltaTime );
+    xbool           ProcessInput        ( intptr_t UserID, s32 ControllerID, f32 DeltaTime );
 
     void            Render              ( void ) const;
     
-    void            ActivateVoiceMenu   ( s32 UserID );
-    void            DeactivateVoiceMenu ( s32 UserID );
-    xbool           IsVoiceMenuActive   ( s32 UserID ) const;
+    void            ActivateVoiceMenu   ( intptr_t UserID );
+    void            DeactivateVoiceMenu ( intptr_t UserID );
+    xbool           IsVoiceMenuActive   ( intptr_t UserID ) const;
 
     // Objectives Window for single player
     void            SetObjective        ( const xwchar* pString );

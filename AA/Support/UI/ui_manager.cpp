@@ -193,18 +193,23 @@ void ui_manager::Init( void )
     ui_dlg_list_register( this );
 
 #ifdef TARGET_PC
+#if defined(RENDERER_BACKEND_D3D)
+    //d3deng_SetMouseMode( MOUSE_MODE_ALWAYS );
+    d3deng_SetMouseMode( MOUSE_MODE_ABSOLUTE ) ;
 #ifdef T2_DESIGNER_BUILD
     ShowCursor(TRUE);
 #else
     ShowCursor(FALSE);
+#endif
+#elif defined(RENDERER_BACKEND_OPENGL)
+    opengleng_SetMouseMode( MOUSE_MODE_ABSOLUTE );
+    // ShowCursor(FALSE);
 #endif
     m_Mouse.Load( "data/ui/pc/ui_cursor.xbmp");
     
     VERIFY( vram_Register( m_Mouse ) );
 
     m_MouseColor.Set(ARGB(224,224,224,224));
-    //d3deng_SetMouseMode( MOUSE_MODE_ALWAYS );
-    d3deng_SetMouseMode( MOUSE_MODE_ABSOLUTE ) ;
 #endif
     // Allow processing of user input
     m_EnableUserInput = TRUE;
@@ -460,8 +465,12 @@ void ui_manager::RenderElement( s32 iElement, const irect& Position, s32 State, 
     if( IsAdditive )
     {
 #ifdef TARGET_PC
+#ifdef RENDERER_BACKEND_D3D
         g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
         g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
         gsreg_Begin();
@@ -552,8 +561,12 @@ void ui_manager::RenderElementUV( s32 iElement, const irect& Position, const ire
     if( IsAdditive )
     {
 #ifdef TARGET_PC
+#ifdef RENDERER_BACKEND_D3D
         g_pd3dDevice->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
         g_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ONE );
+#elif defined(RENDERER_BACKEND_OPENGL)
+        glBlendFunc( GL_SRC_ALPHA, GL_ONE );
+#endif
 #endif
 #ifdef TARGET_PS2
         gsreg_Begin();
@@ -789,7 +802,7 @@ ui_win* ui_manager::CreateWin( s32 UserID, const char* ClassName, const irect& P
 
 //=========================================================================
 
-s32 ui_manager::CreateUser( s32 ControllerID, const irect& Bounds, s32 Data )
+intptr_t ui_manager::CreateUser( s32 ControllerID, const irect& Bounds, s32 Data )
 {
     // Create new user struct
     user*   pUser = new user;
@@ -840,7 +853,7 @@ s32 ui_manager::CreateUser( s32 ControllerID, const irect& Bounds, s32 Data )
         m_Users.Append() = pUser;
     }
 
-    return (s32)pUser;
+    return (intptr_t)pUser;
 }
 
 //=========================================================================
@@ -849,13 +862,13 @@ void ui_manager::DeleteAllUsers( void )
 {
     while( m_Users.GetCount() > 0 )
     {
-        DeleteUser( (s32)m_Users[0] );
+        DeleteUser((intptr_t) m_Users[0] );
     }
 }
 
 //=========================================================================
 
-void ui_manager::DeleteUser( s32 UserID )
+void ui_manager::DeleteUser( intptr_t UserID )
 {
     s32     Index;
 
@@ -1063,7 +1076,7 @@ xbool ui_manager::ProcessInput( f32 DeltaTime )
         // Only process input for enabled users
         if( pUser->Enabled )
         {
-            Continue &= ProcessInput( DeltaTime, (s32)pUser );
+            Continue &= ProcessInput( DeltaTime, (intptr_t)pUser );
         }
     }
 

@@ -2,7 +2,7 @@
 #include "ParticleLibrary.hpp"
 #include "Tokenizer/Tokenizer.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
-#include "LabelSets/labelparse.hpp"
+#include "LabelSets/LabelParse.hpp"
 #include "e_scratchmem.hpp"
 
 //=============================================================================

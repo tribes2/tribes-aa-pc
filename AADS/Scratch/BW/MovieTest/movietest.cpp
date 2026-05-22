@@ -14,9 +14,9 @@ void AppMain(s32,char **)
     audio_Init();
 #if 0
     s32     effects,music,voice;
-    effects=    audio_LoadContainer("/projects/t2/demo1/data/audio/effects.pkg");
-    music=      audio_LoadContainer("/projects/t2/demo1/data/audio/music.pkg");
-    voice=      audio_LoadContainer("/projects/t2/demo1/data/audio/voice.pkg");
+    effects=    audio_LoadContainer("/projects/t2/Demo1/data/audio/effects.pkg");
+    music=      audio_LoadContainer("/projects/t2/Demo1/data/audio/music.pkg");
+    voice=      audio_LoadContainer("/projects/t2/Demo1/data/audio/voice.pkg");
 
     audio_UnloadContainer(voice);
     audio_UnloadContainer(music);

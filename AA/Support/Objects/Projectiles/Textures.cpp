@@ -4,7 +4,7 @@
 //
 //==============================================================================
 #include "Entropy.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 #include "Auxiliary/Bitmap/aux_Bitmap.hpp"
 
 

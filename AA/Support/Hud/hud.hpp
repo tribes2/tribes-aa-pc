@@ -62,7 +62,7 @@ public:
     {
         const char* pLabel;
         const char* pText;
-        s32         ID;
+        u32         ID;
     };
 
     struct voice_table

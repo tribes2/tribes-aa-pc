@@ -3,7 +3,7 @@
 #include "x_types.hpp"
 #include "x_threads.hpp"
 #include "audiodefs.hpp"
-#include "audio.hpp"
+#include "Audio.hpp"
 //
 // This contains all the variables and structures used on the EE side of the audio
 // driver. There should be no equivalents on the IOP of the same fields.

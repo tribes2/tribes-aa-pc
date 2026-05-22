@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "demo1/Globals.hpp"
+#include "Demo1/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"
@@ -14,14 +14,14 @@
 #include "UI/ui_manager.hpp"
 #include "UI/ui_font.hpp"
 #include "Demo1/Data/UI/ui_strings.h"
-#include "demo1/data/missions/campaign.h"
+#include "Demo1/Data/Missions/Campaign.h"
 
 #include "StringMgr/StringMgr.hpp"
 
-#include "objects/vehicles/vehicle.hpp"
-#include "objects/vehicles/bomber.hpp"
-#include "objects/vehicles/asstank.hpp"
-#include "objects/projectiles/satchelcharge.hpp"
+#include "Objects/Vehicles/Vehicle.hpp"
+#include "Objects/Vehicles/AssTank.hpp"
+#include "Objects/Vehicles/Bomber.hpp"
+#include "Objects/Projectiles/SatchelCharge.hpp"
 
 #include "UI/ui_colors.hpp"
 
@@ -451,7 +451,7 @@ void hud_manager::Initialize( void )
 
 //=========================================================================
 
-s32 hud_manager::CreateUser( player_object* pPlayer, s32 UIUserID )
+intptr_t hud_manager::CreateUser( player_object* pPlayer, s32 UIUserID )
 {
     ASSERT( pPlayer );
     ASSERT( UIUserID );
@@ -490,7 +490,7 @@ s32 hud_manager::CreateUser( player_object* pPlayer, s32 UIUserID )
         m_Users.Append() = pUser;
     }
 
-    return (s32)pUser;
+    return (intptr_t)pUser;
 }
 
 //=========================================================================
@@ -499,13 +499,13 @@ void hud_manager::DeleteAllUsers( void )
 {
     while( m_Users.GetCount() > 0 )
     {
-        DeleteUser( (s32)m_Users[0] );
+        DeleteUser( (intptr_t)m_Users[0] );
     }
 }
 
 //=========================================================================
 
-void hud_manager::DeleteUser( s32 UserID )
+void hud_manager::DeleteUser( intptr_t UserID )
 {
     s32     Index;
 
@@ -521,7 +521,7 @@ void hud_manager::DeleteUser( s32 UserID )
 
 //=========================================================================
 
-hud_manager::user* hud_manager::GetUser( s32 UserID ) const
+hud_manager::user* hud_manager::GetUser( intptr_t UserID ) const
 {
     ASSERT( (m_Users.Find( (user*)UserID )) != -1 );
 
@@ -531,7 +531,7 @@ hud_manager::user* hud_manager::GetUser( s32 UserID ) const
 
 //=========================================================================
 
-player_object* hud_manager::GetPlayer( s32 UserID ) const
+player_object* hud_manager::GetPlayer( intptr_t UserID ) const
 {
     ASSERT( (m_Users.Find( (user*)UserID )) != -1 );
 
@@ -610,7 +610,7 @@ void hud_manager::Update( f32 DeltaTime )
 
 //=========================================================================
 
-xbool hud_manager::ProcessInput( s32 UserID, s32 ControllerID, f32 DeltaTime )
+xbool hud_manager::ProcessInput( intptr_t UserID, s32 ControllerID, f32 DeltaTime )
 {
     xbool   Processed = FALSE;
     s32     Input = 0;
@@ -1305,9 +1305,9 @@ void hud_manager::RenderVehicle( user* pUser, const irect& wr ) const
 
 //=========================================================================
 
-void hud_manager::RenderHealthEnergy( user* pUser, const irect& wr, const irect& or ) const
+void hud_manager::RenderHealthEnergy( user* pUser, const irect& wr, const irect& _or ) const
 {
-    irect Rect = or;
+    irect Rect = _or;
     Rect.Translate( wr.l, wr.t );
 
     RenderBitmap( HUD_BMP_HEALTH_METER, Rect, XCOLOR_WHITE );
@@ -2176,7 +2176,7 @@ void hud_manager::RenderText( const irect& Rect, s32 Flags, s32 Alpha, const xwc
 
 //=========================================================================
 
-void hud_manager::ActivateVoiceMenu( s32 UserID )
+void hud_manager::ActivateVoiceMenu( intptr_t UserID )
 {
     ASSERT( (m_Users.Find( (user*)UserID )) != -1 );
 
@@ -2193,7 +2193,7 @@ void hud_manager::ActivateVoiceMenu( s32 UserID )
 
 //=========================================================================
 
-void hud_manager::DeactivateVoiceMenu( s32 UserID )
+void hud_manager::DeactivateVoiceMenu( intptr_t UserID )
 {
     ASSERT( (m_Users.Find( (user*)UserID )) != -1 );
 
@@ -2204,7 +2204,7 @@ void hud_manager::DeactivateVoiceMenu( s32 UserID )
 
 //=========================================================================
 
-xbool hud_manager::IsVoiceMenuActive( s32 UserID ) const
+xbool hud_manager::IsVoiceMenuActive( intptr_t UserID ) const
 {
     ASSERT( (m_Users.Find( (user*)UserID )) != -1 );
 

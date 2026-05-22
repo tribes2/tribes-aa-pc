@@ -9,7 +9,7 @@
 //==============================================================================
 
 #include "ParticleObject.hpp"
-#include "debris.hpp"
+#include "Debris.hpp"
 #include "Entropy.hpp"
 #include "../Demo1/Globals.hpp"
 #include "AudioMgr/Audio.hpp"

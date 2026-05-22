@@ -1,6 +1,6 @@
 
 #include "x_types.hpp"
-#include "audio.hpp"
+#include "Audio.hpp"
 #include "audiovars.hpp"
 
 extern s32 DebugDisableAudio;

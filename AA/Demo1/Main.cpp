@@ -13,7 +13,7 @@
 #include "Entropy.hpp"
 #include "NetLib/bitstream.hpp"
 #include "Globals.hpp"
-#include "fe_Globals.hpp"
+#include "osdialog.h"
 #include "NetworkMgr/GameServer.hpp"
 #include "NetworkMgr/GameClient.hpp"
 #include "Tokenizer/Tokenizer.hpp"
@@ -2033,8 +2033,7 @@ void ExportNavGraphs( void )
         x_DebugMsg("done.  Testing continuity...");
         if ( !g_Graph.DebugConnected() )
         {
-            MessageBox( NULL, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions",
-                "Error", MB_OK | MB_ICONINFORMATION );
+            osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Graph is not connected\nCheck projects\\T2\\Demo1\\BotLog.txt for node positions");
         }
         else
             x_DebugMsg("OK\n");

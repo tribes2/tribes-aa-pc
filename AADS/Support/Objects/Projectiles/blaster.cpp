@@ -19,7 +19,7 @@
 #include "NetLib/bitstream.hpp"
 
 #include "Blaster.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  STATICS

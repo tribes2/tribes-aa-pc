@@ -17,8 +17,8 @@
 #include "Objects/Player/PlayerObject.hpp"
 #include "PointLight/PointLight.hpp"
 
-#include "BomberShot.hpp"
-#include "textures.hpp"
+#include "Bombershot.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES
@@ -63,7 +63,7 @@ void bomber_shot::Setup( void )
     m_Life  = GetMaxAge();
     m_SoundID    = SOUNDTYPE_NONE; 
 
-    m_MotionInherit = GetMotionInherit();
+    // m_MotionInherit = GetMotionInherit();
 }
 
 //==============================================================================
@@ -77,7 +77,7 @@ void bomber_shot::Initialize( const matrix4&    L2W,
     Setup();
 
     // call default initializer
-    linear::Initialize( L2W, Movement, TeamBits, OriginID, ExcludeID );
+    linear::Initialize( L2W, TeamBits, OriginID, ExcludeID );
 }
 
 //==============================================================================

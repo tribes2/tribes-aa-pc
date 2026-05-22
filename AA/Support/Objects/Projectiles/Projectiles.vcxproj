@@ -125,7 +125,7 @@
     <ClInclude Include="Bounds.hpp" />
     <ClInclude Include="Bubble.hpp" />
     <ClInclude Include="bullet.hpp" />
-    <ClInclude Include="debris.hpp" />
+    <ClInclude Include="Debris.hpp" />
     <ClInclude Include="Disk.hpp" />
     <ClInclude Include="Flag.hpp" />
     <ClInclude Include="FlipFlop.hpp" />
@@ -146,7 +146,7 @@
     <ClInclude Include="Sensor.hpp" />
     <ClInclude Include="ShrikeShot.hpp" />
     <ClInclude Include="Station.hpp" />
-    <ClInclude Include="textures.hpp" />
+    <ClInclude Include="Textures.hpp" />
     <ClInclude Include="Turret.hpp" />
     <ClInclude Include="VehiclePad.hpp" />
     <ClInclude Include="WayPoint.hpp" />

@@ -18,7 +18,7 @@
 #include "pointlight\pointlight.hpp"
 
 #include "Bullet.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES

@@ -13,7 +13,7 @@
 #include "../Demo1/Globals.hpp"
 #include "LabelSets/Tribes2Types.hpp"
 #include "Objects/Player/PlayerObject.hpp"
-#include "arcing.hpp"
+#include "Arcing.hpp"
 
 #include "Debris.hpp"
 

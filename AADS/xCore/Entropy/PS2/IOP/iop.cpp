@@ -7,7 +7,7 @@
 #include "iop.hpp"
 #include "netdefs.hpp"
 #include "x_threads.hpp"
-#include "../demo1/specialversion.hpp"
+#include "../Demo1/specialversion.hpp"
 
 // Define this to enable usb ethernet device support
 //#ifdef TARGET_PS2_DEV

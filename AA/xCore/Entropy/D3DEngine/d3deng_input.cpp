@@ -5,6 +5,7 @@
 
 #include "../e_Engine.hpp"
 #include "../3rdParty/DirectX8/dinput.h"
+#include "osdialog.h"
 
 //==============================================================================
 // DEFINES
@@ -408,10 +409,7 @@ dxerr CreateMouse( device& Device, const DIDEVICEINSTANCE* pInstance, s32 Sample
     if( Error == DIERR_UNSUPPORTED && !s_Input.bForeground && s_Input.bExclusive )
     {
         d3deng_KillInput();
-        MessageBox( s_Input.Window, "SetCooperativeLevel() returned DIERR_UNSUPPORTED.\n"
-                              "For security reasons, background exclusive Mouse\n"
-                              "access is not allowed.", 
-                              "Mouse", MB_OK );
+        osdialog_message(OSDIALOG_WARNING, OSDIALOG_OK, "SetCooperativeLevel() returned DIERR_UNSUPPORTED.\nFor security reasons, background exclusive Mouse\naccess is not allowed.");
         return Error;
     }
 
@@ -494,9 +492,7 @@ dxerr CreateKeyboard( device& Device, const DIDEVICEINSTANCE* pInstance, s32 Sam
     if( Error == DIERR_UNSUPPORTED && !s_Input.bForeground && s_Input.bExclusive )
     {
         d3deng_KillInput();
-        MessageBox( s_Input.Window,"SetCooperativeLevel() returned DIERR_UNSUPPORTED.\n"
-                                   "For security reasons, background exclusive keyboard\n"
-                                   "access is not allowed.", "Keyboard", MB_OK );
+        osdialog_message(OSDIALOG_WARNING, OSDIALOG_OK, "SetCooperativeLevel() returned DIERR_UNSUPPORTED.\nFor security reasons, background exclusive keyboard\naccess is not allowed.");
         return Error;
     }
 
@@ -615,9 +611,7 @@ dxerr CreateJoystick( device& Device, const DIDEVICEINSTANCE* pInstance, s32 Sam
     if( Error == DIERR_UNSUPPORTED && !s_Input.bForeground && s_Input.bExclusive )
     {
         d3deng_KillInput();
-        MessageBox( s_Input.Window,"SetCooperativeLevel() returned DIERR_UNSUPPORTED.\n"
-                                   "For security reasons, background exclusive joystick\n"
-                                   "access is not allowed.", "Keyboard", MB_OK );
+        osdialog_message(OSDIALOG_WARNING, OSDIALOG_OK, "SetCooperativeLevel() returned DIERR_UNSUPPORTED.\nFor security reasons, background exclusive joystick\naccess is not allowed.");
         return Error;
     }
     

@@ -10,6 +10,9 @@
 //==============================================================================
 
 #include "x_math.hpp"
+#ifndef _MSC_VER
+#include <cstdint>
+#endif // _MSC_VER
 
 //==============================================================================
 #define TOKEN_STRING_SIZE           512
@@ -19,7 +22,7 @@
 #define TOKEN_ALLOC_ALLOCATE        0
 #define TOKEN_ALLOC_FREE            1
 
-typedef void * (token_allocator)(s32 key, s32 length);
+typedef void * (token_allocator)(s32 key, intptr_t length);
 
 class token_stream
 {   

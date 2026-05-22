@@ -11,7 +11,7 @@
 #include "ps2/ps2_except.hpp"
 #include "ps2/ps2_exceptiondefs.hpp"
 #include "NetLib/NetLib.hpp"
-#include "../../demo1/specialversion.hpp"
+#include "../../Demo1/specialversion.hpp"
 
 #define SCREEN_WIDTH 384
 #define SCREEN_HEIGHT 224

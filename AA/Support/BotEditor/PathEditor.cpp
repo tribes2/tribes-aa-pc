@@ -1,6 +1,7 @@
 #include "ObjectMgr/ObjectMgr.hpp"
 #include "PathEditor.hpp"
 #include "e_draw.hpp"
+#include "osdialog.h"
 #include "Entropy.hpp"
 #include "Objects/Bot/BotObject.hpp"
 #include "Objects/Player/DefaultLoadouts.hpp"
@@ -870,7 +871,7 @@ xbool path_editor::Save( const char* pFileName, const matrix4& W2L )
 
     if( !Fp )
     {
-        MessageBox(NULL, "Save FAILED!  (File write-protected?)", "Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Save FAILED!  (File write-protected?)");
         return FALSE;
     }
 
@@ -2342,7 +2343,7 @@ void path_editor::BlowEdges ( s32 BBoxSize )
         || m_NodeList.GetCount() > MAX_EDGES)
     {
 #ifdef TARGET_PC
-        MessageBox(NULL, "Unexpected number of nodes/edges > 3000.", "Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Unexpected number of nodes/edges > 3000.");
         return;
 #endif
     }

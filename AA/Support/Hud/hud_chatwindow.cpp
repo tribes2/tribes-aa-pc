@@ -5,7 +5,7 @@
 //=========================================================================
 
 #include "Entropy.hpp"
-#include "demo1/Globals.hpp"
+#include "Demo1/Globals.hpp"
 
 #include "GameMgr/GameMgr.hpp"
 #include "ObjectMgr/ObjectMgr.hpp"

@@ -18,7 +18,7 @@
 #include "PointLight/PointLight.hpp"
 
 #include "Plasma.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES

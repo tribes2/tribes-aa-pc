@@ -19,7 +19,7 @@
 #include "NetLib/bitstream.hpp"
 
 #include "ShrikeShot.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES

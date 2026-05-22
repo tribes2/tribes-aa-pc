@@ -1,6 +1,6 @@
 #include "Graph.hpp"
 #include "Support/GameMgr/GameMgr.hpp"
-#include "Objects/Terrain/Terrain.hpp"
+#include "osdialog.h"
 #include "Support/Building/BuildingOBJ.hpp"
 #include "BotLog.hpp"
 
@@ -207,7 +207,7 @@ void graph::Save( const char* pFileName )
 #ifdef TARGET_PC
     if( !Fp )
     {
-        MessageBox(NULL, "Save FAILED!  (File write-protected?)", "Error", MB_OK);
+        osdialog_message(OSDIALOG_ERROR, OSDIALOG_OK, "Save FAILED!  (File write-protected?)");
         return;
     }
 #endif

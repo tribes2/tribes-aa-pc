@@ -334,7 +334,11 @@ void bounds_Render( const bbox& a_BBox )
     draw_Begin( DRAW_TRIANGLES, DRAW_TEXTURED | DRAW_USE_ALPHA );
     draw_ClearL2W();
     draw_SetTexture( s_Bitmap );
+    #ifdef RENDERER_BACKEND_D3D
     g_pd3dDevice->SetRenderState( D3DRS_CULLMODE, D3DCULL_NONE );
+    #elif defined(RENDERER_BACKEND_OPENGL)
+    glDisable( GL_CULL_FACE );
+    #endif
     #endif
 
     #ifdef TARGET_PS2

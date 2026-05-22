@@ -19,7 +19,7 @@ struct voice_cmd
     s32         Pos;
     const char* pLabel;
     const char* pText;
-    s32         ID;
+    intptr_t         ID;
     s32         HudVoiceID ;
 };
 

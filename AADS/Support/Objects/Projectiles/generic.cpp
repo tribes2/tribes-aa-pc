@@ -19,7 +19,7 @@
 #include "pointlight\pointlight.hpp"
 
 #include "Generic.hpp"
-#include "textures.hpp"
+#include "Textures.hpp"
 
 //==============================================================================
 //  DEFINES

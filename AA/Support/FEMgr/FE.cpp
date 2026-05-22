@@ -5,7 +5,7 @@
 
 #include "AudioMgr/Audio.hpp"
 
-#include "../demo1/Globals.hpp"
+#include "../Demo1/Globals.hpp"
 
 
 // Declare shp and xbmp output paths
